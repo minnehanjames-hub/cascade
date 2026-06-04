@@ -1,0 +1,25 @@
+{
+  "name": "cascade",
+  "version": "0.1.0",
+  "description": "Complexity collapse simulation engine for hydrological stress in semiconductor fabrication supply chains",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "mathjs": "^15.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/*.test.js"
+    ]
+  },
+  "license": "MIT"
+}
