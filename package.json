@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "monitor": "node src/index.js"
   },
   "dependencies": {
     "mathjs": "^15.2.0"
