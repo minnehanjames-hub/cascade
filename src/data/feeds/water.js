@@ -9,14 +9,20 @@
  *
  * ── SOURCES ──────────────────────────────────────────────────────────────────
  *
- *   Taiwan WRA       Daily reservoir storage: Shimen (石門水庫) and Zengwen
- *                    (曾文水庫). Primary: water.taiwan.gov.tw JSON API.
- *                    Fallback: WRA Open Data platform.
- *                    Update cadence: daily at ~06:00 TWD.
+ *   Taiwan WRA       Hourly reservoir storage: Shimen (石門水庫) and Zengwen
+ *                    (曾文水庫). Endpoint: opendata.wra.gov.tw UUID dataset
+ *                    2be9044c-6e44-4856-aad5-dd108c2e6679 (no auth, 466
+ *                    reservoirs, lowercase fields, hourly cadence).
+ *                    Storage in API unit converted to MCM via empirical factor
+ *                    calibrated from Zengwen flow balance Jun 2026.
+ *                    NOTE: Shimen sensor offline as of Jun 2026 — falls back
+ *                    to mock with explicit warning when detected.
  *
- *   USGS NWIS        Phoenix AMA groundwater depth (parameter 72019, Maricopa
- *                    County). REST API at waterservices.usgs.gov.
- *                    Update cadence: wells report weekly to monthly.
+ *   USGS OGC API     Phoenix AMA groundwater depth (parameter 72019, ft).
+ *                    New API at api.waterdata.usgs.gov/ogcapi/v0/ (legacy
+ *                    waterservices.usgs.gov/nwis/gwlevels/ decommissioned
+ *                    fall 2025). Field measurements, 4-year rolling window.
+ *                    Update cadence: wells report quarterly to annually.
  *
  *   NOAA CPC         ENSO Oceanic Niño Index (ONI) ASCII file.
  *                    Used to determine La Niña / El Niño advisory status and
@@ -76,13 +82,30 @@ const STALE_AFTER_MS = {
 // ── Taiwan WRA configuration ──────────────────────────────────────────────────
 
 /**
- * Try endpoints in order. The primary WRA API returns all reservoirs as a
- * JSON array. The open-data fallback uses a different envelope format.
+ * WRA Open Data dataset 2be9044c: real-time reservoir observations.
+ * Returns all 466 Taiwan reservoirs as a JSON array, no auth required.
+ * Confirmed working as of Jun 2026; updates hourly.
+ *
+ * Previous endpoints now dead:
+ *   water.taiwan.gov.tw/api/v2/Reservoir/GetReservoirData  — connection refused
+ *   opendata.wra.gov.tw/api/v1/public/…/reservoirPercentage10 — HTTP 401
  */
-const TAIWAN_WRA_ENDPOINTS = [
-  'https://water.taiwan.gov.tw/api/v2/Reservoir/GetReservoirData',
-  'https://opendata.wra.gov.tw/api/v1/public/WaterResourceBase/reservoirPercentage10',
-];
+const TAIWAN_WRA_ENDPOINT =
+  'https://opendata.wra.gov.tw/api/v2/2be9044c-6e44-4856-aad5-dd108c2e6679?format=JSON';
+
+/**
+ * Empirical conversion: WRA API `effectivewaterstoragecapacity` units → MCM.
+ *
+ * Calibrated from Zengwen (ID 20201) flow-balance analysis on Jun 11 2026:
+ * two independent 6-hour periods agreed within 15%:
+ *   period 0-6h:  80.48 Δunits vs. 0.936 MCM net inflow → 1 unit = 11,627 m³
+ *   period 12-22h: 138.00 Δunits vs. 1.437 MCM net flow → 1 unit = 10,414 m³
+ *   best estimate: 11,020 m³/unit = 0.01102 MCM/unit
+ *
+ * The ewsc field IS time-varying (confirmed hourly changes for Zengwen).
+ * Shimen sensor was offline as of Jun 2026 (blank inflow, totaloutflow=0).
+ */
+const TAIWAN_WRA_MCM_PER_UNIT = 11020 / 1e6; // 0.01102 MCM per API unit
 
 /**
  * Reservoir configurations.
@@ -111,25 +134,58 @@ const TAIWAN_RESERVOIRS = {
   },
 };
 
-// ── USGS NWIS configuration ───────────────────────────────────────────────────
+// ── USGS OGC API configuration ────────────────────────────────────────────────
+//
+// Legacy endpoint waterservices.usgs.gov/nwis/gwlevels/ was decommissioned
+// fall 2025. Replacement: OGC-compliant API at api.waterdata.usgs.gov.
+//
+// IMPORTANT: bbox + datetime queries on the field-measurements collection are
+// very slow (> 15 s timeout). Use specific monitoring_location_id filtering
+// instead — returns in ~2 s.
+//
+// Well selection rationale (Phoenix AMA, Maricopa County, parameter 72019):
+//   Deep confined aquifer wells (> 50 ft) represent the managed groundwater
+//   that semiconductor fabs actually draw from. Shallow wells (< 50 ft) track
+//   canals and alluvial surface water — irrelevant to fab supply security.
+//   This curated list was found via the OGC API field-measurements collection
+//   in Jun 2026 and includes a mix of USGS-operated and ADWR cooperative wells.
 
-const USGS_GW_BASE = 'https://waterservices.usgs.gov/nwis/gwlevels/';
-const USGS_GW_PARAMS = {
-  format:       'json',
-  stateCd:      'az',
-  countycd:     '04013', // Maricopa County FIPS — Phoenix AMA core
-  parameterCd:  '72019', // Depth to water level, feet below land surface
-  siteStatus:   'active',
-  period:       'P7D',   // last 7 days; groundwater changes slowly
-  siteType:     'GW',
-};
+const USGS_GW_BASE = 'https://api.waterdata.usgs.gov/ogcapi/v0/collections/field-measurements/items';
+
+/**
+ * Curated Phoenix AMA groundwater monitoring wells (parameter 72019, depth to
+ * water in ft). Querying by ID is ~2 s; bbox+datetime queries time out.
+ *
+ * Most recent observations as of Jun 2026:
+ *   AZ014-333052111595501: 87.96 ft (Apr 2026)
+ *   USGS-332500112095501:  89.76 ft (Aug 2025)
+ *   USGS-332948111573201:  92.09 ft (May 2025)
+ *   USGS-332642112210801:  95.01 ft (Aug 2025)
+ *   USGS-332659112264801: 168.36 ft (Aug 2025)
+ *   USGS-332830112274201: 267.76 ft (Jul 2024)
+ *   USGS-332918112283301: 328.41 ft (Jul 2024)
+ */
+const USGS_GW_SITE_IDS = [
+  'AZ014-333052111595501', // ADWR cooperative, 88 ft  — Apr 2026 (freshest)
+  'USGS-332659112264801',  // USGS, 168 ft             — Aug 2025
+  'USGS-332830112274201',  // USGS, 268 ft             — Jul 2024
+  'USGS-332918112283301',  // USGS, 328 ft             — Jul 2024
+  'USGS-332500112095501',  // USGS, 90 ft              — Aug 2025
+  'USGS-332948111573201',  // USGS, 92 ft              — May 2025
+  'USGS-332642112210801',  // USGS, 95 ft              — Aug 2025
+];
+
+const USGS_GW_MIN_DEPTH_FT = 50; // exclude shallow alluvial wells (< 50 ft tracks canals, not aquifer)
 
 // ── NOAA CPC configuration ────────────────────────────────────────────────────
 
 /**
  * ONI (Oceanic Niño Index) — 3-month running means of NINO3.4 SST anomalies.
  * The most reliable machine-readable ENSO index; plain ASCII; updated monthly.
- * Columns: SEAS  YR  TOTAL  CLIM  ANOM
+ * Actual file format (4 columns, space-delimited):
+ *   SEAS  YR   TOTAL   ANOM
+ *   DJF  1950  26.67   0.02
+ * NOTE: the documented 5-column format (with CLIM) does not match the real file.
  */
 const NOAA_ONI_URL = 'https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt';
 
@@ -272,106 +328,109 @@ function estimateTaiwanDroughtProb(oni) {
 // ── Taiwan WRA — fetch and parse ──────────────────────────────────────────────
 
 /**
- * Find a reservoir record in a response array by name or station ID.
- * Handles both the English-field and Traditional-Chinese-field formats
- * that different WRA endpoints return.
- */
-function findReservoirRecord(records, cfg) {
-  if (!Array.isArray(records)) return null;
-  return records.find((r) => {
-    const id   = String(r.ReservoirIdentifier ?? r['識別碼'] ?? r.id ?? '');
-    const name = String(r.ReservoirName ?? r['水庫名稱'] ?? r.name ?? '');
-    if (id === cfg.id) return true;
-    if (name.includes(cfg.nameChinese)) return true;
-    return cfg.nameAlt.some(
-      (alt) => name.toLowerCase().includes(alt.toLowerCase())
-    );
-  }) ?? null;
-}
-
-/**
- * Extract storage in MCM from a WRA record.
- * Tries direct MCM fields first; falls back to percentage × effective capacity.
- */
-function extractStorageMcm(record, cfg) {
-  const directFields = [
-    'EffectiveStorage',
-    '有效蓄水量(MCM)',
-    '有效蓄水量',
-    'effective_storage',
-    'Storage',
-    'storage',
-  ];
-  for (const f of directFields) {
-    const v = parseFloat(record[f]);
-    if (!isNaN(v) && v >= 0) return v;
-  }
-
-  // Fallback: storage% × effective capacity
-  const pctFields = [
-    'StoragePercentage',
-    '蓄水百分比(%)',
-    '蓄水百分比',
-    'percentage',
-    'Percentage',
-  ];
-  for (const f of pctFields) {
-    const pct = parseFloat(record[f]);
-    if (!isNaN(pct) && pct >= 0 && pct <= 100) {
-      return (pct / 100) * cfg.effectiveCapacity_mcm;
-    }
-  }
-
-  return null;
-}
-
-/**
- * Normalize any known WRA JSON response envelope into the internal shape.
- * Throws if the required reservoirs cannot be found or parsed.
+ * Parse the WRA open-data JSON response (endpoint 2be9044c…).
+ *
+ * The live endpoint returns an array of 466 reservoir observation records,
+ * all with LOWERCASE field names. The key fields are:
+ *
+ *   reservoiridentifier           — numeric-string ID, e.g. "10401" (Shimen)
+ *   effectivewaterstoragecapacity — current storage in WRA unit (≈ 11,020 m³/unit)
+ *                                   NOT the design capacity; changes hourly
+ *   inflowdischarge               — inflow rate in m³/s; empty string when sensor offline
+ *   totaloutflow                  — total outflow in m³/s; 0 when sensor offline
+ *   observationtime               — ISO 8601 timestamp, e.g. "2026-06-11T22:00:00"
+ *
+ * Shimen (ID 10401) sensor was offline as of Jun 2026:
+ *   inflowdischarge = "" (blank), totaloutflow = 0.0, ewsc unchanging.
+ * When this pattern is detected, sensor_offline=true is flagged and the
+ * caller falls back to the mock value with an explicit warning.
+ *
+ * @throws {Error} if the response envelope is unrecognized or a reservoir is missing
  */
 function parseTaiwanWRAResponse(body) {
-  // Unwrap the records array from any known envelope format
   let records;
-  if (Array.isArray(body))                        records = body;
-  else if (Array.isArray(body?.result?.records))  records = body.result.records;
-  else if (Array.isArray(body?.records))          records = body.records;
-  else if (Array.isArray(body?.data))             records = body.data;
+  if (Array.isArray(body))                       records = body;
+  else if (Array.isArray(body?.result?.records)) records = body.result.records;
+  else if (Array.isArray(body?.records))         records = body.records;
+  else if (Array.isArray(body?.data))            records = body.data;
   else throw new Error('Unrecognized Taiwan WRA response envelope');
 
-  const now = new Date().toISOString();
+  const now    = new Date().toISOString();
   const result = { fetchedAt: now, stale: false, mock: false, error: null };
 
   for (const [key, cfg] of Object.entries(TAIWAN_RESERVOIRS)) {
-    const rec = findReservoirRecord(records, cfg);
-    if (!rec) throw new Error(`Reservoir ${cfg.nameChinese} not found in WRA response`);
+    // Match by lowercase reservoiridentifier (new API) or legacy capitalized fields
+    const rec = records.find(
+      (r) => String(r.reservoiridentifier ?? r.ReservoirIdentifier ?? r.id ?? '') === cfg.id
+    );
+    if (!rec) throw new Error(`Reservoir ${cfg.nameChinese} (ID ${cfg.id}) not found in WRA response`);
 
-    const storageMcm = extractStorageMcm(rec, cfg);
-    if (storageMcm === null) {
-      throw new Error(`Cannot extract storage MCM for ${cfg.nameChinese}`);
+    // ── Detect offline sensor: blank inflow AND zero outflow ────────────────
+    const inflowRaw  = rec.inflowdischarge ?? rec.InflowDischarge ?? '';
+    const outflowRaw = parseFloat(rec.totaloutflow ?? rec.TotalOutflow ?? '');
+    const sensorOffline = (inflowRaw === '' || inflowRaw == null)
+                       && (!isNaN(outflowRaw) && outflowRaw === 0);
+
+    result[`${key}_sensor_offline`] = sensorOffline;
+    result[`${key}_ewsc_raw`]       = rec.effectivewaterstoragecapacity ?? null;
+
+    if (!sensorOffline) {
+      const ewsc = parseFloat(rec.effectivewaterstoragecapacity ?? '');
+      if (isNaN(ewsc) || ewsc < 0) {
+        throw new Error(
+          `Cannot extract storage for ${cfg.nameChinese}: effectivewaterstoragecapacity=${rec.effectivewaterstoragecapacity}`
+        );
+      }
+      const storageMcm           = ewsc * TAIWAN_WRA_MCM_PER_UNIT;
+      result[`${key}_storage_mcm`]   = parseFloat(storageMcm.toFixed(2));
+      result[`${key}_fill_fraction`] = parseFloat((storageMcm / cfg.designCapacity_mcm).toFixed(4));
+    } else {
+      // Caller (fetchTaiwanWRA) will substitute mock; we return null here
+      result[`${key}_storage_mcm`]   = null;
+      result[`${key}_fill_fraction`] = null;
     }
 
-    result[`${key}_storage_mcm`]    = parseFloat(storageMcm.toFixed(2));
-    result[`${key}_fill_fraction`]  = parseFloat((storageMcm / cfg.designCapacity_mcm).toFixed(4));
-    result.source_date = rec.Date ?? rec['資料日期'] ?? now.slice(0, 10);
+    result.source_date = (rec.observationtime ?? '').slice(0, 10) || now.slice(0, 10);
   }
 
-  const totalDesign = TAIWAN_RESERVOIRS.shimen.designCapacity_mcm +
-                      TAIWAN_RESERVOIRS.zengwen.designCapacity_mcm;
-  result.combined_storage_mcm    = parseFloat(
-    (result.shimen_storage_mcm + result.zengwen_storage_mcm).toFixed(2)
-  );
-  result.combined_fill_fraction  = parseFloat(
-    (result.combined_storage_mcm / totalDesign).toFixed(4)
-  );
-
   return result;
+}
+
+// Legacy helpers kept for backward compatibility with any external callers.
+// New parsing uses parseTaiwanWRAResponse directly.
+function findReservoirRecord(records, cfg) {
+  if (!Array.isArray(records)) return null;
+  return records.find(
+    (r) => String(r.reservoiridentifier ?? r.ReservoirIdentifier ?? r.id ?? '') === cfg.id
+  ) ?? null;
+}
+
+function extractStorageMcm(record, cfg) {
+  // New API: ewsc field with unit conversion
+  const ewsc = parseFloat(record.effectivewaterstoragecapacity ?? '');
+  if (!isNaN(ewsc) && ewsc >= 0) return ewsc * TAIWAN_WRA_MCM_PER_UNIT;
+  // Legacy API: direct MCM or percentage fields
+  for (const f of ['EffectiveStorage', '有效蓄水量(MCM)', '有效蓄水量', 'Storage']) {
+    const v = parseFloat(record[f]);
+    if (!isNaN(v) && v >= 0) return v;
+  }
+  for (const f of ['StoragePercentage', '蓄水百分比(%)', '蓄水百分比', 'percentage']) {
+    const pct = parseFloat(record[f]);
+    if (!isNaN(pct) && pct >= 0 && pct <= 100) return (pct / 100) * cfg.effectiveCapacity_mcm;
+  }
+  return null;
 }
 
 /**
  * Fetch Taiwan WRA reservoir levels.
  *
  * Returns cached data if still within the freshness window.
- * Tries all known WRA endpoints in order; falls back to cache/mock on failure.
+ * Uses the single WRA open-data endpoint (UUID-based, no auth).
+ *
+ * Shimen offline handling: if the API reports blank inflow and zero outflow
+ * for Shimen (sensor confirmed offline as of Jun 2026), logs a warning and
+ * substitutes the mock value so the monitor has a usable baseline. The
+ * result is marked stale=true to signal partial mock usage downstream.
  *
  * @returns {Promise<object>}  Taiwan reading with meta flags.
  */
@@ -380,81 +439,122 @@ async function fetchTaiwanWRA() {
     return { ..._cache.taiwan };
   }
 
-  const errors = [];
-  for (const url of TAIWAN_WRA_ENDPOINTS) {
-    try {
-      const body   = await fetchJSON(url);
-      const parsed = parseTaiwanWRAResponse(body);
-      _cache.taiwan = { ...parsed };
-      return { ...parsed };
-    } catch (err) {
-      errors.push(`${url}: ${err.message}`);
-    }
-  }
+  try {
+    const body   = await fetchJSON(TAIWAN_WRA_ENDPOINT);
+    const parsed = parseTaiwanWRAResponse(body);
 
-  // All endpoints failed — return cached/mock with degradation flags
-  return {
-    ..._cache.taiwan,
-    stale: !!_cache.taiwan.fetchedAt, // true only when we had prior live data
-    error: errors.join(' | '),
-    lastFetchAttempt: new Date().toISOString(),
-  };
+    // ── Shimen offline handling ──────────────────────────────────────────────
+    if (parsed.shimen_sensor_offline) {
+      const ewscRaw  = parsed.shimen_ewsc_raw;
+      const ewscNum  = parseFloat(ewscRaw);
+      const liveMcm  = !isNaN(ewscNum) ? (ewscNum * TAIWAN_WRA_MCM_PER_UNIT).toFixed(1)  : 'N/A';
+      const liveFill = !isNaN(ewscNum)
+        ? ((ewscNum * TAIWAN_WRA_MCM_PER_UNIT) / TAIWAN_RESERVOIRS.shimen.designCapacity_mcm * 100).toFixed(1)
+        : 'N/A';
+      console.warn(
+        `[Cascade/water] Taiwan WRA — Shimen (ID ${TAIWAN_RESERVOIRS.shimen.id}) sensor OFFLINE:` +
+        ` inflowdischarge=blank, totaloutflow=0, ewsc=${ewscRaw}.` +
+        ` Live conversion would give ≈${liveMcm} MCM (${liveFill}% fill) — implausible.` +
+        ` Using MOCK value: ${MOCK.taiwan.shimen_storage_mcm} MCM. Result flagged stale=true.`
+      );
+      parsed.shimen_storage_mcm   = MOCK.taiwan.shimen_storage_mcm;
+      parsed.shimen_fill_fraction = MOCK.taiwan.shimen_fill_fraction;
+      parsed.stale = true; // partial: Shimen is from mock baseline
+    }
+
+    // ── Combined totals ──────────────────────────────────────────────────────
+    const totalDesign = TAIWAN_RESERVOIRS.shimen.designCapacity_mcm
+                      + TAIWAN_RESERVOIRS.zengwen.designCapacity_mcm;
+    const combined    = (parsed.shimen_storage_mcm  ?? 0)
+                      + (parsed.zengwen_storage_mcm ?? 0);
+    parsed.combined_storage_mcm   = parseFloat(combined.toFixed(2));
+    parsed.combined_fill_fraction = parseFloat((combined / totalDesign).toFixed(4));
+
+    _cache.taiwan = { ...parsed };
+    return { ...parsed };
+  } catch (err) {
+    // Full fetch failure — return cached/mock with degradation flags
+    return {
+      ..._cache.taiwan,
+      stale: !!_cache.taiwan.fetchedAt,
+      error: err.message,
+      lastFetchAttempt: new Date().toISOString(),
+    };
+  }
 }
 
-// ── USGS NWIS — fetch and parse ───────────────────────────────────────────────
+// ── USGS OGC API — fetch and parse ────────────────────────────────────────────
 
 /**
- * Parse the USGS NWIS JSON response for groundwater levels.
- * Extracts the most recent valid depth reading from each active site and
- * returns the median depth in both feet and metres.
+ * Parse the USGS OGC API GeoJSON response for groundwater depth.
+ *
+ * The field-measurements collection returns a GeoJSON FeatureCollection.
+ * Each feature has:
+ *   properties.parameter_code        — "72019" = depth to water, ft below surface
+ *   properties.value                 — numeric depth reading
+ *   properties.unit_of_measure       — "ft"
+ *   properties.time                  — ISO 8601 timestamp of the field visit
+ *   properties.monitoring_location_id — site ID, e.g. "USGS-332659112264801"
+ *
+ * Multiple records may exist per location (different visit dates).
+ * We keep the most-recent reading per location, then filter for depth_ft ≥
+ * USGS_GW_MIN_DEPTH_FT (50 ft) to exclude shallow alluvial wells that track
+ * surface water rather than the confined aquifer relevant to fabs.
+ * Median of the qualifying sites is returned as the Phoenix AMA signal.
  */
 function parseUSGSResponse(body) {
-  const series = body?.value?.timeSeries;
-  if (!Array.isArray(series) || series.length === 0) {
-    throw new Error('USGS response contains no timeSeries array');
+  const features = body?.features;
+  if (!Array.isArray(features) || features.length === 0) {
+    throw new Error('USGS OGC API response contains no features');
   }
 
-  const depths_ft = [];
-  const siteReadings = [];
+  // Collect most-recent reading per monitoring location
+  const byLocation = new Map();
+  for (const feat of features) {
+    const p         = feat?.properties ?? {};
+    const paramCode = String(p.parameter_code ?? '');
+    if (paramCode !== '72019') continue;
 
-  for (const ts of series) {
-    // Confirm this is parameter 72019 (depth-to-water)
-    const varCode = ts?.variable?.variableCode?.[0]?.value;
-    if (varCode !== '72019') continue;
+    const loc  = p.monitoring_location_id;
+    const val  = parseFloat(p.value);
+    const unit = String(p.unit_of_measure ?? 'ft').toLowerCase();
+    const time = p.time ?? '';
 
-    const siteNo   = ts?.sourceInfo?.siteCode?.[0]?.value ?? 'unknown';
-    const siteName = ts?.sourceInfo?.siteName ?? siteNo;
+    if (!loc || isNaN(val) || val <= 0) continue;
 
-    // Walk backwards through values to find the most recent non-null reading
-    const vals = ts?.values?.[0]?.value ?? [];
-    for (let i = vals.length - 1; i >= 0; i--) {
-      const entry = vals[i];
-      if (!entry || entry.value == null || entry.value === '') continue;
-      const ft = parseFloat(entry.value);
-      // Sanity bounds: 0–2,000 ft (0–610 m); reject NoData sentinel values
-      if (!isNaN(ft) && ft > 0 && ft < 2000) {
-        depths_ft.push(ft);
-        siteReadings.push({
-          site_no:   siteNo,
-          site_name: siteName,
-          depth_ft:  ft,
-          depth_m:   parseFloat((ft * FT_TO_M).toFixed(2)),
-          dateTime:  entry.dateTime ?? null,
-        });
-        break; // one reading per site
-      }
+    // Normalise to feet (all 72019 data should be ft; guard for edge cases)
+    const val_ft = (unit === 'ft') ? val : val / FT_TO_M;
+    if (val_ft >= 2000) continue; // reject NoData sentinels
+
+    const existing = byLocation.get(loc);
+    if (!existing || time > existing.dateTime) {
+      byLocation.set(loc, {
+        site_no:   loc,
+        site_name: loc,
+        depth_ft:  parseFloat(val_ft.toFixed(2)),
+        depth_m:   parseFloat((val_ft * FT_TO_M).toFixed(2)),
+        dateTime:  time,
+      });
     }
   }
 
-  if (depths_ft.length === 0) {
-    throw new Error('No valid USGS depth readings found in response');
+  if (byLocation.size === 0) {
+    throw new Error('No valid USGS depth readings found in OGC API response');
   }
 
-  const med_ft = median(depths_ft);
-  const med_m  = parseFloat((med_ft * FT_TO_M).toFixed(2));
+  const allSites = Array.from(byLocation.values());
 
-  const mostRecent = siteReadings
-    .map((r) => r.dateTime)
+  // Prefer managed-aquifer wells (≥ USGS_GW_MIN_DEPTH_FT).
+  // Fall back to all sites if every reading is shallower (shouldn't happen in normal ops).
+  const deepSites    = allSites.filter((s) => s.depth_ft >= USGS_GW_MIN_DEPTH_FT);
+  const workingSites = deepSites.length > 0 ? deepSites : allSites;
+
+  const depths_ft = workingSites.map((s) => s.depth_ft);
+  const med_ft    = median(depths_ft);
+  const med_m     = parseFloat((med_ft * FT_TO_M).toFixed(2));
+
+  const mostRecent = workingSites
+    .map((s) => s.dateTime)
     .filter(Boolean)
     .sort()
     .at(-1)
@@ -463,8 +563,8 @@ function parseUSGSResponse(body) {
   return {
     depth_m:     med_m,
     depth_ft:    parseFloat(med_ft.toFixed(2)),
-    sites_count: depths_ft.length,
-    sites:       siteReadings,
+    sites_count: workingSites.length,
+    sites:       workingSites,
     source_date: mostRecent,
     fetchedAt:   new Date().toISOString(),
     stale:  false,
@@ -474,10 +574,12 @@ function parseUSGSResponse(body) {
 }
 
 /**
- * Fetch Phoenix AMA groundwater depth from USGS NWIS.
+ * Fetch Phoenix AMA groundwater depth from the USGS OGC API.
  *
- * Queries all active Maricopa County wells for parameter 72019 (depth to
- * water, feet). Returns median depth converted to metres.
+ * Queries the field-measurements collection for parameter 72019 (depth to
+ * water, ft) over a 4-year rolling window within the Phoenix metro bbox.
+ * Returns the median depth across all managed-aquifer wells (≥ 50 ft),
+ * converted to metres.
  *
  * @returns {Promise<object>}  USGS reading with meta flags.
  */
@@ -486,12 +588,18 @@ async function fetchUSGSGroundwater() {
     return { ..._cache.usgs };
   }
 
-  const url = `${USGS_GW_BASE}?${new URLSearchParams(USGS_GW_PARAMS)}`;
+  // Query specific known wells by ID — ~2 s response vs > 15 s for bbox+datetime
+  const url = `${USGS_GW_BASE}?${new URLSearchParams({
+    monitoring_location_id: USGS_GW_SITE_IDS.join(','),
+    parameter_code:         '72019',
+    f:                      'json',
+    limit:                  '50',
+  })}`;
 
   try {
     const body   = await fetchJSON(url);
     const parsed = parseUSGSResponse(body);
-    _cache.usgs = { ...parsed };
+    _cache.usgs  = { ...parsed };
     return { ...parsed };
   } catch (err) {
     return {
@@ -508,10 +616,10 @@ async function fetchUSGSGroundwater() {
 /**
  * Parse the NOAA ONI ASCII file.
  *
- * File format (space-delimited):
- *   SEAS  YR   TOTAL   CLIM   ANOM
- *   DJF  1950  26.67  26.65   0.02
- *   JFM  1950  26.83  26.88  -0.04
+ * Actual file format (4 columns, space-delimited — NOT 5 as documented):
+ *   SEAS  YR   TOTAL   ANOM
+ *   DJF  1950  26.67   0.02
+ *   JFM  1950  26.83  -0.04
  *   ...
  *
  * Advisory determination follows official NOAA criteria:
@@ -527,10 +635,10 @@ function parseOniText(text) {
     if (!line || /^(SEAS|YEAR|#)/i.test(line)) continue;
 
     const parts = line.split(/\s+/);
-    if (parts.length < 5) continue;
+    if (parts.length < 4) continue;
 
     const year = parseInt(parts[1], 10);
-    const anom = parseFloat(parts[4]);
+    const anom = parseFloat(parts[3]); // column 3 = ANOM (not 4; real file has no CLIM column)
     if (!isNaN(year) && !isNaN(anom)) {
       readings.push({ season: parts[0], year, anom });
     }
