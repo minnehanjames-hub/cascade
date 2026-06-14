@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "title": "Investment Committee Memorandum",
+    "desk": "Cascade Capital — Hydro-Semiconductor Risk Desk",
+    "asOf": "2026-06-13",
+    "classification": "Internal — Investment Committee",
+    "snapshot": "Composite stress 0.025 / 1.000 · Taiwan combined fill 40.1% · Zengwen recovering from a 9.4% trough (Jun 3) · ENSO neutral (ONI +0.48) · no critical-slowing-down signal on detrended data.",
+    "basis": "Built on the live Cascade data snapshot of 2026-06-13 and 12 months of real WRA reservoir history."
+  },
+  "call": {
+    "headline": "SHORT NVDA — defined-risk, trigger-gated",
+    "direction": "SHORT",
+    "stance": "Asymmetric short-bias via defined-risk options; disciplined, trigger-gated entry",
+    "primaryTicker": "NVDA",
+    "primaryName": "NVIDIA Corp.",
+    "hedgeTickers": ["ASML", "INTC"],
+    "convictionThesis": 4,
+    "convictionTiming": 2,
+    "horizon": "12–24 months",
+    "sizingToday": "Starter / optionality only — defined-risk long-dated (Jan-2028) NVDA put spreads, ≤2% of NAV. Full thesis sizing is a Sep–Oct 2026 decision, contingent on the trigger ladder. Downside capped at premium paid.",
+    "oneLiner": "The structural mispricing is real and badly underpriced — but it is dormant today. We own the downside the way you can hold it with conviction: capped cost, convex payoff, disciplined entry.",
+    "whyNvda": [
+      "NVDA is the purest TSMC-Taiwan dependency on the board: diversification ≈ 0.04. Every flagship accelerator (H100 / H200 / B200) is fabbed on TSMC N4/N3 with no credible substitute foundry inside an 18-month horizon — a single point of failure priced as if it doesn't exist.",
+      "Valuation leaves no margin of safety. At ~35–40× forward earnings the stock prices a smooth AI build-out; the model puts $42.4B of NVDA revenue at risk in a 0.60 Taiwan-stress scenario. Even a partial 0.40 event compresses the multiple from ~35× toward sub-20× — a 40%+ drawdown — without AI demand falling at all.",
+      "The lag structure is the edge: a ~45-day finished-goods buffer plus 6–12-month forward order books means a supply shock first rallies the stock on 'resilience,' then lands as a revenue miss 3–5 quarters later, which the market will misattribute to 'demand normalization.' That misread is the entry window.",
+      "Why not short TSM itself: shorting the monopoly into a scarcity event is shorting quality — TSMC raises wafer ASPs and rations allocation to its highest-margin customers, and printed record margins through the 2021 drought. NVDA, downstream and un-diversified, eats the disruption without the pricing power.",
+      "Why not naked-short today: composite stress is 0.025, reservoirs are filling, ENSO is neutral, and the CSD test is clean. So we do not pay carry to be early into a recovering monopoly tape — we own defined-risk, long-dated put spreads and scale only as the trigger ladder confirms."
+    ],
+    "hedge": "Pair the short with structural longs that win on diversification and scarcity: ASML (every new fab built anywhere — Arizona, Dresden, Japan, Ohio — buys EUV tools) and a small INTC optionality position (the one name that re-rates if Taiwan risk forces CHIPS-Act / domestic reshoring).",
+    "triggerLadder": [
+      { "tier": "WATCH", "size": "0% — monitor & scout premium", "conditions": "NOAA issues La Niña Watch/Advisory (ONI ≤ −0.5 sustained); Taiwan 3-month below-normal precip probability climbs toward 70% (now ~62%)." },
+      { "tier": "STARTER", "size": "1–2% NAV — NVDA Jan-2028 put spreads + TSM puts", "conditions": "Combined fill crosses <50% on a POST-typhoon-season drawdown (not the seasonal trough); detrended CSD flags ≥2/3 reservoir series (AR1 τ≥0.50) AND cross-reservoir correlation τ≥0.40; composite ≥0.15." },
+      { "tier": "PRESS", "size": "5–7% NAV — add SOXX/SMH puts", "conditions": "Either reservoir <20%; WRA issues a formal water-restriction notice covering TSMC fabs; composite ≥0.30 (co-activation boost engages); La Niña ≥70% probability through the typhoon season." },
+      { "tier": "MAX", "size": "Full size — add direct shorts", "conditions": "TSMC management cites water in production guidance (Catalyst 10, 3-day repricing lag); composite ≥0.60. At this point you are in the event, not anticipating it." }
+    ],
+    "invalidation": "Cut/cover if: ENSO flips to El Niño or stays neutral through Q4 2026; the 2026 typhoon season refills reservoirs above ~50–60% by September; Samsung SF2 reaches commercial N2 yield parity (HHI collapses below ~0.65); NVDA de-rates below ~20× forward (risk already priced); or Intel Foundry demonstrates credible N3-equivalent yield (substitute capacity breaks the monopoly).",
+    "voteTally": { "bearishBias": 4, "nakedShortToday": 0, "definedRiskTriggerGated": 4 },
+    "consensusNote": "All four analysts see the asymmetry to the downside; none will put on a naked directional short while the reservoirs are filling. The unanimous structure is defined-risk and trigger-gated. The single-name short (Voss) is the sharpest expression; the macro and event-driven desks favour the same downside via options; the CRO sets the gate. We adopt the single-name short, expressed with defined risk, sized on the CRO's ladder."
+  },
+  "agents": [
+    {
+      "handle": "Derek Voss",
+      "role": "Fundamental Single-Name / Short-Seller",
+      "style": "Bottom-up · exposure vs. priced-in · margin & multiple sensitivity",
+      "stance": "SHORT",
+      "primaryTicker": "NVDA",
+      "otherTickers": ["INTC", "TSM", "AAPL"],
+      "conviction": 3,
+      "horizon": "12–24 months",
+      "thesis": [
+        "NVDA is a pure-play TSMC dependency (diversification ≈ 0.04) — H100/H200/B200 all on N3/N4 with no credible substitute inside 18 months; the market prices this as if it's irrelevant.",
+        "The 45-day finished-goods buffer creates a lag trap: a Q3 shock doesn't hit revenue until Q5–Q6, so the stock rallies on 'resilience' before the miss lands — that is the entry, not a refutation.",
+        "35–40× forward earnings assumes smooth AI compounding; a partial 0.40 stress event ($20B+ at risk) compresses the multiple from 35× to sub-20× — a 40%+ drawdown with no fall in AI demand.",
+        "Two of ten catalysts are already live (combined fill 40.1%, water-cost proxy 1.72×). Zengwen touched 9.4% nine days ago — the market read the bounce as all-clear; the structural vulnerability is intact.",
+        "ENSO-neutral (ONI +0.48) keeps this at conviction 3, not 5 — an ONI crossing to −0.5 with a failed Zengwen recovery before October closes the window and triggers position scaling."
+      ],
+      "quote": "Everyone is watching the AI demand curve; nobody is watching the reservoir that produces the chips that run the curve — and the reservoir touched nine percent eleven days ago."
+    },
+    {
+      "handle": "Priya Nair",
+      "role": "Event-Driven / Special Situations",
+      "style": "Convex asymmetric payoffs · optionality · scenario trees",
+      "stance": "LONG PUTS",
+      "primaryTicker": "TSM",
+      "otherTickers": ["NVDA", "SOXX", "AAPL"],
+      "conviction": 3,
+      "horizon": "12–24 months",
+      "thesis": [
+        "N3/N2 HHI of 0.942/0.924 is near-monopoly — no substitute foundry for Apple, Nvidia, or AMD silicon at any price; the concentration alone justifies structural tail insurance.",
+        "Composite stress 0.025 with no EWS flag is not bullish — it is why the puts are cheap. 2021 was also invisible in financial models until TSMC trucked water; the market misread a near-miss as 'solved.'",
+        "Structure: TSM Jan-2028 $130/$90 put spread as the core (2.5% NAV); cap premium at ~4–6% of notional, own the vol expansion and the move through the 0.40–0.50 concern band.",
+        "Size up with NVDA put spreads on Catalyst 6 (La Niña + 70% drought prob), SOXX puts on Catalyst 1 (<50% combined fill) — total risk budget ~6% NAV for exposure to a $272–531B disruption.",
+        "Pay ~7.5 bps/month of NAV to own a tail that produces $272–531B of economic disruption if it fires. That carry is cheap."
+      ],
+      "quote": "The market saw 2021 as proof TSMC is resilient — I see proof the emergency reserve has been spent once, and the next typhoon-less year is not a tail event but a probability-weighted outcome I can insure at near-zero implied-vol premium."
+    },
+    {
+      "handle": "Marcus Reid",
+      "role": "Global Macro",
+      "style": "Top-down · cycles & supply shocks · liquid expressions",
+      "stance": "FLAT-WATCH",
+      "primaryTicker": "TSM",
+      "otherTickers": ["ASML", "SOXX", "NVDA", "SMH"],
+      "conviction": 3,
+      "horizon": "6–18 months",
+      "thesis": [
+        "The structural mispricing is real — the global AI compute stack runs through one fab complex fed by two Taiwan reservoirs — but mispricing needs a catalyst, and the calendar is empty today.",
+        "The tape is recovering, not collapsing: Zengwen bounced off 9.4%, ENSO is neutral, the CSD test shows zero flags and Zengwen AR1 τ = −0.54. The engine says: not yet.",
+        "Own the asymmetry without the carry: 12–18-month OTM TSM puts as a defined-risk tail hedge; the convexity at current IV is the correct form of exposure.",
+        "Pair long ASML — every diversification response (new fabs in Arizona, Dresden, Japan) buys EUV tools; ASML wins whether the risk realizes or the world pre-emptively de-concentrates.",
+        "The 2026 typhoon season is the binary: a deficient season under weakening ENSO moves Zengwen back toward the 20% single-reservoir catalyst by Q4."
+      ],
+      "quote": "2021 taught markets that TSMC always finds a way — what it actually proved is that TSMC spent its emergency reserve, and the market drew the wrong lesson from a near-miss."
+    },
+    {
+      "handle": "Helena Koh",
+      "role": "Chief Risk Officer / Skeptic",
+      "style": "Capital preservation · base rates · cost-of-being-early",
+      "stance": "FLAT-WATCH",
+      "primaryTicker": "NONE today",
+      "otherTickers": ["TSM", "SMH", "NVDA"],
+      "conviction": 5,
+      "horizon": "Revisit Oct 2026",
+      "thesis": [
+        "Our own composite stress score is 0.025/1.000 with 2 of 10 catalysts active — when the early-warning engine we built says 'no warning,' you do not short into it.",
+        "The physical signal is directionally wrong: Zengwen bottomed June 3 and is filling as plum rains arrive. Shorting a filling reservoir is shorting the thesis resolving against you.",
+        "The CSD test fails on its own most rigorous version: detrended residuals flag 0/3; Zengwen AR1 τ = −0.54 (recovery); cross-reservoir correlation τ = +0.01 (no coupling).",
+        "ENSO is neutral at ONI +0.48 — the La Niña precursor that drove 2021 is absent; the basis for a suppressed 2026 typhoon season is structurally weak.",
+        "Carrying a short on a pricing monopoly through an AI-capex supercycle bleeds borrow and carry every day you're early; the cost of being six months early is not recovered from the repricing."
+      ],
+      "quote": "The reservoir is filling and you want to short the monopoly that just proved it can truck water through a once-in-56-year drought — come back in October when the typhoons haven't come."
+    }
+  ]
+}

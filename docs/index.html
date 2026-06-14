@@ -3,115 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cascade — Hydro-Semiconductor Risk Monitor</title>
-  <meta name="description" content="Early-warning monitor for hydrological stress in the semiconductor supply chain: reservoir trajectories, critical-slowing-down signals, and financial exposure." />
+  <title>Cascade Capital — Hydro-Semiconductor Investment Memo</title>
+  <meta name="description" content="Investment-committee memorandum: hydrological stress in the semiconductor supply chain, a multi-analyst hedge-fund read, and a defined-risk directional call." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="loading" class="loading">Loading monitor data…</div>
+  <div id="loading" class="loading">Compiling the committee memo…</div>
 
   <main id="app" hidden>
-    <!-- Header -->
-    <header class="hero">
-      <div class="hero-row">
-        <div>
-          <div class="kicker">CASCADE ▸ COMPLEXITY-COLLAPSE ENGINE</div>
-          <h1>Hydro-Semiconductor Risk Monitor</h1>
-          <p class="subtitle">Hydrological stress as an early-warning signal for semiconductor supply-chain dislocation.</p>
-        </div>
-        <div class="hero-meta">
-          <span id="dataMode" class="badge"></span>
-          <span id="asOf" class="muted"></span>
-        </div>
+    <!-- Masthead -->
+    <header class="masthead">
+      <div class="masthead-top">
+        <span class="house">CASCADE CAPITAL</span>
+        <span id="classification" class="classification"></span>
       </div>
+      <h1 id="memoTitle">Investment Committee Memorandum</h1>
+      <div class="dateline" id="dateline"></div>
+      <p class="snapshot" id="snapshot"></p>
     </header>
 
-    <!-- Verdict + composite -->
-    <section class="grid grid-2">
-      <div class="card verdict" id="verdictCard">
-        <h2 class="card-title">Decision — current read</h2>
-        <div id="verdictBanner" class="verdict-banner"></div>
-        <p id="verdictDetail" class="verdict-detail"></p>
-        <ul id="verdictPoints" class="verdict-points"></ul>
-      </div>
-      <div class="card composite">
-        <h2 class="card-title">Composite stress score</h2>
-        <div class="gauge-wrap">
-          <svg id="gauge" viewBox="0 0 200 120" class="gauge"></svg>
-          <div class="gauge-readout">
-            <span id="scoreVal" class="score-val"></span>
-            <span class="score-max">/ 1.000</span>
-          </div>
-        </div>
-        <div id="catalystCount" class="muted center"></div>
-      </div>
+    <!-- The Call -->
+    <section class="call" id="callSection">
+      <div class="call-label">The Call</div>
+      <h2 class="call-headline" id="callHeadline"></h2>
+      <p class="call-stance" id="callStance"></p>
+      <div class="tearsheet" id="tearsheet"></div>
+      <p class="call-oneliner" id="callOneliner"></p>
     </section>
 
-    <!-- Reservoir history (centerpiece) -->
-    <section class="card">
-      <div class="card-head">
-        <h2 class="card-title">Taiwan reservoir trajectory — 12 months of real WRA data</h2>
-        <span id="historyMeta" class="muted"></span>
-      </div>
+    <!-- Why the name -->
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">01</span> Position rationale — <span id="whyTicker"></span></h3>
+      <ul class="reasoning" id="whyList"></ul>
+      <p class="hedge" id="hedgeNote"></p>
+    </section>
+
+    <!-- The desk -->
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">02</span> The desk — four mandates, one tape</h3>
+      <p class="block-sub">Each analyst reasoned independently over the same live data. Their stances and reasoning, unedited.</p>
+      <div class="desk" id="desk"></div>
+    </section>
+
+    <!-- Consensus -->
+    <section class="memo-block consensus">
+      <h3 class="block-head"><span class="num">03</span> Consensus &amp; execution</h3>
+      <div class="vote" id="vote"></div>
+      <p class="consensus-note" id="consensusNote"></p>
+      <h4 class="ladder-title">Trigger ladder — how we scale in</h4>
+      <div class="ladder" id="ladder"></div>
+      <div class="invalidation" id="invalidation"></div>
+    </section>
+
+    <!-- The evidence -->
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">04</span> The evidence — 12 months of real WRA reservoir data</h3>
+      <p class="block-sub" id="historyMeta"></p>
       <div class="chart-box"><canvas id="reservoirChart"></canvas></div>
       <p class="caption" id="reservoirCaption"></p>
+      <div class="verdict-strip" id="verdictStrip"></div>
     </section>
 
-    <!-- EWS analysis -->
-    <section class="card">
-      <h2 class="card-title">Early-warning analysis — critical slowing down?</h2>
-      <p class="muted">
-        AR1, variance and return-rate trends (Kendall&nbsp;τ). On a strongly trending series the
-        <em>raw</em> indicators are inflated by the trend itself, so the honest test is on
-        <strong>detrended residuals</strong>. A series is flagged when ≥2 of 3 indicators trend collapse-consistent (|τ|≥0.50).
-      </p>
+    <!-- EWS -->
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">05</span> Early-warning read — is this critical slowing down?</h3>
+      <p class="block-sub">AR1, variance and return-rate trends (Kendall&nbsp;τ). On a trending series the raw indicators are inflated by the trend, so the honest test is on <em>detrended residuals</em>; ≥2 of 3 flagging (|τ|≥0.50) raises a warning.</p>
       <div id="ewsTables" class="ews-grid"></div>
-      <div class="grid grid-2" style="margin-top:18px">
+      <div class="evidence-2">
         <div>
-          <h3 class="sub">Cross-reservoir spatial correlation</h3>
-          <p class="muted small" id="spatialNote"></p>
+          <h4 class="mini-head">Cross-reservoir correlation</h4>
+          <p class="block-sub small" id="spatialNote"></p>
           <div class="chart-box small"><canvas id="spatialChart"></canvas></div>
         </div>
         <div>
-          <h3 class="sub">Forward-simulation EWS (60-tick projection)</h3>
+          <h4 class="mini-head">Forward-simulation EWS (60-tick)</h4>
           <div id="simEws" class="mini-table"></div>
+          <h4 class="mini-head" style="margin-top:16px">Composite stress</h4>
+          <div class="composite-row">
+            <div class="composite-bar"><div id="compositeFill"></div></div>
+            <span id="compositeVal" class="mono"></span>
+          </div>
+          <div class="muted small" id="catalystCount"></div>
         </div>
       </div>
     </section>
 
-    <!-- Regional status -->
-    <section>
-      <h2 class="section-title">Regional status</h2>
-      <div id="regionCards" class="grid grid-3"></div>
-    </section>
-
-    <!-- Catalysts -->
-    <section class="card">
-      <h2 class="card-title">Catalyst status <span class="muted">— 10 catalysts, severity 2–5</span></h2>
+    <!-- Regions + catalysts -->
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">06</span> Regional status &amp; catalysts</h3>
+      <div id="regionCards" class="region-grid"></div>
       <div id="catalystList" class="catalyst-list"></div>
     </section>
 
     <!-- Exposure -->
-    <section class="card">
-      <h2 class="card-title">Financial exposure — Taiwan stress scenarios</h2>
-      <div class="grid grid-2">
+    <section class="memo-block">
+      <h3 class="block-head"><span class="num">07</span> What's at stake — Taiwan stress scenarios</h3>
+      <div class="evidence-2">
         <div class="chart-box"><canvas id="exposureChart"></canvas></div>
         <div id="scenarioTable" class="scenario-table"></div>
       </div>
-      <h3 class="sub">Top exposed companies (Taiwan, stress 0.60 scenario)</h3>
+      <h4 class="mini-head">Most-exposed names (stress 0.60 scenario, revenue at risk)</h4>
       <div id="companyList" class="company-list"></div>
-      <p class="caption">N3/N2 HHI 0.942/0.924 — near-monopoly concentration; substitute capacity effectively zero.</p>
+      <p class="caption">N3/N2 HHI 0.942 / 0.924 — near-monopoly concentration; substitute capacity effectively zero.</p>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <h3 class="sub">Methodology &amp; sources</h3>
+      <h4 class="mini-head">Methodology &amp; sources</h4>
       <ul id="sourceList" class="source-list"></ul>
-      <p class="muted small">
-        Generated from the Cascade engine. Reservoir history: WRA FHY disaster system
-        (<code>ReservoirHistoryApi/GetComparision</code>). Live feeds: Taiwan WRA opendata, USGS OGC water API, NOAA CPC ONI.
-        Detrending via centered moving average before CSD indicators. This is a research model, not investment advice.
+      <p class="disclaimer">
+        Cascade is a research engine, not an investment adviser. This memorandum is a model-driven illustration generated from
+        public hydrological data and the Cascade exposure model. Nothing here is investment advice, a recommendation, or an offer.
+        Figures are model estimates. Do your own work.
       </p>
       <p class="muted small" id="genStamp"></p>
     </footer>
