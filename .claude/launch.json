@@ -7,11 +7,11 @@
       "runtimeArgs": [
         "-m",
         "http.server",
-        "8775",
+        "8780",
         "--directory",
         "docs"
       ],
-      "port": 8775
+      "port": 8780
     }
   ]
 }

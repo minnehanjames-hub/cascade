@@ -38,6 +38,7 @@ function render(d, a, v) {
 
   renderMasthead(a, d);
   renderCall(a.call);
+  renderWatchlist(a.watchlist);
   renderWhy(a.call);
   renderDesk(a.agents);
   renderConsensus(a.call);
@@ -90,6 +91,9 @@ const GLOSSARY = {
   walkforward: '<b>Walk-forward test.</b> At each past week the model is shown ONLY data available up to then, so the backtest never peeks at the future.',
   seasonnull: '<b>Seasonal null model.</b> A deliberately naive model that knows only the calendar and the water level. If the full model can\'t beat it, the "skill" was just seasonality.',
   conviction: '<b>Conviction cap.</b> A hard limit that shrinks position size because the track record is only a handful of events — a clean backtest is never allowed to become false certainty.',
+  exposure: '<b>Exposure score (0–100).</b> Analyst judgement of how much of the company\'s revenue runs through TSMC-Taiwan leading-edge wafers with no substitute. Higher = more to lose in a curtailment.',
+  transmission: '<b>Transmission score (0–100).</b> How <em>cleanly</em> a Taiwan water shock would actually move the stock on fundamentals, vs. being drowned out by AI-demand narrative, crowding or squeeze risk. This is why NVDA ranks last despite the highest exposure.',
+  hype: '<b>Hype risk.</b> How much narrative/momentum insulates a name from a slow fundamental catalyst. High = a shortage can be spun bullish and shorts can get squeezed.',
 };
 function info(key) {
   const t = GLOSSARY[key]; if (!t) return '';
@@ -510,4 +514,28 @@ function renderHow(v) {
     <h3>What this is — and is not</h3>
     <p>It <strong>is</strong> a causal, calibrated early-warning monitor for Taiwan reservoir stress, honest about its error rates. It is <strong>not</strong> yet a proven equity-dislocation predictor: the chain from reservoir level → fab curtailment → share-price move is assumed, not validated, and the sample is only six droughts. Treat every number as evidence to weigh, not an instruction to follow.</p>
    </div>`;
+}
+
+// ── Watchlist ────────────────────────────────────────────────────────────────
+function renderWatchlist(w) {
+  if (!w) return;
+  $('watchlistNote').innerHTML = `${w.note} <span class="mono small">Exposure${info('exposure')} · transmission${info('transmission')} · hype${info('hype')}</span>`;
+  $('watchlistCaveat').innerHTML = w.caveat;
+
+  const row = (n) => {
+    const sat = n.ticker === 'NVDA' ? ' satellite' : '';
+    const trn = n.transmission != null ? `<div class="wl-bars"><span>exposure</span><span class="wl-bar exp"><div style="width:${n.exposure}%"></div></span><span>transmission</span><span class="wl-bar trn"><div style="width:${n.transmission}%"></div></span></div>` :
+      `<div class="wl-bars"><span>exposure</span><span class="wl-bar exp"><div style="width:${n.exposure}%"></div></span></div>`;
+    return `<div class="wl-row${sat}">
+      <div class="wl-rank">${n.rank}</div>
+      <div><div class="wl-tkr">${n.ticker}</div><div class="wl-co">${n.company}</div><span class="wl-dir ${n.direction || (w.short.includes(n) ? 'SHORT' : 'LONG')}">${n.direction || (w.short.includes(n) ? 'SHORT' : 'LONG')}</span></div>
+      <div class="wl-mid">
+        <div class="wl-meta"><span>${n.capTier}-cap</span><span>·</span><span>${n.channel}</span><span class="wl-chip hype-${n.hypeRisk}">hype ${n.hypeRisk}</span><span class="wl-chip">score ${n.consensus}</span></div>
+        ${trn}
+        <div class="wl-reason">${n.reason}</div>
+      </div>
+    </div>`;
+  };
+  $('watchlistShort').innerHTML = `<div class="wl">${w.short.map((n) => row({ ...n, direction: 'SHORT' })).join('')}</div>`;
+  $('watchlistLong').innerHTML = `<div class="wl">${w.long.map((n) => row({ ...n, direction: 'LONG' })).join('')}</div>`;
 }

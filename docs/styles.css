@@ -287,3 +287,26 @@ code { font-family: var(--mono); font-size: 12px; background: var(--paper-2); pa
 .how .role .rn { font-weight: 600; }
 .how .role .rr { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
 .how .principle { border-left: 3px solid var(--green); padding: 4px 0 4px 14px; margin: 12px 0; font-size: 15px; }
+
+/* ── Watchlist ────────────────────────────────────────── */
+.wl { border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.wl-row { display: grid; grid-template-columns: 26px 92px 1fr; gap: 12px; align-items: start; padding: 12px 14px; border-top: 1px solid var(--rule); background: var(--card); }
+.wl-row:first-child { border-top: none; }
+.wl-row .wl-rank { font-family: var(--mono); font-size: 15px; font-weight: 700; color: var(--muted); }
+.wl-tkr { font-family: var(--mono); font-weight: 700; font-size: 15px; }
+.wl-co { font-size: 11px; color: var(--muted); }
+.wl-dir { display: inline-block; font-family: var(--mono); font-size: 9.5px; font-weight: 700; letter-spacing: .5px; padding: 1px 5px; border-radius: 2px; margin-top: 3px; }
+.wl-dir.SHORT { background: rgba(168,50,42,.12); color: var(--red); }
+.wl-dir.LONG { background: rgba(61,107,58,.14); color: var(--green); }
+.wl-mid .wl-meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 11px; color: var(--muted); font-family: var(--mono); margin-bottom: 5px; }
+.wl-chip { padding: 1px 6px; border-radius: 2px; border: 1px solid var(--rule); }
+.wl-chip.hype-high { color: var(--red); border-color: rgba(168,50,42,.4); }
+.wl-chip.hype-med { color: var(--gold); border-color: rgba(154,115,32,.4); }
+.wl-chip.hype-low { color: var(--green); border-color: rgba(61,107,58,.4); }
+.wl-bars { display: grid; grid-template-columns: 78px 1fr; gap: 4px 8px; align-items: center; font-size: 10.5px; font-family: var(--mono); color: var(--muted); margin: 4px 0 6px; }
+.wl-bar { height: 7px; background: var(--paper-2); border-radius: 4px; overflow: hidden; }
+.wl-bar > div { height: 100%; border-radius: 4px; }
+.wl-bar.exp > div { background: var(--blue); }
+.wl-bar.trn > div { background: var(--red-soft); }
+.wl-reason { font-size: 13px; color: var(--ink-soft); }
+.wl-row.satellite { background: repeating-linear-gradient(135deg, var(--card), var(--card) 8px, var(--paper-2) 8px, var(--paper-2) 9px); }
