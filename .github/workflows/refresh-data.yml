@@ -1,0 +1,63 @@
+name: Refresh live data
+
+# Keeps the deployed dashboard current without any local machine:
+#   - runs on GitHub's servers on a daily schedule (and on-demand)
+#   - pulls the live hydrological feeds and rebuilds docs/data.json
+#   - commits the refresh and forces a GitHub Pages redeploy
+#
+# Note: this refreshes the LIVE snapshot (composite score, regional status,
+# catalysts, exposure, EWS). It intentionally does NOT touch the historical
+# reservoir series (research/data/) or the dated analyst memo (analysis.json) —
+# those are point-in-time and should not silently change.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch: {}    # manual "Run workflow" button / gh workflow run
+
+permissions:
+  contents: write          # to commit & push the refreshed data
+  pages: write             # to request a Pages rebuild
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Rebuild site data from live feeds
+        run: npm run build:site
+
+      - name: Commit refreshed data
+        id: commit
+        run: |
+          if git diff --quiet -- docs/data.json; then
+            echo "No change in docs/data.json — nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name  "cascade-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add docs/data.json
+            git commit -m "Auto-refresh live data ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger Pages rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build already queued."
