@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cascade — Hydro-Semiconductor Risk Monitor</title>
+  <meta name="description" content="Early-warning monitor for hydrological stress in the semiconductor supply chain: reservoir trajectories, critical-slowing-down signals, and financial exposure." />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="loading" class="loading">Loading monitor data…</div>
+
+  <main id="app" hidden>
+    <!-- Header -->
+    <header class="hero">
+      <div class="hero-row">
+        <div>
+          <div class="kicker">CASCADE ▸ COMPLEXITY-COLLAPSE ENGINE</div>
+          <h1>Hydro-Semiconductor Risk Monitor</h1>
+          <p class="subtitle">Hydrological stress as an early-warning signal for semiconductor supply-chain dislocation.</p>
+        </div>
+        <div class="hero-meta">
+          <span id="dataMode" class="badge"></span>
+          <span id="asOf" class="muted"></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Verdict + composite -->
+    <section class="grid grid-2">
+      <div class="card verdict" id="verdictCard">
+        <h2 class="card-title">Decision — current read</h2>
+        <div id="verdictBanner" class="verdict-banner"></div>
+        <p id="verdictDetail" class="verdict-detail"></p>
+        <ul id="verdictPoints" class="verdict-points"></ul>
+      </div>
+      <div class="card composite">
+        <h2 class="card-title">Composite stress score</h2>
+        <div class="gauge-wrap">
+          <svg id="gauge" viewBox="0 0 200 120" class="gauge"></svg>
+          <div class="gauge-readout">
+            <span id="scoreVal" class="score-val"></span>
+            <span class="score-max">/ 1.000</span>
+          </div>
+        </div>
+        <div id="catalystCount" class="muted center"></div>
+      </div>
+    </section>
+
+    <!-- Reservoir history (centerpiece) -->
+    <section class="card">
+      <div class="card-head">
+        <h2 class="card-title">Taiwan reservoir trajectory — 12 months of real WRA data</h2>
+        <span id="historyMeta" class="muted"></span>
+      </div>
+      <div class="chart-box"><canvas id="reservoirChart"></canvas></div>
+      <p class="caption" id="reservoirCaption"></p>
+    </section>
+
+    <!-- EWS analysis -->
+    <section class="card">
+      <h2 class="card-title">Early-warning analysis — critical slowing down?</h2>
+      <p class="muted">
+        AR1, variance and return-rate trends (Kendall&nbsp;τ). On a strongly trending series the
+        <em>raw</em> indicators are inflated by the trend itself, so the honest test is on
+        <strong>detrended residuals</strong>. A series is flagged when ≥2 of 3 indicators trend collapse-consistent (|τ|≥0.50).
+      </p>
+      <div id="ewsTables" class="ews-grid"></div>
+      <div class="grid grid-2" style="margin-top:18px">
+        <div>
+          <h3 class="sub">Cross-reservoir spatial correlation</h3>
+          <p class="muted small" id="spatialNote"></p>
+          <div class="chart-box small"><canvas id="spatialChart"></canvas></div>
+        </div>
+        <div>
+          <h3 class="sub">Forward-simulation EWS (60-tick projection)</h3>
+          <div id="simEws" class="mini-table"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Regional status -->
+    <section>
+      <h2 class="section-title">Regional status</h2>
+      <div id="regionCards" class="grid grid-3"></div>
+    </section>
+
+    <!-- Catalysts -->
+    <section class="card">
+      <h2 class="card-title">Catalyst status <span class="muted">— 10 catalysts, severity 2–5</span></h2>
+      <div id="catalystList" class="catalyst-list"></div>
+    </section>
+
+    <!-- Exposure -->
+    <section class="card">
+      <h2 class="card-title">Financial exposure — Taiwan stress scenarios</h2>
+      <div class="grid grid-2">
+        <div class="chart-box"><canvas id="exposureChart"></canvas></div>
+        <div id="scenarioTable" class="scenario-table"></div>
+      </div>
+      <h3 class="sub">Top exposed companies (Taiwan, stress 0.60 scenario)</h3>
+      <div id="companyList" class="company-list"></div>
+      <p class="caption">N3/N2 HHI 0.942/0.924 — near-monopoly concentration; substitute capacity effectively zero.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h3 class="sub">Methodology &amp; sources</h3>
+      <ul id="sourceList" class="source-list"></ul>
+      <p class="muted small">
+        Generated from the Cascade engine. Reservoir history: WRA FHY disaster system
+        (<code>ReservoirHistoryApi/GetComparision</code>). Live feeds: Taiwan WRA opendata, USGS OGC water API, NOAA CPC ONI.
+        Detrending via centered moving average before CSD indicators. This is a research model, not investment advice.
+      </p>
+      <p class="muted small" id="genStamp"></p>
+    </footer>
+  </main>
+
+  <div id="error" class="error" hidden></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

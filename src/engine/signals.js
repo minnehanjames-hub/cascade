@@ -282,6 +282,40 @@ function firstSustainedBreach(x, threshold, minRun = 1) {
   return -1;
 }
 
+// ---- detrending ------------------------------------------------------------
+
+/**
+ * Remove a slow trend by subtracting a centered moving-average baseline,
+ * returning the residual fluctuations.
+ *
+ * This is the standard preprocessing step before computing CSD indicators
+ * (AR1, variance) on real-world, non-stationary series. Without it, a strong
+ * deterministic trend — e.g. a reservoir's seasonal draw/fill cycle — inflates
+ * both lag-1 autocorrelation and variance and produces spurious early-warning
+ * flags. CSD theory describes fluctuations *around* a slowly-moving attractor,
+ * so the trend must be removed first and the indicators computed on residuals.
+ *
+ * @param {number[]} x
+ * @param {number} [window]  Centered MA window; default ~series/4 (min 3),
+ *                           forced odd so the window is symmetric about each point.
+ * @returns {number[]} residuals (same length as x)
+ */
+function detrend(x, window) {
+  assertSeries(x, 2);
+  let w = window || Math.max(3, Math.floor(x.length / 4));
+  if (w % 2 === 0) w += 1; // keep window odd for symmetric centering
+  const half = Math.floor(w / 2);
+  const res = new Array(x.length);
+  for (let i = 0; i < x.length; i++) {
+    const lo = Math.max(0, i - half);
+    const hi = Math.min(x.length, i + half + 1);
+    let s = 0;
+    for (let j = lo; j < hi; j++) s += x[j];
+    res[i] = x[i] - s / (hi - lo);
+  }
+  return res;
+}
+
 // ---- warning summarization -------------------------------------------------
 
 const DEFAULT_INDICATORS = ['ar1', 'variance', 'cov', 'skewness'];
@@ -299,6 +333,9 @@ const DEFAULT_INDICATORS = ['ar1', 'variance', 'cov', 'skewness'];
  * @param {string[]} [opts.indicators=DEFAULT_INDICATORS]
  * @param {number} [opts.tauThreshold=0.5]  |tau| needed to count an indicator.
  * @param {number} [opts.minSignals=2]  Indicators needed to raise a warning.
+ * @param {boolean} [opts.detrend=false]  Compute indicators on detrended
+ *        residuals (recommended for non-stationary real-world series).
+ * @param {number} [opts.detrendWindow]  Centered MA window passed to detrend().
  * @returns {object} per-indicator tau/latest plus an overall verdict.
  */
 function warningSummary(x, opts = {}) {
@@ -308,6 +345,7 @@ function warningSummary(x, opts = {}) {
   const indicators = opts.indicators || DEFAULT_INDICATORS;
   const tauThreshold = opts.tauThreshold ?? 0.5;
   const minSignals = opts.minSignals ?? 2;
+  const series = opts.detrend ? detrend(x, opts.detrendWindow) : x;
 
   // Indicators whose *increase* is collapse-consistent. Skewness is direction-
   // ambiguous (depends on which side the alternative basin sits), so we score
@@ -320,7 +358,7 @@ function warningSummary(x, opts = {}) {
   for (const name of indicators) {
     const fn = ROLLING_METRICS[name];
     if (!fn) throw new Error(`warningSummary: unknown indicator "${name}"`);
-    const { values } = rolling(x, window, fn);
+    const { values } = rolling(series, window, fn);
     const tau = kendallTau(values);
     const latest = values.length ? values[values.length - 1] : NaN;
 
@@ -345,6 +383,7 @@ function warningSummary(x, opts = {}) {
 
   return {
     window,
+    detrended: !!opts.detrend,
     indicators: detail,
     signals,
     minSignals,
@@ -423,6 +462,8 @@ module.exports = {
   rolling,
   rollingMetric,
   ROLLING_METRICS,
+  // detrending
+  detrend,
   // trend
   kendallTau,
   // thresholds

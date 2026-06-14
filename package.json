@@ -7,7 +7,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "start": "node src/index.js",
-    "monitor": "node src/index.js"
+    "monitor": "node src/index.js",
+    "fetch:history": "node scripts/fetch-reservoir-history.js",
+    "build:site": "node scripts/build-site-data.js"
   },
   "dependencies": {
     "mathjs": "^15.2.0"
