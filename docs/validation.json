@@ -1,0 +1,1462 @@
+{
+  "generatedAt": "2026-06-14T18:57:48.867Z",
+  "model": {
+    "horizonWeeks": 26,
+    "severeThreshold": 18,
+    "seasonalThreshold": 30,
+    "alertThreshold": 0.45,
+    "weights": {
+      "level": 0.42,
+      "trend": 0.18,
+      "season": 0.18,
+      "enso": 0.15,
+      "ews": 0.07
+    },
+    "logisticK": 5,
+    "logisticR0": 0.55
+  },
+  "dataWindow": {
+    "start": "2010-01-06",
+    "end": "2026-06-10",
+    "weeks": 858
+  },
+  "onsets": [
+    {
+      "date": "2011-05-04",
+      "fill": 15.9
+    },
+    {
+      "date": "2015-04-29",
+      "fill": 17.6
+    },
+    {
+      "date": "2018-05-23",
+      "fill": 17.7
+    },
+    {
+      "date": "2020-05-06",
+      "fill": 15.8
+    },
+    {
+      "date": "2021-04-07",
+      "fill": 17.7
+    },
+    {
+      "date": "2023-04-26",
+      "fill": 16.6
+    }
+  ],
+  "seasonalOnsets": [
+    {
+      "date": "2012-02-15",
+      "fill": 29
+    },
+    {
+      "date": "2013-03-13",
+      "fill": 28.5
+    },
+    {
+      "date": "2014-04-16",
+      "fill": 28.2
+    },
+    {
+      "date": "2015-03-11",
+      "fill": 26.4
+    },
+    {
+      "date": "2017-04-12",
+      "fill": 27.3
+    },
+    {
+      "date": "2018-04-11",
+      "fill": 29.4
+    },
+    {
+      "date": "2019-04-10",
+      "fill": 30
+    },
+    {
+      "date": "2020-04-01",
+      "fill": 28.3
+    },
+    {
+      "date": "2021-02-10",
+      "fill": 27.1
+    },
+    {
+      "date": "2023-03-15",
+      "fill": 25.7
+    },
+    {
+      "date": "2024-05-22",
+      "fill": 27.7
+    },
+    {
+      "date": "2026-04-29",
+      "fill": 29.9
+    }
+  ],
+  "full": {
+    "threshold": 0.6,
+    "perEvent": [
+      {
+        "date": "2011-05-04",
+        "fillAtOnset": 15.9,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.861
+      },
+      {
+        "date": "2015-04-29",
+        "fillAtOnset": 17.6,
+        "hit": true,
+        "leadWeeks": 24,
+        "peakProb": 0.775
+      },
+      {
+        "date": "2018-05-23",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 24,
+        "peakProb": 0.772
+      },
+      {
+        "date": "2020-05-06",
+        "fillAtOnset": 15.8,
+        "hit": true,
+        "leadWeeks": 5,
+        "peakProb": 0.733
+      },
+      {
+        "date": "2021-04-07",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.767
+      },
+      {
+        "date": "2023-04-26",
+        "fillAtOnset": 16.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.77
+      }
+    ],
+    "hitRate": "6/6",
+    "medianLeadWeeks": 26,
+    "leadRangeWeeks": [
+      5,
+      26
+    ],
+    "alertEpisodes": 20,
+    "falseAlarms": 10,
+    "precision": 0.5,
+    "precisionCI95": [
+      0.3,
+      0.7
+    ],
+    "falseAlarmsPerYear": 0.61
+  },
+  "fullLow": {
+    "threshold": 0.45,
+    "perEvent": [
+      {
+        "date": "2011-05-04",
+        "fillAtOnset": 15.9,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.861
+      },
+      {
+        "date": "2015-04-29",
+        "fillAtOnset": 17.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.775
+      },
+      {
+        "date": "2018-05-23",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.772
+      },
+      {
+        "date": "2020-05-06",
+        "fillAtOnset": 15.8,
+        "hit": true,
+        "leadWeeks": 11,
+        "peakProb": 0.733
+      },
+      {
+        "date": "2021-04-07",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.767
+      },
+      {
+        "date": "2023-04-26",
+        "fillAtOnset": 16.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.77
+      }
+    ],
+    "hitRate": "6/6",
+    "medianLeadWeeks": 26,
+    "leadRangeWeeks": [
+      11,
+      26
+    ],
+    "alertEpisodes": 20,
+    "falseAlarms": 17,
+    "precision": 0.15,
+    "precisionCI95": [
+      0.05,
+      0.36
+    ],
+    "falseAlarmsPerYear": 1.03
+  },
+  "noEws": {
+    "threshold": 0.6,
+    "perEvent": [
+      {
+        "date": "2011-05-04",
+        "fillAtOnset": 15.9,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.887
+      },
+      {
+        "date": "2015-04-29",
+        "fillAtOnset": 17.6,
+        "hit": true,
+        "leadWeeks": 25,
+        "peakProb": 0.801
+      },
+      {
+        "date": "2018-05-23",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 24,
+        "peakProb": 0.799
+      },
+      {
+        "date": "2020-05-06",
+        "fillAtOnset": 15.8,
+        "hit": true,
+        "leadWeeks": 9,
+        "peakProb": 0.76
+      },
+      {
+        "date": "2021-04-07",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.794
+      },
+      {
+        "date": "2023-04-26",
+        "fillAtOnset": 16.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.799
+      }
+    ],
+    "hitRate": "6/6",
+    "medianLeadWeeks": 26,
+    "leadRangeWeeks": [
+      9,
+      26
+    ],
+    "alertEpisodes": 21,
+    "falseAlarms": 11,
+    "precision": 0.48,
+    "precisionCI95": [
+      0.28,
+      0.68
+    ],
+    "falseAlarmsPerYear": 0.67
+  },
+  "seasonOnly": {
+    "threshold": 0.6,
+    "perEvent": [
+      {
+        "date": "2011-05-04",
+        "fillAtOnset": 15.9,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.898
+      },
+      {
+        "date": "2015-04-29",
+        "fillAtOnset": 17.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.898
+      },
+      {
+        "date": "2018-05-23",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.842
+      },
+      {
+        "date": "2020-05-06",
+        "fillAtOnset": 15.8,
+        "hit": true,
+        "leadWeeks": 10,
+        "peakProb": 0.842
+      },
+      {
+        "date": "2021-04-07",
+        "fillAtOnset": 17.7,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.898
+      },
+      {
+        "date": "2023-04-26",
+        "fillAtOnset": 16.6,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.861
+      }
+    ],
+    "hitRate": "6/6",
+    "medianLeadWeeks": 26,
+    "leadRangeWeeks": [
+      10,
+      26
+    ],
+    "alertEpisodes": 18,
+    "falseAlarms": 16,
+    "precision": 0.11,
+    "precisionCI95": [
+      0.03,
+      0.33
+    ],
+    "falseAlarmsPerYear": 0.97
+  },
+  "seasonalContext": {
+    "threshold": 0.6,
+    "perEvent": [
+      {
+        "date": "2012-02-15",
+        "fillAtOnset": 29,
+        "hit": true,
+        "leadWeeks": 15,
+        "peakProb": 0.705
+      },
+      {
+        "date": "2013-03-13",
+        "fillAtOnset": 28.5,
+        "hit": true,
+        "leadWeeks": 17,
+        "peakProb": 0.812
+      },
+      {
+        "date": "2014-04-16",
+        "fillAtOnset": 28.2,
+        "hit": true,
+        "leadWeeks": 8,
+        "peakProb": 0.748
+      },
+      {
+        "date": "2015-03-11",
+        "fillAtOnset": 26.4,
+        "hit": true,
+        "leadWeeks": 17,
+        "peakProb": 0.769
+      },
+      {
+        "date": "2017-04-12",
+        "fillAtOnset": 27.3,
+        "hit": true,
+        "leadWeeks": 7,
+        "peakProb": 0.652
+      },
+      {
+        "date": "2018-04-11",
+        "fillAtOnset": 29.4,
+        "hit": true,
+        "leadWeeks": 26,
+        "peakProb": 0.754
+      },
+      {
+        "date": "2019-04-10",
+        "fillAtOnset": 30,
+        "hit": true,
+        "leadWeeks": 7,
+        "peakProb": 0.738
+      },
+      {
+        "date": "2020-04-01",
+        "fillAtOnset": 28.3,
+        "hit": false,
+        "leadWeeks": null,
+        "peakProb": 0.614
+      },
+      {
+        "date": "2021-02-10",
+        "fillAtOnset": 27.1,
+        "hit": true,
+        "leadWeeks": 18,
+        "peakProb": 0.763
+      },
+      {
+        "date": "2023-03-15",
+        "fillAtOnset": 25.7,
+        "hit": true,
+        "leadWeeks": 20,
+        "peakProb": 0.751
+      },
+      {
+        "date": "2024-05-22",
+        "fillAtOnset": 27.7,
+        "hit": false,
+        "leadWeeks": null,
+        "peakProb": 0.492
+      },
+      {
+        "date": "2026-04-29",
+        "fillAtOnset": 29.9,
+        "hit": false,
+        "leadWeeks": null,
+        "peakProb": 0.562
+      }
+    ],
+    "hitRate": "9/12",
+    "medianLeadWeeks": 17,
+    "leadRangeWeeks": [
+      7,
+      26
+    ],
+    "alertEpisodes": 20,
+    "falseAlarms": 4,
+    "precision": 0.8,
+    "precisionCI95": [
+      0.58,
+      0.92
+    ],
+    "falseAlarmsPerYear": 0.24
+  },
+  "ewsMarginalValue": {
+    "note": "Full model vs. CSD-removed vs. naive seasonal null (level+season only). If full ≈ seasonOnly, the skill is seasonality, not the thesis. All at the actionable floor P>=0.60, sustained 3 weeks.",
+    "precisionFull": 0.5,
+    "precisionNoEws": 0.48,
+    "precisionSeasonOnly": 0.11,
+    "medianLeadFull": 26,
+    "medianLeadSeasonOnly": 26
+  },
+  "audit": {
+    "by": "Independent model-auditor agent (red-team)",
+    "verdict": "PARTIAL-BUT-LIMITED",
+    "wouldSizeRealRisk": false,
+    "maxCapRecommendation": "≤0.5% NAV, PRESS band (P≥0.65) only, after validating the reservoir→curtailment→equity link",
+    "mostDangerousFlaw": "A naive \"26-week lead\" was a seasonality artefact (alerts are structurally on every dry season). Now measured as first SUSTAINED alert, which collapses to an honest, shorter, more variable lead.",
+    "keyFindings": [
+      "Sample is 6 events / 16 years — no metric is statistically significant; confidence intervals are wide.",
+      "Precision at the old 0.45 floor is poor; real signal only appears at P≥0.60 (floor raised accordingly).",
+      "All 6 onsets are April–May: much of the \"skill\" is just \"dry season is coming\" — see the seasonal null model.",
+      "The reservoir→fab-curtailment→equity chain is NOT validated here; this is a reservoir-stress monitor, not yet a proven equity-dislocation predictor.",
+      "The critical-slowing-down (CSD) term adds almost nothing — the original thesis hook is not what carries the signal."
+    ]
+  },
+  "reliability": [
+    {
+      "band": "0.0–0.2",
+      "n": 183,
+      "predicted": 0.13,
+      "observed": 0
+    },
+    {
+      "band": "0.2–0.4",
+      "n": 256,
+      "predicted": 0.3,
+      "observed": 0.04
+    },
+    {
+      "band": "0.4–0.6",
+      "n": 191,
+      "predicted": 0.5,
+      "observed": 0.16
+    },
+    {
+      "band": "0.6–0.8",
+      "n": 187,
+      "predicted": 0.68,
+      "observed": 0.53
+    },
+    {
+      "band": "0.8–1.0",
+      "n": 25,
+      "predicted": 0.83,
+      "observed": 0.72
+    }
+  ],
+  "timelines": {
+    "2015": [
+      {
+        "date": "2013-11-06",
+        "p": 0.484,
+        "fill": 80.81
+      },
+      {
+        "date": "2013-11-13",
+        "p": 0.505,
+        "fill": 80.81
+      },
+      {
+        "date": "2013-11-20",
+        "p": 0.514,
+        "fill": 73.61
+      },
+      {
+        "date": "2013-11-27",
+        "p": 0.602,
+        "fill": 69.85
+      },
+      {
+        "date": "2013-12-04",
+        "p": 0.565,
+        "fill": 68.57
+      },
+      {
+        "date": "2013-12-11",
+        "p": 0.748,
+        "fill": 67.86
+      },
+      {
+        "date": "2013-12-18",
+        "p": 0.54,
+        "fill": 69
+      },
+      {
+        "date": "2013-12-25",
+        "p": 0.637,
+        "fill": 70.17
+      },
+      {
+        "date": "2014-01-01",
+        "p": 0.384,
+        "fill": 72.28
+      },
+      {
+        "date": "2014-01-08",
+        "p": 0.394,
+        "fill": 71.2
+      },
+      {
+        "date": "2014-01-15",
+        "p": 0.371,
+        "fill": 70.06
+      },
+      {
+        "date": "2014-01-22",
+        "p": 0.372,
+        "fill": 68.68
+      },
+      {
+        "date": "2014-01-29",
+        "p": 0.418,
+        "fill": 63.4
+      },
+      {
+        "date": "2014-02-05",
+        "p": 0.491,
+        "fill": 60.22
+      },
+      {
+        "date": "2014-02-12",
+        "p": 0.354,
+        "fill": 55.19
+      },
+      {
+        "date": "2014-02-19",
+        "p": 0.615,
+        "fill": 52.06
+      },
+      {
+        "date": "2014-02-26",
+        "p": 0.624,
+        "fill": 48.25
+      },
+      {
+        "date": "2014-03-05",
+        "p": 0.634,
+        "fill": 42.16
+      },
+      {
+        "date": "2014-03-12",
+        "p": 0.64,
+        "fill": 37.76
+      },
+      {
+        "date": "2014-03-19",
+        "p": 0.608,
+        "fill": 35.13
+      },
+      {
+        "date": "2014-03-26",
+        "p": 0.608,
+        "fill": 32.7
+      },
+      {
+        "date": "2014-04-02",
+        "p": 0.575,
+        "fill": 31.71
+      },
+      {
+        "date": "2014-04-09",
+        "p": 0.654,
+        "fill": 30.17
+      },
+      {
+        "date": "2014-04-16",
+        "p": 0.778,
+        "fill": 28.19
+      },
+      {
+        "date": "2014-04-23",
+        "p": 0.748,
+        "fill": 28.19
+      },
+      {
+        "date": "2014-04-30",
+        "p": 0.652,
+        "fill": 22.24
+      },
+      {
+        "date": "2014-05-07",
+        "p": 0.385,
+        "fill": 25.4
+      },
+      {
+        "date": "2014-05-14",
+        "p": 0.312,
+        "fill": 28.72
+      },
+      {
+        "date": "2014-05-21",
+        "p": 0.308,
+        "fill": 28.72
+      },
+      {
+        "date": "2014-05-28",
+        "p": 0.273,
+        "fill": 42.46
+      },
+      {
+        "date": "2014-06-04",
+        "p": 0.228,
+        "fill": 48.4
+      },
+      {
+        "date": "2014-06-11",
+        "p": 0.229,
+        "fill": 54.62
+      },
+      {
+        "date": "2014-06-18",
+        "p": 0.23,
+        "fill": 58.53
+      },
+      {
+        "date": "2014-06-25",
+        "p": 0.23,
+        "fill": 60.24
+      },
+      {
+        "date": "2014-07-02",
+        "p": 0.216,
+        "fill": 62.02
+      },
+      {
+        "date": "2014-07-09",
+        "p": 0.212,
+        "fill": 59.18
+      },
+      {
+        "date": "2014-07-16",
+        "p": 0.245,
+        "fill": 57.04
+      },
+      {
+        "date": "2014-07-23",
+        "p": 0.443,
+        "fill": 52.75
+      },
+      {
+        "date": "2014-07-30",
+        "p": 0.351,
+        "fill": 68.6
+      },
+      {
+        "date": "2014-08-06",
+        "p": 0.353,
+        "fill": 66.9
+      },
+      {
+        "date": "2014-08-13",
+        "p": 0.314,
+        "fill": 70.78
+      },
+      {
+        "date": "2014-08-20",
+        "p": 0.216,
+        "fill": 76.62
+      },
+      {
+        "date": "2014-08-27",
+        "p": 0.296,
+        "fill": 75.49
+      },
+      {
+        "date": "2014-09-03",
+        "p": 0.443,
+        "fill": 72.79
+      },
+      {
+        "date": "2014-09-10",
+        "p": 0.442,
+        "fill": 70.33
+      },
+      {
+        "date": "2014-09-17",
+        "p": 0.441,
+        "fill": 69.75
+      },
+      {
+        "date": "2014-09-24",
+        "p": 0.44,
+        "fill": 71.45
+      },
+      {
+        "date": "2014-10-01",
+        "p": 0.452,
+        "fill": 73.47
+      },
+      {
+        "date": "2014-10-08",
+        "p": 0.514,
+        "fill": 70.75
+      },
+      {
+        "date": "2014-10-15",
+        "p": 0.485,
+        "fill": 72.29
+      },
+      {
+        "date": "2014-10-22",
+        "p": 0.485,
+        "fill": 69.57
+      },
+      {
+        "date": "2014-10-29",
+        "p": 0.518,
+        "fill": 64.05
+      },
+      {
+        "date": "2014-11-05",
+        "p": 0.595,
+        "fill": 61.4
+      },
+      {
+        "date": "2014-11-12",
+        "p": 0.64,
+        "fill": 58.73
+      },
+      {
+        "date": "2014-11-19",
+        "p": 0.67,
+        "fill": 57.59
+      },
+      {
+        "date": "2014-11-26",
+        "p": 0.648,
+        "fill": 57.22
+      },
+      {
+        "date": "2014-12-03",
+        "p": 0.712,
+        "fill": 56.03
+      },
+      {
+        "date": "2014-12-10",
+        "p": 0.689,
+        "fill": 55.89
+      },
+      {
+        "date": "2014-12-17",
+        "p": 0.636,
+        "fill": 55.85
+      },
+      {
+        "date": "2014-12-24",
+        "p": 0.625,
+        "fill": 54.39
+      },
+      {
+        "date": "2014-12-31",
+        "p": 0.506,
+        "fill": 54.56
+      },
+      {
+        "date": "2015-01-07",
+        "p": 0.559,
+        "fill": 52.48
+      },
+      {
+        "date": "2015-01-14",
+        "p": 0.624,
+        "fill": 51.34
+      },
+      {
+        "date": "2015-01-21",
+        "p": 0.553,
+        "fill": 50.35
+      },
+      {
+        "date": "2015-01-28",
+        "p": 0.561,
+        "fill": 48.62
+      },
+      {
+        "date": "2015-02-04",
+        "p": 0.596,
+        "fill": 45.83
+      },
+      {
+        "date": "2015-02-11",
+        "p": 0.447,
+        "fill": 42.89
+      },
+      {
+        "date": "2015-02-18",
+        "p": 0.746,
+        "fill": 37.35
+      },
+      {
+        "date": "2015-02-25",
+        "p": 0.746,
+        "fill": 35.36
+      },
+      {
+        "date": "2015-03-04",
+        "p": 0.769,
+        "fill": 31.4
+      },
+      {
+        "date": "2015-03-11",
+        "p": 0.775,
+        "fill": 26.41
+      },
+      {
+        "date": "2015-03-18",
+        "p": 0.774,
+        "fill": 24.04
+      },
+      {
+        "date": "2015-03-25",
+        "p": 0.774,
+        "fill": 21.85
+      },
+      {
+        "date": "2015-04-01",
+        "p": 0.758,
+        "fill": 21.59
+      },
+      {
+        "date": "2015-04-08",
+        "p": 0.716,
+        "fill": 21.49
+      },
+      {
+        "date": "2015-04-15",
+        "p": 0.71,
+        "fill": 20.13
+      },
+      {
+        "date": "2015-04-22",
+        "p": 0.682,
+        "fill": 19.24
+      },
+      {
+        "date": "2015-04-29",
+        "p": 0.544,
+        "fill": 17.63
+      },
+      {
+        "date": "2015-05-06",
+        "p": 0.507,
+        "fill": 17.87
+      },
+      {
+        "date": "2015-05-13",
+        "p": 0.538,
+        "fill": 17.74
+      },
+      {
+        "date": "2015-05-20",
+        "p": 0.537,
+        "fill": 17.57
+      },
+      {
+        "date": "2015-05-27",
+        "p": 0.248,
+        "fill": 43.25
+      },
+      {
+        "date": "2015-06-03",
+        "p": 0.171,
+        "fill": 53.92
+      },
+      {
+        "date": "2015-06-10",
+        "p": 0.217,
+        "fill": 54
+      },
+      {
+        "date": "2015-06-17",
+        "p": 0.278,
+        "fill": 54.74
+      },
+      {
+        "date": "2015-06-24",
+        "p": 0.206,
+        "fill": 55.65
+      },
+      {
+        "date": "2015-07-01",
+        "p": 0.185,
+        "fill": 54.89
+      },
+      {
+        "date": "2015-07-08",
+        "p": 0.185,
+        "fill": 54.89
+      },
+      {
+        "date": "2015-07-15",
+        "p": 0.185,
+        "fill": 61.95
+      },
+      {
+        "date": "2015-07-22",
+        "p": 0.345,
+        "fill": 60.71
+      },
+      {
+        "date": "2015-07-29",
+        "p": 0.394,
+        "fill": 62.2
+      }
+    ],
+    "2021": [
+      {
+        "date": "2019-11-13",
+        "p": 0.424,
+        "fill": 80.89
+      },
+      {
+        "date": "2019-11-20",
+        "p": 0.359,
+        "fill": 77.09
+      },
+      {
+        "date": "2019-11-27",
+        "p": 0.472,
+        "fill": 73.76
+      },
+      {
+        "date": "2019-12-04",
+        "p": 0.484,
+        "fill": 71.84
+      },
+      {
+        "date": "2019-12-11",
+        "p": 0.441,
+        "fill": 72.8
+      },
+      {
+        "date": "2019-12-18",
+        "p": 0.305,
+        "fill": 72.88
+      },
+      {
+        "date": "2019-12-25",
+        "p": 0.397,
+        "fill": 72.47
+      },
+      {
+        "date": "2020-01-01",
+        "p": 0.367,
+        "fill": 72.45
+      },
+      {
+        "date": "2020-01-08",
+        "p": 0.338,
+        "fill": 72.45
+      },
+      {
+        "date": "2020-01-15",
+        "p": 0.332,
+        "fill": 71.58
+      },
+      {
+        "date": "2020-01-22",
+        "p": 0.368,
+        "fill": 66.49
+      },
+      {
+        "date": "2020-01-29",
+        "p": 0.331,
+        "fill": 65.89
+      },
+      {
+        "date": "2020-02-05",
+        "p": 0.446,
+        "fill": 61.08
+      },
+      {
+        "date": "2020-02-12",
+        "p": 0.331,
+        "fill": 55.43
+      },
+      {
+        "date": "2020-02-19",
+        "p": 0.542,
+        "fill": 49.65
+      },
+      {
+        "date": "2020-02-26",
+        "p": 0.568,
+        "fill": 45.22
+      },
+      {
+        "date": "2020-03-04",
+        "p": 0.597,
+        "fill": 39.85
+      },
+      {
+        "date": "2020-03-11",
+        "p": 0.614,
+        "fill": 35.35
+      },
+      {
+        "date": "2020-03-18",
+        "p": 0.594,
+        "fill": 33.01
+      },
+      {
+        "date": "2020-03-25",
+        "p": 0.592,
+        "fill": 30.7
+      },
+      {
+        "date": "2020-04-01",
+        "p": 0.633,
+        "fill": 28.28
+      },
+      {
+        "date": "2020-04-08",
+        "p": 0.733,
+        "fill": 25.78
+      },
+      {
+        "date": "2020-04-15",
+        "p": 0.733,
+        "fill": 23.87
+      },
+      {
+        "date": "2020-04-22",
+        "p": 0.686,
+        "fill": 21.09
+      },
+      {
+        "date": "2020-04-29",
+        "p": 0.671,
+        "fill": 18.91
+      },
+      {
+        "date": "2020-05-06",
+        "p": 0.665,
+        "fill": 15.82
+      },
+      {
+        "date": "2020-05-13",
+        "p": 0.702,
+        "fill": 14.45
+      },
+      {
+        "date": "2020-05-20",
+        "p": 0.67,
+        "fill": 15.51
+      },
+      {
+        "date": "2020-05-27",
+        "p": 0.417,
+        "fill": 30.22
+      },
+      {
+        "date": "2020-06-03",
+        "p": 0.338,
+        "fill": 39.37
+      },
+      {
+        "date": "2020-06-10",
+        "p": 0.32,
+        "fill": 43.28
+      },
+      {
+        "date": "2020-06-17",
+        "p": 0.323,
+        "fill": 45.14
+      },
+      {
+        "date": "2020-06-24",
+        "p": 0.389,
+        "fill": 43.36
+      },
+      {
+        "date": "2020-07-01",
+        "p": 0.404,
+        "fill": 40.92
+      },
+      {
+        "date": "2020-07-08",
+        "p": 0.424,
+        "fill": 40.34
+      },
+      {
+        "date": "2020-07-15",
+        "p": 0.477,
+        "fill": 39.16
+      },
+      {
+        "date": "2020-07-22",
+        "p": 0.519,
+        "fill": 35.42
+      },
+      {
+        "date": "2020-07-29",
+        "p": 0.586,
+        "fill": 33.09
+      },
+      {
+        "date": "2020-08-05",
+        "p": 0.611,
+        "fill": 34
+      },
+      {
+        "date": "2020-08-12",
+        "p": 0.567,
+        "fill": 36.5
+      },
+      {
+        "date": "2020-08-19",
+        "p": 0.53,
+        "fill": 37.55
+      },
+      {
+        "date": "2020-08-26",
+        "p": 0.544,
+        "fill": 35.72
+      },
+      {
+        "date": "2020-09-02",
+        "p": 0.546,
+        "fill": 42.12
+      },
+      {
+        "date": "2020-09-09",
+        "p": 0.546,
+        "fill": 43.53
+      },
+      {
+        "date": "2020-09-16",
+        "p": 0.546,
+        "fill": 42
+      },
+      {
+        "date": "2020-09-23",
+        "p": 0.546,
+        "fill": 41.13
+      },
+      {
+        "date": "2020-09-30",
+        "p": 0.545,
+        "fill": 39.59
+      },
+      {
+        "date": "2020-10-07",
+        "p": 0.605,
+        "fill": 37.41
+      },
+      {
+        "date": "2020-10-14",
+        "p": 0.61,
+        "fill": 35.03
+      },
+      {
+        "date": "2020-10-21",
+        "p": 0.681,
+        "fill": 34.14
+      },
+      {
+        "date": "2020-10-28",
+        "p": 0.702,
+        "fill": 33.24
+      },
+      {
+        "date": "2020-11-04",
+        "p": 0.763,
+        "fill": 30.25
+      },
+      {
+        "date": "2020-11-11",
+        "p": 0.755,
+        "fill": 30.34
+      },
+      {
+        "date": "2020-11-18",
+        "p": 0.736,
+        "fill": 31.28
+      },
+      {
+        "date": "2020-11-25",
+        "p": 0.725,
+        "fill": 30.37
+      },
+      {
+        "date": "2020-12-02",
+        "p": 0.727,
+        "fill": 30.85
+      },
+      {
+        "date": "2020-12-09",
+        "p": 0.709,
+        "fill": 32
+      },
+      {
+        "date": "2020-12-16",
+        "p": 0.689,
+        "fill": 33.49
+      },
+      {
+        "date": "2020-12-23",
+        "p": 0.689,
+        "fill": 34.11
+      },
+      {
+        "date": "2020-12-30",
+        "p": 0.689,
+        "fill": 34.8
+      },
+      {
+        "date": "2021-01-06",
+        "p": 0.685,
+        "fill": 34.86
+      },
+      {
+        "date": "2021-01-13",
+        "p": 0.684,
+        "fill": 32.08
+      },
+      {
+        "date": "2021-01-20",
+        "p": 0.685,
+        "fill": 31.95
+      },
+      {
+        "date": "2021-01-27",
+        "p": 0.688,
+        "fill": 31.6
+      },
+      {
+        "date": "2021-02-03",
+        "p": 0.717,
+        "fill": 30.93
+      },
+      {
+        "date": "2021-02-10",
+        "p": 0.754,
+        "fill": 27.1
+      },
+      {
+        "date": "2021-02-17",
+        "p": 0.76,
+        "fill": 26.92
+      },
+      {
+        "date": "2021-02-24",
+        "p": 0.767,
+        "fill": 26.19
+      },
+      {
+        "date": "2021-03-03",
+        "p": 0.748,
+        "fill": 25.06
+      },
+      {
+        "date": "2021-03-10",
+        "p": 0.751,
+        "fill": 24.47
+      },
+      {
+        "date": "2021-03-17",
+        "p": 0.757,
+        "fill": 23.35
+      },
+      {
+        "date": "2021-03-24",
+        "p": 0.76,
+        "fill": 22.28
+      },
+      {
+        "date": "2021-03-31",
+        "p": 0.757,
+        "fill": 18.73
+      },
+      {
+        "date": "2021-04-07",
+        "p": 0.735,
+        "fill": 17.75
+      },
+      {
+        "date": "2021-04-14",
+        "p": 0.739,
+        "fill": 16.55
+      },
+      {
+        "date": "2021-04-21",
+        "p": 0.751,
+        "fill": 13.91
+      },
+      {
+        "date": "2021-04-28",
+        "p": 0.758,
+        "fill": 12.34
+      },
+      {
+        "date": "2021-05-05",
+        "p": 0.685,
+        "fill": 12.05
+      },
+      {
+        "date": "2021-05-12",
+        "p": 0.704,
+        "fill": 8.83
+      },
+      {
+        "date": "2021-05-19",
+        "p": 0.682,
+        "fill": 7.65
+      },
+      {
+        "date": "2021-05-26",
+        "p": 0.677,
+        "fill": 7.21
+      },
+      {
+        "date": "2021-06-02",
+        "p": 0.591,
+        "fill": 7.58
+      },
+      {
+        "date": "2021-06-09",
+        "p": 0.444,
+        "fill": 20.4
+      },
+      {
+        "date": "2021-06-16",
+        "p": 0.407,
+        "fill": 29.9
+      },
+      {
+        "date": "2021-06-23",
+        "p": 0.332,
+        "fill": 43.57
+      },
+      {
+        "date": "2021-06-30",
+        "p": 0.257,
+        "fill": 57.69
+      },
+      {
+        "date": "2021-07-07",
+        "p": 0.227,
+        "fill": 63.2
+      },
+      {
+        "date": "2021-07-14",
+        "p": 0.198,
+        "fill": 65.96
+      },
+      {
+        "date": "2021-07-21",
+        "p": 0.237,
+        "fill": 66.66
+      },
+      {
+        "date": "2021-07-28",
+        "p": 0.237,
+        "fill": 76.61
+      }
+    ]
+  },
+  "current": {
+    "date": "2026-06-10",
+    "fill": 30.65,
+    "probability": {
+      "p": 0.366,
+      "riskScore": 0.44,
+      "bandLow": 0.246,
+      "bandHigh": 0.486,
+      "contributions": {
+        "level": 0.37,
+        "trend": 0.005,
+        "season": 0.045,
+        "enso": 0.002,
+        "ews": 0.019
+      },
+      "novelty": false
+    },
+    "decision": {
+      "action": "WATCH",
+      "nominalPctNav": 0,
+      "convictionCap": 0.6,
+      "sizePctNav": 0,
+      "rationale": "Elevated but not actionable — scout structure, take no position yet."
+    },
+    "features": {
+      "date": "2026-06-10",
+      "fill": 30.65,
+      "week": 24,
+      "month": 5,
+      "pctile": 0.119,
+      "slope": -0.082,
+      "oni": 0.48,
+      "ewsTau": -0.013,
+      "risk": {
+        "level": 0.881,
+        "trend": 0.027,
+        "season": 0.25,
+        "enso": 0.01,
+        "ews": 0.267
+      },
+      "novelty": false
+    }
+  },
+  "caveats": [
+    "Only 6 curtailment-class onsets exist in 16 years — a tiny sample. Every metric carries a wide confidence interval (precision CI shown); none is statistically significant.",
+    "Weights are fixed from first principles and were NOT tuned to these results — by design, to avoid overfitting. The 18% severe threshold is acknowledged to be drawn from where past troughs sit (a known limitation).",
+    "Lead time is measured from the first SUSTAINED alert (3+ weeks), not the first flicker, to avoid crediting a dry-season alarm with false foresight.",
+    "A naive seasonal null model is reported alongside the full model: skill that the full model does not add ON TOP of seasonality is not real edge.",
+    "The reservoir→curtailment→fab-output→equity chain is NOT validated here. This is a reservoir-stress monitor; the financial link is an unproven assumption.",
+    "Past skill does not guarantee future skill — regime changes (TSMC desalination/recycling, demand shifts, climate) can break any historical relationship. The decision rule caps conviction accordingly."
+  ]
+}

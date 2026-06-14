@@ -26,6 +26,14 @@
       <p class="snapshot" id="snapshot"></p>
     </header>
 
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-panel="memo">Investment memo</button>
+      <button class="tab" data-panel="model">Model &amp; validation</button>
+      <button class="tab" data-panel="how">How it works</button>
+    </nav>
+
+    <div id="panel-memo" class="panel">
+
     <!-- The Call -->
     <section class="call" id="callSection">
       <div class="call-label">The Call</div>
@@ -112,6 +120,45 @@
     </section>
 
     <!-- Footer -->
+    </div><!-- /panel-memo -->
+
+    <div id="panel-model" class="panel" hidden>
+      <section class="memo-block">
+        <h3 class="block-head"><span class="num">A</span> Live forecast — calibrated probability &amp; the rule's action</h3>
+        <p class="block-sub">A deterministic model converts measured hydrology into a probability that a curtailment-class drought begins within ~6 months, then a <strong>pre-registered rule</strong> maps that probability to an action and a capped position size. No AI judgement enters this number.</p>
+        <div id="forecastCard"></div>
+      </section>
+
+      <section class="memo-block">
+        <h3 class="block-head"><span class="num">B</span> Walk-forward validation — 16 years, strictly causal</h3>
+        <p class="block-sub">At every week 2010–2026 the model saw only data up to that week, then we checked it against the 6 real curtailment-class droughts. We did <em>not</em> tune the model to these results.</p>
+        <div id="valMetrics"></div>
+        <div class="evidence-2" style="margin-top:18px">
+          <div>
+            <h4 class="mini-head">Reliability — is the probability honest?</h4>
+            <div class="chart-box small"><canvas id="reliabilityChart"></canvas></div>
+            <p class="caption" id="reliabilityNote"></p>
+          </div>
+          <div>
+            <h4 class="mini-head">Run-up to the 2021 drought</h4>
+            <div class="chart-box small"><canvas id="timelineChart"></canvas></div>
+            <p class="caption">Model probability (line) vs combined fill (area) into the worst drought in 56 years.</p>
+          </div>
+        </div>
+        <div id="marginalCallout" class="callout-grid"></div>
+      </section>
+
+      <section class="memo-block">
+        <h3 class="block-head"><span class="num">C</span> Independent audit — the red-team's verdict</h3>
+        <p class="block-sub">Before trusting any of this, a separate auditor agent was told to find the flaws. Its findings are shown unedited — including the ones that count against the model.</p>
+        <div id="auditCard"></div>
+      </section>
+    </div><!-- /panel-model -->
+
+    <div id="panel-how" class="panel" hidden>
+      <div id="howContent"></div>
+    </div><!-- /panel-how -->
+
     <footer class="footer">
       <h4 class="mini-head">Methodology &amp; sources</h4>
       <ul id="sourceList" class="source-list"></ul>

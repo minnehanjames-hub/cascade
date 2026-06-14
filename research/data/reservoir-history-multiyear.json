@@ -1,0 +1,6026 @@
+{
+  "meta": {
+    "source": "WRA FHY disaster system — ReservoirHistoryApi/GetComparision",
+    "stations": {
+      "shimen": "10201",
+      "zengwen": "30502"
+    },
+    "cadence": "weekly",
+    "range": {
+      "start": "2010-01-06",
+      "end": "2026-06-10"
+    },
+    "fetched_at": "2026-06-14T02:50:06.994Z",
+    "samples": 858,
+    "failures": 0,
+    "note": "CapacityRate→%fill; Capacity = effective storage (萬 m³). For backtesting the EWS against labelled drought events."
+  },
+  "series": [
+    {
+      "date": "2010-01-06",
+      "shimen_fill": 78.05,
+      "shimen_storage": 16311.12,
+      "zengwen_fill": 40.4,
+      "zengwen_storage": 19858
+    },
+    {
+      "date": "2010-01-13",
+      "shimen_fill": 80.66,
+      "shimen_storage": 16856.21,
+      "zengwen_fill": 40.32,
+      "zengwen_storage": 19823
+    },
+    {
+      "date": "2010-01-20",
+      "zengwen_fill": 38.56,
+      "zengwen_storage": 18954,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2010-01-27",
+      "shimen_fill": 79.64,
+      "shimen_storage": 16642.89,
+      "zengwen_fill": 36.22,
+      "zengwen_storage": 17803
+    },
+    {
+      "date": "2010-02-03",
+      "shimen_fill": 78.16,
+      "shimen_storage": 16333.6,
+      "zengwen_fill": 34.2,
+      "zengwen_storage": 16814
+    },
+    {
+      "date": "2010-02-10",
+      "shimen_fill": 74.03,
+      "shimen_storage": 15470.95,
+      "zengwen_fill": 31.03,
+      "zengwen_storage": 15254
+    },
+    {
+      "date": "2010-02-17",
+      "shimen_fill": 74.9,
+      "shimen_storage": 15652.81,
+      "zengwen_fill": 28.04,
+      "zengwen_storage": 13782
+    },
+    {
+      "date": "2010-02-24",
+      "shimen_fill": 99,
+      "shimen_storage": 20689.19,
+      "zengwen_fill": 25.94,
+      "zengwen_storage": 12754
+    },
+    {
+      "date": "2010-03-03",
+      "shimen_fill": 97.71,
+      "shimen_storage": 20420.39,
+      "zengwen_fill": 25.47,
+      "zengwen_storage": 12521
+    },
+    {
+      "date": "2010-03-10",
+      "shimen_fill": 94.28,
+      "shimen_storage": 19703.17,
+      "zengwen_fill": 22.5,
+      "zengwen_storage": 11060
+    },
+    {
+      "date": "2010-03-17",
+      "shimen_fill": 91.36,
+      "shimen_storage": 19093.02,
+      "zengwen_fill": 19.92,
+      "zengwen_storage": 9791
+    },
+    {
+      "date": "2010-03-24",
+      "shimen_fill": 84.33,
+      "shimen_storage": 17624.23,
+      "zengwen_fill": 18.5,
+      "zengwen_storage": 9092
+    },
+    {
+      "date": "2010-03-31",
+      "shimen_fill": 78.23,
+      "shimen_storage": 16348.61,
+      "zengwen_fill": 17.04,
+      "zengwen_storage": 8376
+    },
+    {
+      "date": "2010-04-07",
+      "shimen_fill": 72.62,
+      "shimen_storage": 15175.58,
+      "zengwen_fill": 15.58,
+      "zengwen_storage": 7660
+    },
+    {
+      "date": "2010-04-14",
+      "shimen_fill": 73.34,
+      "shimen_storage": 15326.42,
+      "zengwen_fill": 14.95,
+      "zengwen_storage": 7348
+    },
+    {
+      "date": "2010-04-21",
+      "shimen_fill": 68.58,
+      "shimen_storage": 14331.45,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-04-28",
+      "shimen_fill": 65.32,
+      "shimen_storage": 13650.92,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-05-05",
+      "shimen_fill": 65.1,
+      "shimen_storage": 13604.06,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-05-12",
+      "shimen_fill": 61.36,
+      "shimen_storage": 12822.63,
+      "zengwen_fill": 11.24,
+      "zengwen_storage": 5526
+    },
+    {
+      "date": "2010-05-19",
+      "shimen_fill": 57.37,
+      "shimen_storage": 11989.18,
+      "zengwen_fill": 10.27,
+      "zengwen_storage": 5047
+    },
+    {
+      "date": "2010-05-26",
+      "shimen_fill": 55.55,
+      "shimen_storage": 11609.62,
+      "zengwen_fill": 13.4,
+      "zengwen_storage": 6586
+    },
+    {
+      "date": "2010-06-02",
+      "shimen_fill": 59.59,
+      "shimen_storage": 12452.14,
+      "zengwen_fill": 21.77,
+      "zengwen_storage": 10700
+    },
+    {
+      "date": "2010-06-09",
+      "shimen_fill": 67.43,
+      "shimen_storage": 14090.91,
+      "zengwen_fill": 23,
+      "zengwen_storage": 11306
+    },
+    {
+      "date": "2010-06-16",
+      "shimen_fill": 78.34,
+      "shimen_storage": 16371.13,
+      "zengwen_fill": 33.15,
+      "zengwen_storage": 16294
+    },
+    {
+      "date": "2010-06-23",
+      "shimen_fill": 84.82,
+      "shimen_storage": 17726.69,
+      "zengwen_fill": 36.44,
+      "zengwen_storage": 17912
+    },
+    {
+      "date": "2010-06-30",
+      "shimen_fill": 94.89,
+      "shimen_storage": 19830.05,
+      "zengwen_fill": 39.35,
+      "zengwen_storage": 19346
+    },
+    {
+      "date": "2010-07-07",
+      "shimen_fill": 92.56,
+      "shimen_storage": 19342.3,
+      "zengwen_fill": 39.4,
+      "zengwen_storage": 19369
+    },
+    {
+      "date": "2010-07-14",
+      "shimen_fill": 90.73,
+      "shimen_storage": 18960.91,
+      "zengwen_fill": 38.33,
+      "zengwen_storage": 18844.430088
+    },
+    {
+      "date": "2010-07-21",
+      "shimen_fill": 91.48,
+      "shimen_storage": 19117.85,
+      "zengwen_fill": 37.43,
+      "zengwen_storage": 18400.648333
+    },
+    {
+      "date": "2010-07-28",
+      "shimen_fill": 94.12,
+      "shimen_storage": 19669.42,
+      "zengwen_fill": 54.99,
+      "zengwen_storage": 27033
+    },
+    {
+      "date": "2010-08-04",
+      "shimen_fill": 92.6,
+      "shimen_storage": 19350.64,
+      "zengwen_fill": 75.03,
+      "zengwen_storage": 36882.220222
+    },
+    {
+      "date": "2010-08-11",
+      "shimen_fill": 89.08,
+      "shimen_storage": 18616.87,
+      "zengwen_fill": 77.62,
+      "zengwen_storage": 38159.24152
+    },
+    {
+      "date": "2010-08-18",
+      "shimen_fill": 87.84,
+      "shimen_storage": 18357.41,
+      "zengwen_fill": 81.71,
+      "zengwen_storage": 40167
+    },
+    {
+      "date": "2010-08-25",
+      "shimen_fill": 82.99,
+      "shimen_storage": 17342.45,
+      "zengwen_fill": 83.27,
+      "zengwen_storage": 40933.919499
+    },
+    {
+      "date": "2010-09-01",
+      "shimen_fill": 81.36,
+      "shimen_storage": 17001.94,
+      "zengwen_fill": 88.85,
+      "zengwen_storage": 43677
+    },
+    {
+      "date": "2010-09-08",
+      "shimen_fill": 78.45,
+      "shimen_storage": 16393.67,
+      "zengwen_fill": 93.25,
+      "zengwen_storage": 45840
+    },
+    {
+      "date": "2010-09-15",
+      "shimen_fill": 78.73,
+      "shimen_storage": 16453.87,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-09-22",
+      "shimen_fill": 95.62,
+      "shimen_storage": 19983,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-09-29",
+      "shimen_fill": 98.92,
+      "shimen_storage": 20671.78,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-10-06",
+      "shimen_fill": 96.15,
+      "shimen_storage": 20093.92,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50500.736654
+    },
+    {
+      "date": "2010-10-13",
+      "shimen_fill": 91.8,
+      "shimen_storage": 19184.18,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-10-20",
+      "zengwen_fill": 100,
+      "zengwen_storage": 49533,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2010-10-27",
+      "shimen_fill": 97.38,
+      "shimen_storage": 20351.38,
+      "zengwen_fill": 95.64,
+      "zengwen_storage": 47015.789217
+    },
+    {
+      "date": "2010-11-03",
+      "shimen_fill": 99.33,
+      "shimen_storage": 20758.93,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-11-10",
+      "shimen_fill": 98.75,
+      "shimen_storage": 20636.99,
+      "zengwen_fill": 90.74,
+      "zengwen_storage": 44608.756889
+    },
+    {
+      "date": "2010-11-17",
+      "shimen_fill": 97.63,
+      "shimen_storage": 20403.12,
+      "zengwen_fill": 87.93,
+      "zengwen_storage": 43223.216211
+    },
+    {
+      "date": "2010-11-24",
+      "shimen_fill": 94.97,
+      "shimen_storage": 19847.01,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-12-01",
+      "shimen_fill": 92.76,
+      "shimen_storage": 19384.04,
+      "zengwen_fill": 78.66,
+      "zengwen_storage": 38668.930769
+    },
+    {
+      "date": "2010-12-08",
+      "shimen_fill": 91.01,
+      "shimen_storage": 19018.63,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-12-15",
+      "shimen_fill": 89.08,
+      "shimen_storage": 18616.87,
+      "zengwen_fill": 74.33,
+      "zengwen_storage": 36538.607954
+    },
+    {
+      "date": "2010-12-22",
+      "shimen_fill": 89.47,
+      "shimen_storage": 18698.42,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2010-12-29",
+      "shimen_fill": 88.07,
+      "shimen_storage": 18405.88,
+      "zengwen_fill": 74.74,
+      "zengwen_storage": 36741.478308
+    },
+    {
+      "date": "2011-01-05",
+      "shimen_fill": 85.09,
+      "shimen_storage": 17782.02,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-01-12",
+      "shimen_fill": 82.95,
+      "shimen_storage": 17334.67,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-01-19",
+      "shimen_fill": 85.85,
+      "shimen_storage": 17940.69,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-01-26",
+      "shimen_fill": 84.98,
+      "shimen_storage": 17758.29,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-02-02",
+      "shimen_fill": 83.55,
+      "shimen_storage": 17459.51,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-02-09",
+      "shimen_fill": null,
+      "shimen_storage": null,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-02-16",
+      "shimen_fill": 74.87,
+      "shimen_storage": 15645.51,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-02-23",
+      "shimen_fill": 70.41,
+      "shimen_storage": 14714.59,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2011-03-02",
+      "shimen_fill": 63.95,
+      "shimen_storage": 13364.62,
+      "zengwen_fill": 44.96,
+      "zengwen_storage": 22102
+    },
+    {
+      "date": "2011-03-09",
+      "shimen_fill": 57.79,
+      "shimen_storage": 12075.93,
+      "zengwen_fill": 39.61,
+      "zengwen_storage": 19471
+    },
+    {
+      "date": "2011-03-16",
+      "shimen_fill": 52.73,
+      "shimen_storage": 11019.11,
+      "zengwen_fill": 34.53,
+      "zengwen_storage": 16975
+    },
+    {
+      "date": "2011-03-23",
+      "shimen_fill": 47.79,
+      "shimen_storage": 9988.08,
+      "zengwen_fill": 30.16,
+      "zengwen_storage": 14828
+    },
+    {
+      "date": "2011-03-30",
+      "shimen_fill": 47.01,
+      "shimen_storage": 9823.16,
+      "zengwen_fill": 24.62,
+      "zengwen_storage": 12103
+    },
+    {
+      "date": "2011-04-06",
+      "zengwen_fill": 22.42,
+      "zengwen_storage": 11021,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2011-04-13",
+      "zengwen_fill": 18.03,
+      "zengwen_storage": 8862,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2011-04-20",
+      "zengwen_fill": 15.69,
+      "zengwen_storage": 7711,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2011-04-27",
+      "shimen_fill": 30.06,
+      "shimen_storage": 6282.21,
+      "zengwen_fill": 15.71,
+      "zengwen_storage": 7725
+    },
+    {
+      "date": "2011-05-04",
+      "shimen_fill": 26.16,
+      "shimen_storage": 5467.09,
+      "zengwen_fill": 11.71,
+      "zengwen_storage": 5757
+    },
+    {
+      "date": "2011-05-11",
+      "shimen_fill": 21.8,
+      "shimen_storage": 4555.94,
+      "zengwen_fill": 9.21,
+      "zengwen_storage": 4527
+    },
+    {
+      "date": "2011-05-18",
+      "shimen_fill": 34.16,
+      "shimen_storage": 7137.88,
+      "zengwen_fill": 12.23,
+      "zengwen_storage": 6013
+    },
+    {
+      "date": "2011-05-25",
+      "shimen_fill": 42.19,
+      "shimen_storage": 8817.26,
+      "zengwen_fill": 12.73,
+      "zengwen_storage": 6260
+    },
+    {
+      "date": "2011-06-01",
+      "shimen_fill": 47.82,
+      "shimen_storage": 9993.6,
+      "zengwen_fill": 14.17,
+      "zengwen_storage": 6966
+    },
+    {
+      "date": "2011-06-08",
+      "shimen_fill": 49.26,
+      "shimen_storage": 10294.81,
+      "zengwen_fill": 12.8,
+      "zengwen_storage": 6293
+    },
+    {
+      "date": "2011-06-15",
+      "shimen_fill": 55.1,
+      "shimen_storage": 11422.67,
+      "zengwen_fill": 12.27,
+      "zengwen_storage": 6033
+    },
+    {
+      "date": "2011-06-22",
+      "shimen_fill": 56.09,
+      "shimen_storage": 11627.82,
+      "zengwen_fill": 11.19,
+      "zengwen_storage": 5503.177
+    },
+    {
+      "date": "2011-06-29",
+      "shimen_fill": 94.47,
+      "shimen_storage": 19585.21,
+      "zengwen_fill": 13.7,
+      "zengwen_storage": 6733
+    },
+    {
+      "date": "2011-07-06",
+      "shimen_fill": 97.67,
+      "shimen_storage": 20248.14,
+      "zengwen_fill": 13.71,
+      "zengwen_storage": 6740
+    },
+    {
+      "date": "2011-07-13",
+      "shimen_fill": 97.01,
+      "shimen_storage": 20111.02,
+      "zengwen_fill": 15.18,
+      "zengwen_storage": 7464
+    },
+    {
+      "date": "2011-07-20",
+      "shimen_fill": 96.02,
+      "shimen_storage": 19906.43,
+      "zengwen_fill": 42.72,
+      "zengwen_storage": 21001
+    },
+    {
+      "date": "2011-07-27",
+      "shimen_fill": 96.1,
+      "shimen_storage": 19923.43,
+      "zengwen_fill": 53.7,
+      "zengwen_storage": 26396
+    },
+    {
+      "date": "2011-08-03",
+      "shimen_fill": 94.47,
+      "shimen_storage": 19585.21,
+      "zengwen_fill": 54.58,
+      "zengwen_storage": 26829
+    },
+    {
+      "date": "2011-08-10",
+      "shimen_fill": 94.43,
+      "shimen_storage": 19576.8,
+      "zengwen_fill": 51.86,
+      "zengwen_storage": 25492
+    },
+    {
+      "date": "2011-08-17",
+      "shimen_fill": 93.42,
+      "shimen_storage": 19367.34,
+      "zengwen_fill": 53.04,
+      "zengwen_storage": 26075
+    },
+    {
+      "date": "2011-08-24",
+      "shimen_fill": 90.59,
+      "shimen_storage": 18780.2,
+      "zengwen_fill": 48.93,
+      "zengwen_storage": 24055
+    },
+    {
+      "date": "2011-08-31",
+      "shimen_fill": 89.45,
+      "shimen_storage": 18543.66,
+      "zengwen_fill": 56.69,
+      "zengwen_storage": 27870
+    },
+    {
+      "date": "2011-09-07",
+      "shimen_fill": 94.07,
+      "shimen_storage": 19501.23,
+      "zengwen_fill": 67.39,
+      "zengwen_storage": 33130
+    },
+    {
+      "date": "2011-09-14",
+      "shimen_fill": 89.72,
+      "shimen_storage": 18600.58,
+      "zengwen_fill": 71.5,
+      "zengwen_storage": 35148
+    },
+    {
+      "date": "2011-09-21",
+      "shimen_fill": 84.41,
+      "shimen_storage": 17498.64,
+      "zengwen_fill": 72.31,
+      "zengwen_storage": 35547
+    },
+    {
+      "date": "2011-09-28",
+      "zengwen_fill": 70.76,
+      "zengwen_storage": 34783,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2011-10-05",
+      "shimen_fill": 90.16,
+      "shimen_storage": 18690.25,
+      "zengwen_fill": 68.64,
+      "zengwen_storage": 33742
+    },
+    {
+      "date": "2011-10-12",
+      "shimen_fill": 98.54,
+      "shimen_storage": 20429.02,
+      "zengwen_fill": 66.85,
+      "zengwen_storage": 32863
+    },
+    {
+      "date": "2011-10-19",
+      "shimen_fill": 97.8,
+      "shimen_storage": 20273.92,
+      "zengwen_fill": 65.92,
+      "zengwen_storage": 32406
+    },
+    {
+      "date": "2011-10-26",
+      "shimen_fill": 96.97,
+      "shimen_storage": 20102.47,
+      "zengwen_fill": 65.32,
+      "zengwen_storage": 32112
+    },
+    {
+      "date": "2011-11-02",
+      "shimen_fill": 94.27,
+      "shimen_storage": 19543.19,
+      "zengwen_fill": 61.7,
+      "zengwen_storage": 30330
+    },
+    {
+      "date": "2011-11-09",
+      "shimen_fill": 89.53,
+      "shimen_storage": 18559.91,
+      "zengwen_fill": 58.59,
+      "zengwen_storage": 28802
+    },
+    {
+      "date": "2011-11-16",
+      "shimen_fill": 97.88,
+      "shimen_storage": 20291.12,
+      "zengwen_fill": 64.61,
+      "zengwen_storage": 31761
+    },
+    {
+      "date": "2011-11-23",
+      "shimen_fill": 98.79,
+      "shimen_storage": 20480.89,
+      "zengwen_fill": 65.68,
+      "zengwen_storage": 32288
+    },
+    {
+      "date": "2011-11-30",
+      "shimen_fill": 98.71,
+      "shimen_storage": 20463.59,
+      "zengwen_fill": 66.49,
+      "zengwen_storage": 32686
+    },
+    {
+      "date": "2011-12-07",
+      "shimen_fill": 98.96,
+      "shimen_storage": 20515.51,
+      "zengwen_fill": 65.02,
+      "zengwen_storage": 31965
+    },
+    {
+      "date": "2011-12-14",
+      "shimen_fill": 99.51,
+      "shimen_storage": 20628.3,
+      "zengwen_fill": 65.86,
+      "zengwen_storage": 32377
+    },
+    {
+      "date": "2011-12-21",
+      "shimen_fill": 99.09,
+      "shimen_storage": 20541.51,
+      "zengwen_fill": 66.52,
+      "zengwen_storage": 32701
+    },
+    {
+      "date": "2011-12-28",
+      "shimen_fill": 99.09,
+      "shimen_storage": 20541.51,
+      "zengwen_fill": 67.03,
+      "zengwen_storage": 32952
+    },
+    {
+      "date": "2012-01-04",
+      "shimen_fill": 98.92,
+      "shimen_storage": 20671.78,
+      "zengwen_fill": 67.49,
+      "zengwen_storage": 33175
+    },
+    {
+      "date": "2012-01-11",
+      "shimen_fill": 99.08,
+      "shimen_storage": 20706.61,
+      "zengwen_fill": 67.91,
+      "zengwen_storage": 33384
+    },
+    {
+      "date": "2012-01-18",
+      "shimen_fill": 98.42,
+      "shimen_storage": 20567.52,
+      "zengwen_fill": 67.58,
+      "zengwen_storage": 33220
+    },
+    {
+      "date": "2012-01-25",
+      "shimen_fill": 99.13,
+      "shimen_storage": 20715.33,
+      "zengwen_fill": 64.4,
+      "zengwen_storage": 31659
+    },
+    {
+      "date": "2012-02-01",
+      "shimen_fill": 99.79,
+      "shimen_storage": 20855.05,
+      "zengwen_fill": 62.28,
+      "zengwen_storage": 30617
+    },
+    {
+      "date": "2012-02-08",
+      "shimen_fill": 98.29,
+      "shimen_storage": 20541.51,
+      "zengwen_fill": 59.02,
+      "zengwen_storage": 29013
+    },
+    {
+      "date": "2012-02-15",
+      "shimen_fill": 96.77,
+      "shimen_storage": 20222.39,
+      "zengwen_fill": 0.56,
+      "zengwen_storage": 272.92
+    },
+    {
+      "date": "2012-02-22",
+      "shimen_fill": 92.04,
+      "shimen_storage": 19234.02,
+      "zengwen_fill": 51.8,
+      "zengwen_storage": 25465
+    },
+    {
+      "date": "2012-02-29",
+      "shimen_fill": 98.05,
+      "shimen_storage": 20489.54,
+      "zengwen_fill": 47.88,
+      "zengwen_storage": 23535
+    },
+    {
+      "date": "2012-03-07",
+      "shimen_fill": 97.92,
+      "shimen_storage": 20463.59,
+      "zengwen_fill": 42.34,
+      "zengwen_storage": 20820
+    },
+    {
+      "date": "2012-03-14",
+      "shimen_fill": 97.84,
+      "shimen_storage": 20446.3,
+      "zengwen_fill": 37.2,
+      "zengwen_storage": 18291
+    },
+    {
+      "date": "2012-03-21",
+      "shimen_fill": 95.78,
+      "shimen_storage": 20017.08,
+      "zengwen_fill": 32.84,
+      "zengwen_storage": 16146
+    },
+    {
+      "date": "2012-03-28",
+      "shimen_fill": 92,
+      "shimen_storage": 19225.71,
+      "zengwen_fill": 28.83,
+      "zengwen_storage": 14177
+    },
+    {
+      "date": "2012-04-04",
+      "shimen_fill": 86.46,
+      "shimen_storage": 18068.27,
+      "zengwen_fill": 26.67,
+      "zengwen_storage": 13116
+    },
+    {
+      "date": "2012-04-11",
+      "shimen_fill": 80.77,
+      "shimen_storage": 16879.17,
+      "zengwen_fill": 23.03,
+      "zengwen_storage": 11327
+    },
+    {
+      "date": "2012-04-18",
+      "shimen_fill": 78.34,
+      "shimen_storage": 16371.13,
+      "zengwen_fill": 20.62,
+      "zengwen_storage": 10139
+    },
+    {
+      "date": "2012-04-25",
+      "shimen_fill": 81.32,
+      "shimen_storage": 16994.25,
+      "zengwen_fill": 20.94,
+      "zengwen_storage": 10297
+    },
+    {
+      "date": "2012-05-02",
+      "shimen_fill": 91.32,
+      "shimen_storage": 19084.74,
+      "zengwen_fill": 21.02,
+      "zengwen_storage": 10337
+    },
+    {
+      "date": "2012-05-09",
+      "shimen_fill": 92.16,
+      "shimen_storage": 19258.98,
+      "zengwen_fill": 32.28,
+      "zengwen_storage": 15872
+    },
+    {
+      "date": "2012-05-16",
+      "shimen_fill": 92.72,
+      "shimen_storage": 19375.69,
+      "zengwen_fill": 32.54,
+      "zengwen_storage": 16003
+    },
+    {
+      "date": "2012-05-23",
+      "shimen_fill": 95.87,
+      "shimen_storage": 20034.14,
+      "zengwen_fill": 48.57,
+      "zengwen_storage": 23884
+    },
+    {
+      "date": "2012-05-30",
+      "shimen_fill": 95.3,
+      "shimen_storage": 19914.93,
+      "zengwen_fill": 55.22,
+      "zengwen_storage": 27153
+    },
+    {
+      "date": "2012-06-06",
+      "shimen_fill": 92.36,
+      "shimen_storage": 19300.61,
+      "zengwen_fill": 59.39,
+      "zengwen_storage": 29206
+    },
+    {
+      "date": "2012-06-13",
+      "shimen_fill": 96.07,
+      "shimen_storage": 20076.83,
+      "zengwen_fill": 77.39,
+      "zengwen_storage": 38054
+    },
+    {
+      "date": "2012-06-20",
+      "shimen_fill": 84.94,
+      "shimen_storage": 17750.39,
+      "zengwen_fill": 70.36,
+      "zengwen_storage": 34598
+    },
+    {
+      "date": "2012-06-27",
+      "shimen_fill": 89.32,
+      "shimen_storage": 18665.77,
+      "zengwen_fill": 82.03,
+      "zengwen_storage": 40339
+    },
+    {
+      "date": "2012-07-04",
+      "shimen_fill": 90.89,
+      "shimen_storage": 18993.88,
+      "zengwen_fill": 83.62,
+      "zengwen_storage": 41119
+    },
+    {
+      "date": "2012-07-11",
+      "shimen_fill": 91.4,
+      "shimen_storage": 19101.29,
+      "zengwen_fill": 82.81,
+      "zengwen_storage": 40720
+    },
+    {
+      "date": "2012-07-18",
+      "shimen_fill": 89.94,
+      "shimen_storage": 18796.58,
+      "zengwen_fill": 81.13,
+      "zengwen_storage": 39894
+    },
+    {
+      "date": "2012-07-25",
+      "shimen_fill": 85.62,
+      "shimen_storage": 17892.99,
+      "zengwen_fill": 80,
+      "zengwen_storage": 39337
+    },
+    {
+      "date": "2012-08-01",
+      "shimen_fill": 93,
+      "shimen_storage": 19434.21,
+      "zengwen_fill": 79.3,
+      "zengwen_storage": 38994
+    },
+    {
+      "date": "2012-08-08",
+      "shimen_fill": 89.98,
+      "shimen_storage": 18804.78,
+      "zengwen_fill": 96.33,
+      "zengwen_storage": 47369
+    },
+    {
+      "date": "2012-08-15",
+      "shimen_fill": 91.6,
+      "shimen_storage": 19143.4,
+      "zengwen_fill": 98.36,
+      "zengwen_storage": 48365
+    },
+    {
+      "date": "2012-08-22",
+      "shimen_fill": 90.14,
+      "shimen_storage": 18837.58,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47263
+    },
+    {
+      "date": "2012-08-29",
+      "shimen_fill": 93.16,
+      "shimen_storage": 19467.7,
+      "zengwen_fill": 91.28,
+      "zengwen_storage": 41653
+    },
+    {
+      "date": "2012-09-05",
+      "shimen_fill": 92.92,
+      "shimen_storage": 19417.48,
+      "zengwen_fill": 93.58,
+      "zengwen_storage": 46015
+    },
+    {
+      "date": "2012-09-12",
+      "shimen_fill": 94.65,
+      "shimen_storage": 19779.24,
+      "zengwen_fill": 95.36,
+      "zengwen_storage": 46892
+    },
+    {
+      "date": "2012-09-19",
+      "shimen_fill": 93.48,
+      "shimen_storage": 19534.8,
+      "zengwen_fill": 93.58,
+      "zengwen_storage": 46015
+    },
+    {
+      "date": "2012-09-26",
+      "shimen_fill": 93.72,
+      "shimen_storage": 19585.21,
+      "zengwen_fill": 91.46,
+      "zengwen_storage": 44972
+    },
+    {
+      "date": "2012-10-03",
+      "shimen_fill": 96.77,
+      "shimen_storage": 20222.39,
+      "zengwen_fill": 88.28,
+      "zengwen_storage": 43410
+    },
+    {
+      "date": "2012-10-10",
+      "shimen_fill": 97.59,
+      "shimen_storage": 20394.49,
+      "zengwen_fill": 83.25,
+      "zengwen_storage": 40936
+    },
+    {
+      "date": "2012-10-17",
+      "shimen_fill": 94.44,
+      "shimen_storage": 19736.96,
+      "zengwen_fill": 77.91,
+      "zengwen_storage": 38312
+    },
+    {
+      "date": "2012-10-24",
+      "shimen_fill": 89.16,
+      "shimen_storage": 18633.15,
+      "zengwen_fill": 73.2,
+      "zengwen_storage": 35993
+    },
+    {
+      "date": "2012-10-31",
+      "shimen_fill": 83.17,
+      "shimen_storage": 17381.41,
+      "zengwen_fill": 71.47,
+      "zengwen_storage": 35143
+    },
+    {
+      "date": "2012-11-07",
+      "shimen_fill": 79.93,
+      "shimen_storage": 16703.66,
+      "zengwen_fill": 67.02,
+      "zengwen_storage": 32956
+    },
+    {
+      "date": "2012-11-14",
+      "shimen_fill": 75.25,
+      "shimen_storage": 15725.93,
+      "zengwen_fill": 62.85,
+      "zengwen_storage": 30906
+    },
+    {
+      "date": "2012-11-21",
+      "shimen_fill": 72.93,
+      "shimen_storage": 15240.11,
+      "zengwen_fill": 58.74,
+      "zengwen_storage": 28884
+    },
+    {
+      "date": "2012-11-28",
+      "shimen_fill": 77.02,
+      "shimen_storage": 16094.74,
+      "zengwen_fill": 56.91,
+      "zengwen_storage": 27985
+    },
+    {
+      "date": "2012-12-05",
+      "shimen_fill": 96.4,
+      "shimen_storage": 20145.24,
+      "zengwen_fill": 55.48,
+      "zengwen_storage": 27282
+    },
+    {
+      "date": "2012-12-12",
+      "shimen_fill": 97.76,
+      "shimen_storage": 20429.02,
+      "zengwen_fill": 55.74,
+      "zengwen_storage": 27410
+    },
+    {
+      "date": "2012-12-19",
+      "shimen_fill": 97.96,
+      "shimen_storage": 20472.24,
+      "zengwen_fill": 56.33,
+      "zengwen_storage": 27697
+    },
+    {
+      "date": "2012-12-26",
+      "shimen_fill": 98.58,
+      "shimen_storage": 20602.24,
+      "zengwen_fill": 56.74,
+      "zengwen_storage": 27899
+    },
+    {
+      "date": "2013-01-02",
+      "shimen_fill": 99.29,
+      "shimen_storage": 20750.2,
+      "zengwen_fill": 57.09,
+      "zengwen_storage": 28072
+    },
+    {
+      "date": "2013-01-09",
+      "shimen_fill": 99.1,
+      "shimen_storage": 20647.64,
+      "zengwen_fill": 57.38,
+      "zengwen_storage": 28216
+    },
+    {
+      "date": "2013-01-16",
+      "shimen_fill": 99.49,
+      "shimen_storage": 20727.57,
+      "zengwen_fill": 55.39,
+      "zengwen_storage": 27239
+    },
+    {
+      "date": "2013-01-23",
+      "shimen_fill": 98.93,
+      "shimen_storage": 20612.18,
+      "zengwen_fill": 52.46,
+      "zengwen_storage": 25795
+    },
+    {
+      "date": "2013-01-30",
+      "shimen_fill": 96.65,
+      "shimen_storage": 20137.3,
+      "zengwen_fill": 45.44,
+      "zengwen_storage": 21791
+    },
+    {
+      "date": "2013-02-06",
+      "shimen_fill": 90.46,
+      "shimen_storage": 18847.14,
+      "zengwen_fill": 41.18,
+      "zengwen_storage": 19747
+    },
+    {
+      "date": "2013-02-13",
+      "shimen_fill": 84.11,
+      "shimen_storage": 17523.76,
+      "zengwen_fill": 37.15,
+      "zengwen_storage": 17814
+    },
+    {
+      "date": "2013-02-20",
+      "shimen_fill": 77.47,
+      "shimen_storage": 16140.51,
+      "zengwen_fill": 34.07,
+      "zengwen_storage": 16339
+    },
+    {
+      "date": "2013-02-27",
+      "shimen_fill": 69.74,
+      "shimen_storage": 14530.51,
+      "zengwen_fill": 28.36,
+      "zengwen_storage": 13599
+    },
+    {
+      "date": "2013-03-06",
+      "shimen_fill": 63.26,
+      "shimen_storage": 13179.5,
+      "zengwen_fill": 21.61,
+      "zengwen_storage": 10361
+    },
+    {
+      "date": "2013-03-13",
+      "shimen_fill": 56.37,
+      "shimen_storage": 11743.93,
+      "zengwen_fill": 17.45,
+      "zengwen_storage": 8366
+    },
+    {
+      "date": "2013-03-20",
+      "shimen_fill": 50.17,
+      "shimen_storage": 10451.82,
+      "zengwen_fill": 16.05,
+      "zengwen_storage": 7699
+    },
+    {
+      "date": "2013-03-27",
+      "shimen_fill": 43.55,
+      "shimen_storage": 9073.58,
+      "zengwen_fill": 16.21,
+      "zengwen_storage": 7772
+    },
+    {
+      "date": "2013-04-03",
+      "shimen_fill": 42.48,
+      "shimen_storage": 8849.62,
+      "zengwen_fill": 16.39,
+      "zengwen_storage": 7859
+    },
+    {
+      "date": "2013-04-10",
+      "shimen_fill": 48.91,
+      "shimen_storage": 10190.03,
+      "zengwen_fill": 19.91,
+      "zengwen_storage": 9548
+    },
+    {
+      "date": "2013-04-17",
+      "shimen_fill": 60.74,
+      "shimen_storage": 12654.69,
+      "zengwen_fill": 17.81,
+      "zengwen_storage": 8542
+    },
+    {
+      "date": "2013-04-24",
+      "shimen_fill": 65.68,
+      "shimen_storage": 13683.92,
+      "zengwen_fill": 16.64,
+      "zengwen_storage": 7981
+    },
+    {
+      "date": "2013-05-01",
+      "shimen_fill": 70.25,
+      "shimen_storage": 14636.85,
+      "zengwen_fill": 16.67,
+      "zengwen_storage": 7994
+    },
+    {
+      "date": "2013-05-08",
+      "shimen_fill": 75.92,
+      "shimen_storage": 15817.26,
+      "zengwen_fill": 14.02,
+      "zengwen_storage": 6722
+    },
+    {
+      "date": "2013-05-15",
+      "shimen_fill": 91.47,
+      "shimen_storage": 19056.93,
+      "zengwen_fill": 16.46,
+      "zengwen_storage": 7893
+    },
+    {
+      "date": "2013-05-22",
+      "shimen_fill": 93.05,
+      "shimen_storage": 19387.21,
+      "zengwen_fill": 40.14,
+      "zengwen_storage": 19251
+    },
+    {
+      "date": "2013-05-29",
+      "shimen_fill": 92.97,
+      "shimen_storage": 19370.19,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-06-05",
+      "shimen_fill": 92.1,
+      "shimen_storage": 19327.66,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-06-12",
+      "shimen_fill": 90.09,
+      "shimen_storage": 18905.73,
+      "zengwen_fill": 49.66,
+      "zengwen_storage": 23816
+    },
+    {
+      "date": "2013-06-19",
+      "shimen_fill": 87.59,
+      "shimen_storage": 18382.63,
+      "zengwen_fill": 51.2,
+      "zengwen_storage": 24553
+    },
+    {
+      "date": "2013-06-26",
+      "shimen_fill": 85.96,
+      "shimen_storage": 18039.15,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-07-03",
+      "shimen_fill": 79.87,
+      "shimen_storage": 16760.89,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-07-10",
+      "shimen_fill": 77.34,
+      "shimen_storage": 16231.47,
+      "zengwen_fill": 52.05,
+      "zengwen_storage": 24959
+    },
+    {
+      "date": "2013-07-17",
+      "shimen_fill": 78.95,
+      "shimen_storage": 16567.8,
+      "zengwen_fill": 89.35,
+      "zengwen_storage": 42848
+    },
+    {
+      "date": "2013-07-24",
+      "shimen_fill": 86.31,
+      "shimen_storage": 18112.4,
+      "zengwen_fill": 89.06,
+      "zengwen_storage": 42711
+    },
+    {
+      "date": "2013-07-31",
+      "shimen_fill": 89.77,
+      "shimen_storage": 18838.78,
+      "zengwen_fill": 88.28,
+      "zengwen_storage": 42337
+    },
+    {
+      "date": "2013-08-07",
+      "shimen_fill": 89.93,
+      "shimen_storage": 18872.23,
+      "zengwen_fill": 85.33,
+      "zengwen_storage": 40919
+    },
+    {
+      "date": "2013-08-14",
+      "shimen_fill": 85.15,
+      "shimen_storage": 17868.98,
+      "zengwen_fill": 81.56,
+      "zengwen_storage": 39111
+    },
+    {
+      "date": "2013-08-21",
+      "shimen_fill": 79.46,
+      "shimen_storage": 16675.76,
+      "zengwen_fill": 78.17,
+      "zengwen_storage": 37487
+    },
+    {
+      "date": "2013-08-28",
+      "shimen_fill": 91.91,
+      "shimen_storage": 19149.72,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48371
+    },
+    {
+      "date": "2013-09-04",
+      "shimen_fill": 91.19,
+      "shimen_storage": 18998.04,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48226
+    },
+    {
+      "date": "2013-09-11",
+      "shimen_fill": 97.87,
+      "shimen_storage": 20391.43,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48407
+    },
+    {
+      "date": "2013-09-18",
+      "shimen_fill": 97.33,
+      "shimen_storage": 20277.25,
+      "zengwen_fill": 99.44,
+      "zengwen_storage": 47685
+    },
+    {
+      "date": "2013-09-25",
+      "shimen_fill": 96.15,
+      "shimen_storage": 20032.74,
+      "zengwen_fill": 98.28,
+      "zengwen_storage": 47130
+    },
+    {
+      "date": "2013-10-02",
+      "shimen_fill": 98.76,
+      "shimen_storage": 20576.75,
+      "zengwen_fill": 99.59,
+      "zengwen_storage": 47757
+    },
+    {
+      "date": "2013-10-09",
+      "shimen_fill": 87.05,
+      "shimen_storage": 18136.86,
+      "zengwen_fill": 95.76,
+      "zengwen_storage": 45921
+    },
+    {
+      "date": "2013-10-16",
+      "shimen_fill": 98.59,
+      "shimen_storage": 20541.37,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-10-23",
+      "shimen_fill": 99.44,
+      "shimen_storage": 20718.68,
+      "zengwen_fill": 86.1,
+      "zengwen_storage": 41289
+    },
+    {
+      "date": "2013-10-30",
+      "shimen_fill": 98.68,
+      "shimen_storage": 20559.06,
+      "zengwen_fill": 82.21,
+      "zengwen_storage": 39423
+    },
+    {
+      "date": "2013-11-06",
+      "shimen_fill": 97.79,
+      "shimen_storage": 20373.84,
+      "zengwen_fill": 76.47,
+      "zengwen_storage": 36671
+    },
+    {
+      "date": "2013-11-13",
+      "shimen_fill": 94.82,
+      "shimen_storage": 19755.64,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2013-11-20",
+      "shimen_fill": 90.9,
+      "shimen_storage": 18939.26,
+      "zengwen_fill": 68.87,
+      "zengwen_storage": 33025
+    },
+    {
+      "date": "2013-11-27",
+      "shimen_fill": 85.73,
+      "shimen_storage": 17860.9,
+      "zengwen_fill": 65.58,
+      "zengwen_storage": 31447
+    },
+    {
+      "date": "2013-12-04",
+      "shimen_fill": 81.12,
+      "shimen_storage": 16900.8,
+      "zengwen_fill": 65.7,
+      "zengwen_storage": 31506
+    },
+    {
+      "date": "2013-12-11",
+      "shimen_fill": 78.49,
+      "shimen_storage": 16353.26,
+      "zengwen_fill": 65.79,
+      "zengwen_storage": 31551
+    },
+    {
+      "date": "2013-12-18",
+      "shimen_fill": 81.57,
+      "shimen_storage": 16994.5,
+      "zengwen_fill": 66.13,
+      "zengwen_storage": 31715
+    },
+    {
+      "date": "2013-12-25",
+      "shimen_fill": 92.77,
+      "shimen_storage": 19327.66,
+      "zengwen_fill": 62.99,
+      "zengwen_storage": 30206
+    },
+    {
+      "date": "2014-01-01",
+      "shimen_fill": 99.15,
+      "shimen_storage": 20656.51,
+      "zengwen_fill": 63.32,
+      "zengwen_storage": 30367
+    },
+    {
+      "date": "2014-01-08",
+      "shimen_fill": 99.02,
+      "shimen_storage": 20629.9,
+      "zengwen_fill": 61.8,
+      "zengwen_storage": 29637
+    },
+    {
+      "date": "2014-01-15",
+      "shimen_fill": 97.7,
+      "shimen_storage": 20356.26,
+      "zengwen_fill": 60.69,
+      "zengwen_storage": 29102
+    },
+    {
+      "date": "2014-01-22",
+      "shimen_fill": 96.74,
+      "shimen_storage": 20154.76,
+      "zengwen_fill": 59.07,
+      "zengwen_storage": 28327
+    },
+    {
+      "date": "2014-01-29",
+      "shimen_fill": 93.71,
+      "shimen_storage": 19523.78,
+      "zengwen_fill": 52.61,
+      "zengwen_storage": 25230
+    },
+    {
+      "date": "2014-02-05",
+      "shimen_fill": 89.85,
+      "shimen_storage": 18813.71,
+      "zengwen_fill": 49.42,
+      "zengwen_storage": 23697
+    },
+    {
+      "date": "2014-02-12",
+      "shimen_fill": 87.67,
+      "shimen_storage": 18357.96,
+      "zengwen_fill": 43.53,
+      "zengwen_storage": 20601
+    },
+    {
+      "date": "2014-02-19",
+      "shimen_fill": 87.63,
+      "shimen_storage": 18350.05,
+      "zengwen_fill": 38.88,
+      "zengwen_storage": 18402
+    },
+    {
+      "date": "2014-02-26",
+      "shimen_fill": 85.87,
+      "shimen_storage": 17980.74,
+      "zengwen_fill": 33.97,
+      "zengwen_storage": 16079
+    },
+    {
+      "date": "2014-03-05",
+      "shimen_fill": 80.17,
+      "shimen_storage": 16786.68,
+      "zengwen_fill": 27.42,
+      "zengwen_storage": 12978
+    },
+    {
+      "date": "2014-03-12",
+      "shimen_fill": 78.1,
+      "shimen_storage": 16355.17,
+      "zengwen_fill": 21.77,
+      "zengwen_storage": 10303
+    },
+    {
+      "date": "2014-03-19",
+      "shimen_fill": 79.29,
+      "shimen_storage": 16604.12,
+      "zengwen_fill": 17.31,
+      "zengwen_storage": 8195
+    },
+    {
+      "date": "2014-03-26",
+      "shimen_fill": 74.96,
+      "shimen_storage": 15695.69,
+      "zengwen_fill": 15.62,
+      "zengwen_storage": 7392
+    },
+    {
+      "date": "2014-04-02",
+      "shimen_fill": 71.41,
+      "shimen_storage": 14953.91,
+      "zengwen_fill": 15.71,
+      "zengwen_storage": 7435
+    },
+    {
+      "date": "2014-04-09",
+      "shimen_fill": 68.87,
+      "shimen_storage": 14421.15,
+      "zengwen_fill": 14.53,
+      "zengwen_storage": 6877
+    },
+    {
+      "date": "2014-04-16",
+      "shimen_fill": 64.05,
+      "shimen_storage": 13411.93,
+      "zengwen_fill": 13.71,
+      "zengwen_storage": 6487
+    },
+    {
+      "date": "2014-04-23",
+      "shimen_fill": 57.27,
+      "shimen_storage": 11993,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2014-04-30",
+      "shimen_fill": 53.92,
+      "shimen_storage": 11290.88,
+      "zengwen_fill": 9.32,
+      "zengwen_storage": 4409
+    },
+    {
+      "date": "2014-05-07",
+      "shimen_fill": 59.84,
+      "shimen_storage": 12530.82,
+      "zengwen_fill": 11.41,
+      "zengwen_storage": 5400
+    },
+    {
+      "date": "2014-05-14",
+      "shimen_fill": 65.55,
+      "shimen_storage": 13725.27,
+      "zengwen_fill": 13.84,
+      "zengwen_storage": 6550
+    },
+    {
+      "date": "2014-05-21",
+      "shimen_fill": 72.02,
+      "shimen_storage": 15081.9,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2014-05-28",
+      "shimen_fill": 84.92,
+      "shimen_storage": 17782.03,
+      "zengwen_fill": 25.75,
+      "zengwen_storage": 12189
+    },
+    {
+      "date": "2014-06-04",
+      "shimen_fill": 89.3,
+      "shimen_storage": 18699.66,
+      "zengwen_fill": 32.68,
+      "zengwen_storage": 15469
+    },
+    {
+      "date": "2014-06-11",
+      "shimen_fill": 93.02,
+      "shimen_storage": 19478.73,
+      "zengwen_fill": 40.31,
+      "zengwen_storage": 19080
+    },
+    {
+      "date": "2014-06-18",
+      "shimen_fill": 90.36,
+      "shimen_storage": 18921.35,
+      "zengwen_fill": 47.33,
+      "zengwen_storage": 22400
+    },
+    {
+      "date": "2014-06-25",
+      "shimen_fill": 90.44,
+      "shimen_storage": 18937.84,
+      "zengwen_fill": 49.83,
+      "zengwen_storage": 23586
+    },
+    {
+      "date": "2014-07-02",
+      "shimen_fill": 93.74,
+      "shimen_storage": 19630.25,
+      "zengwen_fill": 51.03,
+      "zengwen_storage": 24152
+    },
+    {
+      "date": "2014-07-09",
+      "shimen_fill": 90.4,
+      "shimen_storage": 18929.59,
+      "zengwen_fill": 48.28,
+      "zengwen_storage": 22851
+    },
+    {
+      "date": "2014-07-16",
+      "shimen_fill": 93.91,
+      "shimen_storage": 19664.03,
+      "zengwen_fill": 43.53,
+      "zengwen_storage": 20601
+    },
+    {
+      "date": "2014-07-23",
+      "shimen_fill": 89.97,
+      "shimen_storage": 18839.04,
+      "zengwen_fill": 38.88,
+      "zengwen_storage": 18402
+    },
+    {
+      "date": "2014-07-30",
+      "shimen_fill": 89.69,
+      "shimen_storage": 18781.57,
+      "zengwen_fill": 62.63,
+      "zengwen_storage": 29645
+    },
+    {
+      "date": "2014-08-06",
+      "shimen_fill": 89.18,
+      "shimen_storage": 18675.13,
+      "zengwen_fill": 60.32,
+      "zengwen_storage": 28551
+    },
+    {
+      "date": "2014-08-13",
+      "shimen_fill": 89.97,
+      "shimen_storage": 18839.05,
+      "zengwen_fill": 65.77,
+      "zengwen_storage": 31129
+    },
+    {
+      "date": "2014-08-20",
+      "shimen_fill": 89.93,
+      "shimen_storage": 18830.83,
+      "zengwen_fill": 74.49,
+      "zengwen_storage": 35257
+    },
+    {
+      "date": "2014-08-27",
+      "shimen_fill": 87.48,
+      "shimen_storage": 18317.75,
+      "zengwen_fill": 73.9,
+      "zengwen_storage": 34975
+    },
+    {
+      "date": "2014-09-03",
+      "shimen_fill": 83.86,
+      "shimen_storage": 17561.16,
+      "zengwen_fill": 71.46,
+      "zengwen_storage": 33823
+    },
+    {
+      "date": "2014-09-10",
+      "shimen_fill": 80.27,
+      "shimen_storage": 16809.59,
+      "zengwen_fill": 69.38,
+      "zengwen_storage": 32839
+    },
+    {
+      "date": "2014-09-17",
+      "shimen_fill": 74.82,
+      "shimen_storage": 15666.45,
+      "zengwen_fill": 70.94,
+      "zengwen_storage": 33576
+    },
+    {
+      "date": "2014-09-24",
+      "shimen_fill": 77.14,
+      "shimen_storage": 16153.27,
+      "zengwen_fill": 72.44,
+      "zengwen_storage": 34288
+    },
+    {
+      "date": "2014-10-01",
+      "shimen_fill": 83.71,
+      "shimen_storage": 17529.75,
+      "zengwen_fill": 72.54,
+      "zengwen_storage": 34335
+    },
+    {
+      "date": "2014-10-08",
+      "shimen_fill": 78.25,
+      "shimen_storage": 16385.22,
+      "zengwen_fill": 70.91,
+      "zengwen_storage": 33560
+    },
+    {
+      "date": "2014-10-15",
+      "shimen_fill": 85.41,
+      "shimen_storage": 17885.18,
+      "zengwen_fill": 70.03,
+      "zengwen_storage": 33145
+    },
+    {
+      "date": "2014-10-22",
+      "shimen_fill": 83.38,
+      "shimen_storage": 17459.21,
+      "zengwen_fill": 66.88,
+      "zengwen_storage": 31655
+    },
+    {
+      "date": "2014-10-29",
+      "shimen_fill": 77.78,
+      "shimen_storage": 16287.7,
+      "zengwen_fill": 61.12,
+      "zengwen_storage": 28928
+    },
+    {
+      "date": "2014-11-05",
+      "shimen_fill": 72.43,
+      "shimen_storage": 15167.61,
+      "zengwen_fill": 59.53,
+      "zengwen_storage": 28176
+    },
+    {
+      "date": "2014-11-12",
+      "shimen_fill": 67.45,
+      "shimen_storage": 14125.13,
+      "zengwen_fill": 57.75,
+      "zengwen_storage": 27332
+    },
+    {
+      "date": "2014-11-19",
+      "shimen_fill": 65.39,
+      "shimen_storage": 13691.72,
+      "zengwen_fill": 56.97,
+      "zengwen_storage": 26963
+    },
+    {
+      "date": "2014-11-26",
+      "shimen_fill": 63.54,
+      "shimen_storage": 13306.3,
+      "zengwen_fill": 57.24,
+      "zengwen_storage": 27091
+    },
+    {
+      "date": "2014-12-03",
+      "shimen_fill": 61.83,
+      "shimen_storage": 12947.23,
+      "zengwen_fill": 56.22,
+      "zengwen_storage": 26610
+    },
+    {
+      "date": "2014-12-10",
+      "shimen_fill": 61.28,
+      "shimen_storage": 12831.06,
+      "zengwen_fill": 56.25,
+      "zengwen_storage": 26625
+    },
+    {
+      "date": "2014-12-17",
+      "shimen_fill": 60.48,
+      "shimen_storage": 12664.42,
+      "zengwen_fill": 56.55,
+      "zengwen_storage": 26766
+    },
+    {
+      "date": "2014-12-24",
+      "shimen_fill": 57.77,
+      "shimen_storage": 12098.1,
+      "zengwen_fill": 55.57,
+      "zengwen_storage": 26301
+    },
+    {
+      "date": "2014-12-31",
+      "shimen_fill": 60.09,
+      "shimen_storage": 12091.94,
+      "zengwen_fill": 55.84,
+      "zengwen_storage": 26428
+    },
+    {
+      "date": "2015-01-07",
+      "shimen_fill": 53.41,
+      "shimen_storage": 10748.63,
+      "zengwen_fill": 55.57,
+      "zengwen_storage": 26301
+    },
+    {
+      "date": "2015-01-14",
+      "shimen_fill": 50.88,
+      "shimen_storage": 10238.08,
+      "zengwen_fill": 54.95,
+      "zengwen_storage": 26008
+    },
+    {
+      "date": "2015-01-21",
+      "shimen_fill": 47.65,
+      "shimen_storage": 9589.1,
+      "zengwen_fill": 54.83,
+      "zengwen_storage": 25952
+    },
+    {
+      "date": "2015-01-28",
+      "shimen_fill": 44.14,
+      "shimen_storage": 8883.32,
+      "zengwen_fill": 53.75,
+      "zengwen_storage": 25438
+    },
+    {
+      "date": "2015-02-04",
+      "shimen_fill": 41.42,
+      "shimen_storage": 8336.1,
+      "zengwen_fill": 50.74,
+      "zengwen_storage": 24016
+    },
+    {
+      "date": "2015-02-11",
+      "shimen_fill": 37.49,
+      "shimen_storage": 7544.3,
+      "zengwen_fill": 48.03,
+      "zengwen_storage": 22731
+    },
+    {
+      "date": "2015-02-18",
+      "shimen_fill": 33.84,
+      "shimen_storage": 6810.4,
+      "zengwen_fill": 41.33,
+      "zengwen_storage": 19560
+    },
+    {
+      "date": "2015-02-25",
+      "shimen_fill": 31.11,
+      "shimen_storage": 6260.7,
+      "zengwen_fill": 39.52,
+      "zengwen_storage": 18703
+    },
+    {
+      "date": "2015-03-04",
+      "shimen_fill": 26.98,
+      "shimen_storage": 5430.12,
+      "zengwen_fill": 35.37,
+      "zengwen_storage": 16739
+    },
+    {
+      "date": "2015-03-11",
+      "shimen_fill": 22.8,
+      "shimen_storage": 4588.03,
+      "zengwen_fill": 29.7,
+      "zengwen_storage": 14057
+    },
+    {
+      "date": "2015-03-18",
+      "shimen_fill": 22.75,
+      "shimen_storage": 4577.66,
+      "zengwen_fill": 26.19,
+      "zengwen_storage": 12394
+    },
+    {
+      "date": "2015-03-25",
+      "shimen_fill": 20.94,
+      "shimen_storage": 4213.67,
+      "zengwen_fill": 23.69,
+      "zengwen_storage": 11212
+    },
+    {
+      "date": "2015-04-01",
+      "shimen_fill": 25.21,
+      "shimen_storage": 5073.31,
+      "zengwen_fill": 21.49,
+      "zengwen_storage": 10170
+    },
+    {
+      "date": "2015-04-08",
+      "shimen_fill": 24.61,
+      "shimen_storage": 4952.82,
+      "zengwen_fill": 21.59,
+      "zengwen_storage": 10217
+    },
+    {
+      "date": "2015-04-15",
+      "shimen_fill": 24.72,
+      "shimen_storage": 4974.6,
+      "zengwen_fill": 19.52,
+      "zengwen_storage": 9239
+    },
+    {
+      "date": "2015-04-22",
+      "shimen_fill": 24.29,
+      "shimen_storage": 4887.85,
+      "zengwen_fill": 18.37,
+      "zengwen_storage": 8696
+    },
+    {
+      "date": "2015-04-29",
+      "shimen_fill": 23.81,
+      "shimen_storage": 4791.36,
+      "zengwen_fill": 16.18,
+      "zengwen_storage": 7658
+    },
+    {
+      "date": "2015-05-06",
+      "shimen_fill": 27.31,
+      "shimen_storage": 5495.54,
+      "zengwen_fill": 15.04,
+      "zengwen_storage": 7120
+    },
+    {
+      "date": "2015-05-13",
+      "shimen_fill": 32.69,
+      "shimen_storage": 6579.02,
+      "zengwen_fill": 12.56,
+      "zengwen_storage": 5947
+    },
+    {
+      "date": "2015-05-20",
+      "shimen_fill": 34.59,
+      "shimen_storage": 6961.47,
+      "zengwen_fill": 11.5,
+      "zengwen_storage": 5443
+    },
+    {
+      "date": "2015-05-27",
+      "shimen_fill": 45.43,
+      "shimen_storage": 9141.33,
+      "zengwen_fill": 45.2,
+      "zengwen_storage": 21394
+    },
+    {
+      "date": "2015-06-03",
+      "shimen_fill": 55.58,
+      "shimen_storage": 11184.31,
+      "zengwen_fill": 56.79,
+      "zengwen_storage": 26878
+    },
+    {
+      "date": "2015-06-10",
+      "shimen_fill": 55.73,
+      "shimen_storage": 11214.56,
+      "zengwen_fill": 56.85,
+      "zengwen_storage": 26907
+    },
+    {
+      "date": "2015-06-17",
+      "shimen_fill": 56.21,
+      "shimen_storage": 11311.71,
+      "zengwen_fill": 57.75,
+      "zengwen_storage": 27332
+    },
+    {
+      "date": "2015-06-24",
+      "shimen_fill": 57.34,
+      "shimen_storage": 11538.43,
+      "zengwen_fill": 58.62,
+      "zengwen_storage": 27746
+    },
+    {
+      "date": "2015-07-01",
+      "shimen_fill": 60.55,
+      "shimen_storage": 12184.9,
+      "zengwen_fill": 56.13,
+      "zengwen_storage": 26568
+    },
+    {
+      "date": "2015-07-08",
+      "zengwen_fill": 52.47,
+      "zengwen_storage": 24833,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2015-07-15",
+      "shimen_fill": 92.42,
+      "shimen_storage": 18597.5,
+      "zengwen_fill": 53.11,
+      "zengwen_storage": 25135
+    },
+    {
+      "date": "2015-07-22",
+      "shimen_fill": 90.67,
+      "shimen_storage": 18246.83,
+      "zengwen_fill": 52.01,
+      "zengwen_storage": 24614
+    },
+    {
+      "date": "2015-07-29",
+      "shimen_fill": 94.6,
+      "shimen_storage": 19037.72,
+      "zengwen_fill": 52.55,
+      "zengwen_storage": 24874
+    },
+    {
+      "date": "2015-08-05",
+      "shimen_fill": 91.21,
+      "shimen_storage": 18354.9,
+      "zengwen_fill": 48.31,
+      "zengwen_storage": 22864
+    },
+    {
+      "date": "2015-08-12",
+      "shimen_fill": 89.93,
+      "shimen_storage": 18097.8,
+      "zengwen_fill": 89.71,
+      "zengwen_storage": 42460
+    },
+    {
+      "date": "2015-08-19",
+      "shimen_fill": 94.73,
+      "shimen_storage": 19063.32,
+      "zengwen_fill": 97.23,
+      "zengwen_storage": 46021
+    },
+    {
+      "date": "2015-08-26",
+      "shimen_fill": 93.42,
+      "shimen_storage": 18799.84,
+      "zengwen_fill": 98.02,
+      "zengwen_storage": 46395
+    },
+    {
+      "date": "2015-09-02",
+      "shimen_fill": 95.28,
+      "shimen_storage": 19174.52,
+      "zengwen_fill": 96.26,
+      "zengwen_storage": 45559
+    },
+    {
+      "date": "2015-09-09",
+      "zengwen_fill": 100,
+      "zengwen_storage": 48090,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2015-09-16",
+      "shimen_fill": 92.67,
+      "shimen_storage": 18647.95,
+      "zengwen_fill": 99.62,
+      "zengwen_storage": 47149
+    },
+    {
+      "date": "2015-09-23",
+      "shimen_fill": 92.33,
+      "shimen_storage": 18580.7,
+      "zengwen_fill": 95.85,
+      "zengwen_storage": 45364
+    },
+    {
+      "date": "2015-09-30",
+      "shimen_fill": 93.13,
+      "shimen_storage": 18740.68,
+      "zengwen_fill": 96.78,
+      "zengwen_storage": 45807
+    },
+    {
+      "date": "2015-10-07",
+      "shimen_fill": 95.88,
+      "shimen_storage": 19294.75,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49003
+    },
+    {
+      "date": "2015-10-14",
+      "shimen_fill": 95.5,
+      "shimen_storage": 19217.41,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47891
+    },
+    {
+      "date": "2015-10-21",
+      "shimen_fill": 96.27,
+      "shimen_storage": 19372.3,
+      "zengwen_fill": 96.86,
+      "zengwen_storage": 45843
+    },
+    {
+      "date": "2015-10-28",
+      "shimen_fill": 95.37,
+      "shimen_storage": 19191.67,
+      "zengwen_fill": 93.06,
+      "zengwen_storage": 44047
+    },
+    {
+      "date": "2015-11-04",
+      "shimen_fill": 92.04,
+      "shimen_storage": 18521.98,
+      "zengwen_fill": 90.69,
+      "zengwen_storage": 42923
+    },
+    {
+      "date": "2015-11-11",
+      "shimen_fill": 89.44,
+      "shimen_storage": 17999,
+      "zengwen_fill": 90.29,
+      "zengwen_storage": 42734
+    },
+    {
+      "date": "2015-11-18",
+      "shimen_fill": 86.69,
+      "shimen_storage": 17445.42,
+      "zengwen_fill": 84.8,
+      "zengwen_storage": 40134
+    },
+    {
+      "date": "2015-11-25",
+      "shimen_fill": 82.24,
+      "shimen_storage": 16550.22,
+      "zengwen_fill": 82.73,
+      "zengwen_storage": 39158
+    },
+    {
+      "date": "2015-12-02",
+      "zengwen_fill": 77.64,
+      "zengwen_storage": 36746,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2015-12-09",
+      "shimen_fill": 74.09,
+      "shimen_storage": 14908.69,
+      "zengwen_fill": 77.91,
+      "zengwen_storage": 36873
+    },
+    {
+      "date": "2015-12-16",
+      "shimen_fill": 74.27,
+      "shimen_storage": 14945.1,
+      "zengwen_fill": 78.38,
+      "zengwen_storage": 37098
+    },
+    {
+      "date": "2015-12-23",
+      "shimen_fill": 71.19,
+      "shimen_storage": 14326.84,
+      "zengwen_fill": 78.62,
+      "zengwen_storage": 37210
+    },
+    {
+      "date": "2015-12-30",
+      "shimen_fill": 69.27,
+      "shimen_storage": 13940.28,
+      "zengwen_fill": 78.85,
+      "zengwen_storage": 37322
+    },
+    {
+      "date": "2016-01-06",
+      "shimen_fill": 68.85,
+      "shimen_storage": 13861.64,
+      "zengwen_fill": 79.4,
+      "zengwen_storage": 37161
+    },
+    {
+      "date": "2016-01-13",
+      "shimen_fill": 71.52,
+      "shimen_storage": 14399.11,
+      "zengwen_fill": 76.55,
+      "zengwen_storage": 35824
+    },
+    {
+      "date": "2016-01-20",
+      "shimen_fill": 76.33,
+      "shimen_storage": 15367.91,
+      "zengwen_fill": 77.17,
+      "zengwen_storage": 36116
+    },
+    {
+      "date": "2016-01-27",
+      "shimen_fill": 90.38,
+      "shimen_storage": 18197.19,
+      "zengwen_fill": 76.09,
+      "zengwen_storage": 35613
+    },
+    {
+      "date": "2016-02-03",
+      "shimen_fill": 99.14,
+      "shimen_storage": 19961.25,
+      "zengwen_fill": 75.44,
+      "zengwen_storage": 35307
+    },
+    {
+      "date": "2016-02-10",
+      "shimen_fill": 99.31,
+      "shimen_storage": 19995.73,
+      "zengwen_fill": 73.46,
+      "zengwen_storage": 34378
+    },
+    {
+      "date": "2016-02-17",
+      "shimen_fill": 97.91,
+      "shimen_storage": 19712.51,
+      "zengwen_fill": 71.86,
+      "zengwen_storage": 33632
+    },
+    {
+      "date": "2016-02-24",
+      "shimen_fill": 95.13,
+      "shimen_storage": 19153.92,
+      "zengwen_fill": 66.83,
+      "zengwen_storage": 31277
+    },
+    {
+      "date": "2016-03-02",
+      "shimen_fill": 89.7,
+      "shimen_storage": 18059.64,
+      "zengwen_fill": 61.21,
+      "zengwen_storage": 28646
+    },
+    {
+      "date": "2016-03-09",
+      "shimen_fill": 83.47,
+      "shimen_storage": 16805.56,
+      "zengwen_fill": 54.94,
+      "zengwen_storage": 25714
+    },
+    {
+      "date": "2016-03-16",
+      "shimen_fill": 98.33,
+      "shimen_storage": 19798.06,
+      "zengwen_fill": 52.38,
+      "zengwen_storage": 24514
+    },
+    {
+      "date": "2016-03-23",
+      "shimen_fill": 95.51,
+      "shimen_storage": 19229.47,
+      "zengwen_fill": 53.16,
+      "zengwen_storage": 24880
+    },
+    {
+      "date": "2016-03-30",
+      "shimen_fill": 96.64,
+      "shimen_storage": 19457.31,
+      "zengwen_fill": 56.95,
+      "zengwen_storage": 26652
+    },
+    {
+      "date": "2016-04-06",
+      "shimen_fill": 98.37,
+      "shimen_storage": 19806.63,
+      "zengwen_fill": 56.86,
+      "zengwen_storage": 26609
+    },
+    {
+      "date": "2016-04-13",
+      "shimen_fill": 93.35,
+      "shimen_storage": 18795.56,
+      "zengwen_fill": 53.37,
+      "zengwen_storage": 24978
+    },
+    {
+      "date": "2016-04-20",
+      "shimen_fill": 92.65,
+      "shimen_storage": 18655.1,
+      "zengwen_fill": 61.87,
+      "zengwen_storage": 28958
+    },
+    {
+      "date": "2016-04-27",
+      "shimen_fill": 94.09,
+      "shimen_storage": 18945.04,
+      "zengwen_fill": 62.8,
+      "zengwen_storage": 29392
+    },
+    {
+      "date": "2016-05-04",
+      "shimen_fill": 94.84,
+      "shimen_storage": 19095.28,
+      "zengwen_fill": 59.25,
+      "zengwen_storage": 27730
+    },
+    {
+      "date": "2016-05-11",
+      "shimen_fill": 93.56,
+      "shimen_storage": 18837.01,
+      "zengwen_fill": 56.45,
+      "zengwen_storage": 26421
+    },
+    {
+      "date": "2016-05-18",
+      "shimen_fill": 93.85,
+      "shimen_storage": 18895.13,
+      "zengwen_fill": 54.34,
+      "zengwen_storage": 25432
+    },
+    {
+      "date": "2016-05-25",
+      "shimen_fill": 92,
+      "shimen_storage": 18523.52,
+      "zengwen_fill": 52.02,
+      "zengwen_storage": 24346
+    },
+    {
+      "date": "2016-06-01",
+      "shimen_fill": 91.11,
+      "shimen_storage": 18343.57,
+      "zengwen_fill": 51.54,
+      "zengwen_storage": 24122
+    },
+    {
+      "date": "2016-06-08",
+      "shimen_fill": 93.43,
+      "shimen_storage": 18812.13,
+      "zengwen_fill": 48.54,
+      "zengwen_storage": 22715
+    },
+    {
+      "date": "2016-06-15",
+      "shimen_fill": 93.64,
+      "shimen_storage": 18853.6,
+      "zengwen_fill": 80.42,
+      "zengwen_storage": 37638
+    },
+    {
+      "date": "2016-06-22",
+      "shimen_fill": 93.64,
+      "shimen_storage": 18853.6,
+      "zengwen_fill": 87.66,
+      "zengwen_storage": 41028
+    },
+    {
+      "date": "2016-06-29",
+      "shimen_fill": 95.84,
+      "shimen_storage": 19296.8,
+      "zengwen_fill": 91.12,
+      "zengwen_storage": 42644
+    },
+    {
+      "date": "2016-07-06",
+      "shimen_fill": 89.18,
+      "shimen_storage": 17954.91,
+      "zengwen_fill": 91.01,
+      "zengwen_storage": 42592
+    },
+    {
+      "date": "2016-07-13",
+      "shimen_fill": 94.72,
+      "shimen_storage": 19070.19,
+      "zengwen_fill": 88.5,
+      "zengwen_storage": 41421
+    },
+    {
+      "date": "2016-07-20",
+      "shimen_fill": 96.85,
+      "shimen_storage": 19499.7,
+      "zengwen_fill": 93.2,
+      "zengwen_storage": 43620
+    },
+    {
+      "date": "2016-07-27",
+      "shimen_fill": 95.05,
+      "shimen_storage": 19137.15,
+      "zengwen_fill": 90.49,
+      "zengwen_storage": 42350
+    },
+    {
+      "date": "2016-08-03",
+      "shimen_fill": 93.89,
+      "shimen_storage": 18903.44,
+      "zengwen_fill": 87.7,
+      "zengwen_storage": 41045
+    },
+    {
+      "date": "2016-08-10",
+      "shimen_fill": 91.23,
+      "shimen_storage": 18368.04,
+      "zengwen_fill": 83.58,
+      "zengwen_storage": 39117
+    },
+    {
+      "date": "2016-08-17",
+      "shimen_fill": 92,
+      "shimen_storage": 18523.52,
+      "zengwen_fill": 80.32,
+      "zengwen_storage": 37589
+    },
+    {
+      "date": "2016-08-24",
+      "shimen_fill": 91.23,
+      "shimen_storage": 18368.04,
+      "zengwen_fill": 80.14,
+      "zengwen_storage": 37506
+    },
+    {
+      "date": "2016-08-31",
+      "shimen_fill": 86.96,
+      "shimen_storage": 17508.25,
+      "zengwen_fill": 79.44,
+      "zengwen_storage": 37177
+    },
+    {
+      "date": "2016-09-07",
+      "shimen_fill": 82.59,
+      "shimen_storage": 16628.96,
+      "zengwen_fill": 83.01,
+      "zengwen_storage": 38850
+    },
+    {
+      "date": "2016-09-14",
+      "shimen_fill": 87.47,
+      "shimen_storage": 17611.29,
+      "zengwen_fill": 98.92,
+      "zengwen_storage": 46297
+    },
+    {
+      "date": "2016-09-21",
+      "shimen_fill": 96.3,
+      "shimen_storage": 19389.63,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47689
+    },
+    {
+      "date": "2016-09-28",
+      "shimen_fill": 91.43,
+      "shimen_storage": 18408.88,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47308
+    },
+    {
+      "date": "2016-10-05",
+      "shimen_fill": 96.34,
+      "shimen_storage": 19398.08,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47489
+    },
+    {
+      "date": "2016-10-12",
+      "shimen_fill": 97.02,
+      "shimen_storage": 19533.65,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47707
+    },
+    {
+      "date": "2016-10-19",
+      "shimen_fill": 95.22,
+      "shimen_storage": 19170.69,
+      "zengwen_fill": 100,
+      "zengwen_storage": 46909
+    },
+    {
+      "date": "2016-10-26",
+      "shimen_fill": 99.06,
+      "shimen_storage": 19944.04,
+      "zengwen_fill": 98.62,
+      "zengwen_storage": 46153
+    },
+    {
+      "date": "2016-11-02",
+      "shimen_fill": 98.25,
+      "shimen_storage": 19780.93,
+      "zengwen_fill": 98.16,
+      "zengwen_storage": 45938
+    },
+    {
+      "date": "2016-11-09",
+      "shimen_fill": 96.98,
+      "shimen_storage": 19525.16,
+      "zengwen_fill": 95.31,
+      "zengwen_storage": 44605
+    },
+    {
+      "date": "2016-11-16",
+      "shimen_fill": 94.01,
+      "shimen_storage": 18928.39,
+      "zengwen_fill": 91.82,
+      "zengwen_storage": 42974
+    },
+    {
+      "date": "2016-11-23",
+      "shimen_fill": 90.78,
+      "shimen_storage": 18278.42,
+      "zengwen_fill": 87.26,
+      "zengwen_storage": 40840
+    },
+    {
+      "date": "2016-11-30",
+      "shimen_fill": 94.47,
+      "shimen_storage": 19020.06,
+      "zengwen_fill": 85.24,
+      "zengwen_storage": 39891
+    },
+    {
+      "date": "2016-12-07",
+      "shimen_fill": 94.38,
+      "shimen_storage": 19003.37,
+      "zengwen_fill": 84.59,
+      "zengwen_storage": 39587
+    },
+    {
+      "date": "2016-12-14",
+      "shimen_fill": 93.27,
+      "shimen_storage": 18779,
+      "zengwen_fill": 85.09,
+      "zengwen_storage": 39823
+    },
+    {
+      "date": "2016-12-21",
+      "shimen_fill": 91.03,
+      "shimen_storage": 18327.27,
+      "zengwen_fill": 85.45,
+      "zengwen_storage": 39992
+    },
+    {
+      "date": "2016-12-28",
+      "shimen_fill": 88.78,
+      "shimen_storage": 17874.62,
+      "zengwen_fill": 85.74,
+      "zengwen_storage": 40127
+    },
+    {
+      "date": "2017-01-04",
+      "shimen_fill": 86.21,
+      "shimen_storage": 17358.36,
+      "zengwen_fill": 86.07,
+      "zengwen_storage": 40280
+    },
+    {
+      "date": "2017-01-11",
+      "shimen_fill": 83.16,
+      "shimen_storage": 16744,
+      "zengwen_fill": 86.32,
+      "zengwen_storage": 40398
+    },
+    {
+      "date": "2017-01-18",
+      "shimen_fill": 80.48,
+      "shimen_storage": 16203.99,
+      "zengwen_fill": 84.41,
+      "zengwen_storage": 39503
+    },
+    {
+      "date": "2017-01-25",
+      "shimen_fill": 76.33,
+      "shimen_storage": 15367.91,
+      "zengwen_fill": 78.07,
+      "zengwen_storage": 36539
+    },
+    {
+      "date": "2017-02-01",
+      "shimen_fill": 72.84,
+      "shimen_storage": 14665.73,
+      "zengwen_fill": 71.73,
+      "zengwen_storage": 33569
+    },
+    {
+      "date": "2017-02-08",
+      "shimen_fill": 66.34,
+      "shimen_storage": 13357.13,
+      "zengwen_fill": 65.36,
+      "zengwen_storage": 30588
+    },
+    {
+      "date": "2017-02-15",
+      "shimen_fill": 59.67,
+      "shimen_storage": 12013.63,
+      "zengwen_fill": 57.86,
+      "zengwen_storage": 27077
+    },
+    {
+      "date": "2017-02-22",
+      "shimen_fill": 53.58,
+      "shimen_storage": 10788.5,
+      "zengwen_fill": 52.32,
+      "zengwen_storage": 24202
+    },
+    {
+      "date": "2017-03-01",
+      "shimen_fill": 51.53,
+      "shimen_storage": 10375.89,
+      "zengwen_fill": 46.74,
+      "zengwen_storage": 21623
+    },
+    {
+      "date": "2017-03-08",
+      "shimen_fill": 46.5,
+      "shimen_storage": 9361.86,
+      "zengwen_fill": 41.3,
+      "zengwen_storage": 19104
+    },
+    {
+      "date": "2017-03-15",
+      "shimen_fill": 45.97,
+      "shimen_storage": 9256.14,
+      "zengwen_fill": 38.8,
+      "zengwen_storage": 17948
+    },
+    {
+      "date": "2017-03-22",
+      "shimen_fill": 44.88,
+      "shimen_storage": 9036.6,
+      "zengwen_fill": 34.48,
+      "zengwen_storage": 15952
+    },
+    {
+      "date": "2017-03-29",
+      "shimen_fill": 46.03,
+      "shimen_storage": 9266.68,
+      "zengwen_fill": 30.05,
+      "zengwen_storage": 13903
+    },
+    {
+      "date": "2017-04-05",
+      "shimen_fill": 47.8,
+      "shimen_storage": 9624.05,
+      "zengwen_fill": 28.35,
+      "zengwen_storage": 13117
+    },
+    {
+      "date": "2017-04-12",
+      "shimen_fill": 45.84,
+      "shimen_storage": 9229.83,
+      "zengwen_fill": 21.64,
+      "zengwen_storage": 10013
+    },
+    {
+      "date": "2017-04-19",
+      "shimen_fill": 47.03,
+      "shimen_storage": 9468.32,
+      "zengwen_fill": 20.45,
+      "zengwen_storage": 9459
+    },
+    {
+      "date": "2017-04-26",
+      "shimen_fill": 59.3,
+      "shimen_storage": 11939.23,
+      "zengwen_fill": 17.42,
+      "zengwen_storage": 8060
+    },
+    {
+      "date": "2017-05-03",
+      "shimen_fill": 68.64,
+      "shimen_storage": 13820.84,
+      "zengwen_fill": 18.66,
+      "zengwen_storage": 8630
+    },
+    {
+      "date": "2017-05-10",
+      "shimen_fill": 69.25,
+      "shimen_storage": 13943.48,
+      "zengwen_fill": 17.44,
+      "zengwen_storage": 8066
+    },
+    {
+      "date": "2017-05-17",
+      "shimen_fill": 69.42,
+      "shimen_storage": 13977.67,
+      "zengwen_fill": 15.7,
+      "zengwen_storage": 7264
+    },
+    {
+      "date": "2017-05-24",
+      "shimen_fill": 71.41,
+      "shimen_storage": 14378.2,
+      "zengwen_fill": 14.85,
+      "zengwen_storage": 6870
+    },
+    {
+      "date": "2017-05-31",
+      "shimen_fill": 76.36,
+      "shimen_storage": 15375.18,
+      "zengwen_fill": 17.66,
+      "zengwen_storage": 8171
+    },
+    {
+      "date": "2017-06-07",
+      "shimen_fill": 92.57,
+      "shimen_storage": 18638.62,
+      "zengwen_fill": 77.23,
+      "zengwen_storage": 35728
+    },
+    {
+      "date": "2017-06-14",
+      "shimen_fill": 81.61,
+      "shimen_storage": 16430.77,
+      "zengwen_fill": 77.37,
+      "zengwen_storage": 35793
+    },
+    {
+      "date": "2017-06-21",
+      "shimen_fill": 91.55,
+      "shimen_storage": 18433.4,
+      "zengwen_fill": 80.09,
+      "zengwen_storage": 37051
+    },
+    {
+      "date": "2017-06-28",
+      "shimen_fill": 92.61,
+      "shimen_storage": 18646.86,
+      "zengwen_fill": 82.92,
+      "zengwen_storage": 38360
+    },
+    {
+      "date": "2017-07-05",
+      "shimen_fill": 92.21,
+      "shimen_storage": 18564.57,
+      "zengwen_fill": 85.39,
+      "zengwen_storage": 39503
+    },
+    {
+      "date": "2017-07-12",
+      "shimen_fill": 89.9,
+      "shimen_storage": 18100.03,
+      "zengwen_fill": 88.6,
+      "zengwen_storage": 40985
+    },
+    {
+      "date": "2017-07-19",
+      "shimen_fill": 88.86,
+      "shimen_storage": 17890.66,
+      "zengwen_fill": 86.56,
+      "zengwen_storage": 40045
+    },
+    {
+      "date": "2017-07-26",
+      "shimen_fill": 82.63,
+      "shimen_storage": 16636.61,
+      "zengwen_fill": 84.88,
+      "zengwen_storage": 39267
+    },
+    {
+      "date": "2017-08-02",
+      "shimen_fill": 86.14,
+      "shimen_storage": 17342.63,
+      "zengwen_fill": 84.7,
+      "zengwen_storage": 39182
+    },
+    {
+      "date": "2017-08-09",
+      "shimen_fill": 87.35,
+      "shimen_storage": 17587.48,
+      "zengwen_fill": 95.1,
+      "zengwen_storage": 43996
+    },
+    {
+      "date": "2017-08-16",
+      "shimen_fill": 84.12,
+      "shimen_storage": 16936.87,
+      "zengwen_fill": 93.43,
+      "zengwen_storage": 43222
+    },
+    {
+      "date": "2017-08-23",
+      "shimen_fill": 79.18,
+      "shimen_storage": 15941.97,
+      "zengwen_fill": 89.3,
+      "zengwen_storage": 41311
+    },
+    {
+      "date": "2017-08-30",
+      "shimen_fill": 74.68,
+      "shimen_storage": 15035.68,
+      "zengwen_fill": 85.79,
+      "zengwen_storage": 39689
+    },
+    {
+      "date": "2017-09-06",
+      "shimen_fill": 71.31,
+      "shimen_storage": 14357.3,
+      "zengwen_fill": 83.64,
+      "zengwen_storage": 38695
+    },
+    {
+      "date": "2017-09-13",
+      "shimen_fill": 67.54,
+      "shimen_storage": 13597.8,
+      "zengwen_fill": 80.77,
+      "zengwen_storage": 37364
+    },
+    {
+      "date": "2017-09-20",
+      "shimen_fill": 66.54,
+      "shimen_storage": 13397.05,
+      "zengwen_fill": 75.28,
+      "zengwen_storage": 34826
+    },
+    {
+      "date": "2017-09-27",
+      "shimen_fill": 62.61,
+      "shimen_storage": 12606.64,
+      "zengwen_fill": 72.19,
+      "zengwen_storage": 33397
+    },
+    {
+      "date": "2017-10-04",
+      "shimen_fill": 58.63,
+      "shimen_storage": 11803.6,
+      "zengwen_fill": 67.3,
+      "zengwen_storage": 31132
+    },
+    {
+      "date": "2017-10-11",
+      "shimen_fill": 61.26,
+      "shimen_storage": 12333.11,
+      "zengwen_fill": 63.09,
+      "zengwen_storage": 29185
+    },
+    {
+      "date": "2017-10-18",
+      "shimen_fill": 99.96,
+      "shimen_storage": 20125.33,
+      "zengwen_fill": 63.22,
+      "zengwen_storage": 29244
+    },
+    {
+      "date": "2017-10-25",
+      "shimen_fill": 100,
+      "shimen_storage": 20159.98,
+      "zengwen_fill": 61.65,
+      "zengwen_storage": 28518
+    },
+    {
+      "date": "2017-11-01",
+      "shimen_fill": 99.87,
+      "shimen_storage": 20108.02,
+      "zengwen_fill": 58.13,
+      "zengwen_storage": 26890
+    },
+    {
+      "date": "2017-11-08",
+      "shimen_fill": 97.91,
+      "shimen_storage": 19712.51,
+      "zengwen_fill": 55.79,
+      "zengwen_storage": 25807
+    },
+    {
+      "date": "2017-11-15",
+      "shimen_fill": 98.46,
+      "shimen_storage": 19823.77,
+      "zengwen_fill": 55.6,
+      "zengwen_storage": 25722
+    },
+    {
+      "date": "2017-11-22",
+      "shimen_fill": 100,
+      "shimen_storage": 20212.03,
+      "zengwen_fill": 54.99,
+      "zengwen_storage": 25441
+    },
+    {
+      "date": "2017-11-29",
+      "shimen_fill": 100,
+      "shimen_storage": 20298.98,
+      "zengwen_fill": 52.68,
+      "zengwen_storage": 24368
+    },
+    {
+      "date": "2017-12-06",
+      "shimen_fill": 99.66,
+      "shimen_storage": 20064.78,
+      "zengwen_fill": 51.43,
+      "zengwen_storage": 23790
+    },
+    {
+      "date": "2017-12-13",
+      "shimen_fill": 100,
+      "shimen_storage": 20272.87,
+      "zengwen_fill": 51.69,
+      "zengwen_storage": 23913
+    },
+    {
+      "date": "2017-12-20",
+      "shimen_fill": 100,
+      "shimen_storage": 20307.69,
+      "zengwen_fill": 51.93,
+      "zengwen_storage": 24023
+    },
+    {
+      "date": "2017-12-27",
+      "shimen_fill": 100,
+      "shimen_storage": 20246.78,
+      "zengwen_fill": 52.14,
+      "zengwen_storage": 24120
+    },
+    {
+      "date": "2018-01-03",
+      "shimen_fill": 99.35,
+      "shimen_storage": 19782.33,
+      "zengwen_fill": 52.29,
+      "zengwen_storage": 24189
+    },
+    {
+      "date": "2018-01-10",
+      "shimen_fill": 98.44,
+      "shimen_storage": 19601.1,
+      "zengwen_fill": 53.92,
+      "zengwen_storage": 24465
+    },
+    {
+      "date": "2018-01-17",
+      "shimen_fill": 100,
+      "shimen_storage": 20016.94,
+      "zengwen_fill": 50.1,
+      "zengwen_storage": 22730
+    },
+    {
+      "date": "2018-01-24",
+      "shimen_fill": 100,
+      "shimen_storage": 20016.94,
+      "zengwen_fill": 49.27,
+      "zengwen_storage": 22357
+    },
+    {
+      "date": "2018-01-31",
+      "shimen_fill": 100,
+      "shimen_storage": 20034.39,
+      "zengwen_fill": 46.31,
+      "zengwen_storage": 21012
+    },
+    {
+      "date": "2018-02-07",
+      "shimen_fill": 100,
+      "shimen_storage": 19912.45,
+      "zengwen_fill": 39.85,
+      "zengwen_storage": 18079
+    },
+    {
+      "date": "2018-02-14",
+      "shimen_fill": 100,
+      "shimen_storage": 19964.65,
+      "zengwen_fill": 36.06,
+      "zengwen_storage": 16363
+    },
+    {
+      "date": "2018-02-21",
+      "shimen_fill": 100,
+      "shimen_storage": 19982.07,
+      "zengwen_fill": 32.12,
+      "zengwen_storage": 14574
+    },
+    {
+      "date": "2018-02-28",
+      "shimen_fill": 99.43,
+      "shimen_storage": 19799.65,
+      "zengwen_fill": 28.12,
+      "zengwen_storage": 12759
+    },
+    {
+      "date": "2018-03-07",
+      "shimen_fill": 97.19,
+      "shimen_storage": 19352.62,
+      "zengwen_fill": 23.47,
+      "zengwen_storage": 10647
+    },
+    {
+      "date": "2018-03-14",
+      "shimen_fill": 96.72,
+      "shimen_storage": 19258.91,
+      "zengwen_fill": 18.96,
+      "zengwen_storage": 8601
+    },
+    {
+      "date": "2018-03-21",
+      "shimen_fill": 92.67,
+      "shimen_storage": 18453.61,
+      "zengwen_fill": 17.79,
+      "zengwen_storage": 8073
+    },
+    {
+      "date": "2018-03-28",
+      "shimen_fill": 88.18,
+      "shimen_storage": 17558.23,
+      "zengwen_fill": 16.78,
+      "zengwen_storage": 7612
+    },
+    {
+      "date": "2018-04-04",
+      "shimen_fill": 83.51,
+      "shimen_storage": 16629.71,
+      "zengwen_fill": 12.78,
+      "zengwen_storage": 5800
+    },
+    {
+      "date": "2018-04-11",
+      "shimen_fill": 77.05,
+      "shimen_storage": 15341.7,
+      "zengwen_fill": 11.92,
+      "zengwen_storage": 5408
+    },
+    {
+      "date": "2018-04-18",
+      "shimen_fill": 71.23,
+      "shimen_storage": 14182.87,
+      "zengwen_fill": 9.53,
+      "zengwen_storage": 4326
+    },
+    {
+      "date": "2018-04-25",
+      "shimen_fill": 66.67,
+      "shimen_storage": 13275.04,
+      "zengwen_fill": 7.92,
+      "zengwen_storage": 3593
+    },
+    {
+      "date": "2018-05-02",
+      "shimen_fill": 62.37,
+      "shimen_storage": 12418.39,
+      "zengwen_fill": 6.86,
+      "zengwen_storage": 3114
+    },
+    {
+      "date": "2018-05-09",
+      "shimen_fill": 56.9,
+      "shimen_storage": 11330.7,
+      "zengwen_fill": 5.59,
+      "zengwen_storage": 2535
+    },
+    {
+      "date": "2018-05-16",
+      "shimen_fill": 52.79,
+      "shimen_storage": 10511.83,
+      "zengwen_fill": 6.63,
+      "zengwen_storage": 3007
+    },
+    {
+      "date": "2018-05-23",
+      "shimen_fill": 48.22,
+      "shimen_storage": 9601,
+      "zengwen_fill": 6.38,
+      "zengwen_storage": 2897
+    },
+    {
+      "date": "2018-05-30",
+      "shimen_fill": 38.43,
+      "shimen_storage": 7652.87,
+      "zengwen_fill": 5.32,
+      "zengwen_storage": 2413
+    },
+    {
+      "date": "2018-06-06",
+      "shimen_fill": 32.15,
+      "shimen_storage": 6402.04,
+      "zengwen_fill": 2.38,
+      "zengwen_storage": 1078
+    },
+    {
+      "date": "2018-06-13",
+      "shimen_fill": 31.44,
+      "shimen_storage": 6260.04,
+      "zengwen_fill": 3.37,
+      "zengwen_storage": 1528
+    },
+    {
+      "date": "2018-06-20",
+      "shimen_fill": 33.24,
+      "shimen_storage": 6618.77,
+      "zengwen_fill": 14.06,
+      "zengwen_storage": 6378
+    },
+    {
+      "date": "2018-06-27",
+      "shimen_fill": 37.71,
+      "shimen_storage": 7507.99,
+      "zengwen_fill": 25.51,
+      "zengwen_storage": 11575
+    },
+    {
+      "date": "2018-07-04",
+      "shimen_fill": 41.23,
+      "shimen_storage": 8210.58,
+      "zengwen_fill": 42.24,
+      "zengwen_storage": 19164
+    },
+    {
+      "date": "2018-07-11",
+      "shimen_fill": 55.67,
+      "shimen_storage": 11085.07,
+      "zengwen_fill": 51.75,
+      "zengwen_storage": 23482
+    },
+    {
+      "date": "2018-07-18",
+      "shimen_fill": 86.78,
+      "shimen_storage": 17279.4,
+      "zengwen_fill": 47.47,
+      "zengwen_storage": 24159
+    },
+    {
+      "date": "2018-07-25",
+      "shimen_fill": 89.39,
+      "shimen_storage": 17799.55,
+      "zengwen_fill": 54.11,
+      "zengwen_storage": 27541
+    },
+    {
+      "date": "2018-08-01",
+      "shimen_fill": 87.66,
+      "shimen_storage": 17454.33,
+      "zengwen_fill": 60,
+      "zengwen_storage": 30538
+    },
+    {
+      "date": "2018-08-08",
+      "zengwen_fill": 62.84,
+      "zengwen_storage": 31982,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2018-08-15",
+      "shimen_fill": 77.86,
+      "shimen_storage": 15503.65,
+      "zengwen_fill": 69.99,
+      "zengwen_storage": 35625
+    },
+    {
+      "date": "2018-08-22",
+      "shimen_fill": 81.24,
+      "shimen_storage": 16177.68,
+      "zengwen_fill": 75.29,
+      "zengwen_storage": 38321
+    },
+    {
+      "date": "2018-08-29",
+      "shimen_fill": 92.09,
+      "shimen_storage": 18338.04,
+      "zengwen_fill": 94.21,
+      "zengwen_storage": 47949
+    },
+    {
+      "date": "2018-09-05",
+      "shimen_fill": 100,
+      "shimen_storage": 19929.84,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50954
+    },
+    {
+      "date": "2018-09-12",
+      "shimen_fill": 98.48,
+      "shimen_storage": 19609.71,
+      "zengwen_fill": 96.42,
+      "zengwen_storage": 49077
+    },
+    {
+      "date": "2018-09-19",
+      "shimen_fill": 99.43,
+      "shimen_storage": 19799.65,
+      "zengwen_fill": 96.57,
+      "zengwen_storage": 49151
+    },
+    {
+      "date": "2018-09-26",
+      "shimen_fill": 99.3,
+      "shimen_storage": 19773.68,
+      "zengwen_fill": 96.57,
+      "zengwen_storage": 49151
+    },
+    {
+      "date": "2018-10-03",
+      "shimen_fill": 99.09,
+      "shimen_storage": 19730.44,
+      "zengwen_fill": 93.96,
+      "zengwen_storage": 47821
+    },
+    {
+      "date": "2018-10-10",
+      "shimen_fill": 100,
+      "shimen_storage": 19982.07,
+      "zengwen_fill": 89.43,
+      "zengwen_storage": 45517
+    },
+    {
+      "date": "2018-10-17",
+      "shimen_fill": 99.87,
+      "shimen_storage": 19886.38,
+      "zengwen_fill": 88.27,
+      "zengwen_storage": 44926
+    },
+    {
+      "date": "2018-10-24",
+      "shimen_fill": 100,
+      "shimen_storage": 20008.22,
+      "zengwen_fill": 83.42,
+      "zengwen_storage": 42458
+    },
+    {
+      "date": "2018-10-31",
+      "shimen_fill": 99.61,
+      "shimen_storage": 19834.31,
+      "zengwen_fill": 80.36,
+      "zengwen_storage": 40902
+    },
+    {
+      "date": "2018-11-07",
+      "shimen_fill": 98.91,
+      "shimen_storage": 19695.9,
+      "zengwen_fill": 78.55,
+      "zengwen_storage": 39978
+    },
+    {
+      "date": "2018-11-14",
+      "shimen_fill": 98.01,
+      "shimen_storage": 19515.19,
+      "zengwen_fill": 74.67,
+      "zengwen_storage": 38003
+    },
+    {
+      "date": "2018-11-21",
+      "shimen_fill": 97.1,
+      "shimen_storage": 19335.56,
+      "zengwen_fill": 73.65,
+      "zengwen_storage": 37485
+    },
+    {
+      "date": "2018-11-28",
+      "shimen_fill": 95.27,
+      "shimen_storage": 18971.13,
+      "zengwen_fill": 69.61,
+      "zengwen_storage": 35429
+    },
+    {
+      "date": "2018-12-05",
+      "shimen_fill": 92.55,
+      "shimen_storage": 18428.8043839485,
+      "zengwen_fill": 65.28,
+      "zengwen_storage": 33228
+    },
+    {
+      "date": "2018-12-12",
+      "shimen_fill": 89.47,
+      "shimen_storage": 17815.7176726219,
+      "zengwen_fill": 63.42,
+      "zengwen_storage": 32280
+    },
+    {
+      "date": "2018-12-19",
+      "shimen_fill": 86.62,
+      "shimen_storage": 17247.7146846615,
+      "zengwen_fill": 63.67,
+      "zengwen_storage": 32406
+    },
+    {
+      "date": "2018-12-26",
+      "shimen_fill": 83.67,
+      "shimen_storage": 16660.6513071459,
+      "zengwen_fill": 63.74,
+      "zengwen_storage": 32509
+    },
+    {
+      "date": "2019-01-02",
+      "shimen_fill": 82.72,
+      "shimen_storage": 16330.01,
+      "zengwen_fill": 63.96,
+      "zengwen_storage": 32620
+    },
+    {
+      "date": "2019-01-09",
+      "shimen_fill": 80.82,
+      "shimen_storage": 15953.75,
+      "zengwen_fill": 64.11,
+      "zengwen_storage": 32699
+    },
+    {
+      "date": "2019-01-16",
+      "shimen_fill": 77.5,
+      "shimen_storage": 15299.68,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2019-01-23",
+      "shimen_fill": 75.99,
+      "shimen_storage": 15001.02,
+      "zengwen_fill": 58.9,
+      "zengwen_storage": 30042
+    },
+    {
+      "date": "2019-01-30",
+      "shimen_fill": 72.38,
+      "shimen_storage": 14288.56,
+      "zengwen_fill": 54.3,
+      "zengwen_storage": 27692
+    },
+    {
+      "date": "2019-02-06",
+      "shimen_fill": 66.2,
+      "shimen_storage": 13068.94,
+      "zengwen_fill": 49.85,
+      "zengwen_storage": 25426
+    },
+    {
+      "date": "2019-02-13",
+      "shimen_fill": 62.58,
+      "shimen_storage": 12354.14,
+      "zengwen_fill": 45.93,
+      "zengwen_storage": 23427
+    },
+    {
+      "date": "2019-02-20",
+      "shimen_fill": 55.7,
+      "shimen_storage": 10995.6,
+      "zengwen_fill": 41.6,
+      "zengwen_storage": 21215
+    },
+    {
+      "date": "2019-02-27",
+      "shimen_fill": 49.11,
+      "shimen_storage": 9693.61,
+      "zengwen_fill": 35.36,
+      "zengwen_storage": 18035
+    },
+    {
+      "date": "2019-03-06",
+      "shimen_fill": 42.6,
+      "shimen_storage": 8409.92,
+      "zengwen_fill": 31.99,
+      "zengwen_storage": 16313
+    },
+    {
+      "date": "2019-03-13",
+      "shimen_fill": 59.59,
+      "shimen_storage": 11763.79,
+      "zengwen_fill": 30.93,
+      "zengwen_storage": 15775
+    },
+    {
+      "date": "2019-03-20",
+      "shimen_fill": 60.5,
+      "shimen_storage": 11943.93,
+      "zengwen_fill": 29.52,
+      "zengwen_storage": 15058
+    },
+    {
+      "date": "2019-03-27",
+      "shimen_fill": 58.35,
+      "shimen_storage": 11518.22,
+      "zengwen_fill": 25.92,
+      "zengwen_storage": 13222
+    },
+    {
+      "date": "2019-04-03",
+      "shimen_fill": 58.16,
+      "shimen_storage": 11481.68,
+      "zengwen_fill": 23.93,
+      "zengwen_storage": 12207
+    },
+    {
+      "date": "2019-04-10",
+      "shimen_fill": 55.46,
+      "shimen_storage": 10948.32,
+      "zengwen_fill": 20.21,
+      "zengwen_storage": 10307
+    },
+    {
+      "date": "2019-04-17",
+      "shimen_fill": 56.24,
+      "shimen_storage": 11102.4437116885,
+      "zengwen_fill": 18.18,
+      "zengwen_storage": 9273
+    },
+    {
+      "date": "2019-04-24",
+      "shimen_fill": 63,
+      "shimen_storage": 12437.26,
+      "zengwen_fill": 18.31,
+      "zengwen_storage": 9340
+    },
+    {
+      "date": "2019-05-01",
+      "shimen_fill": 63.82,
+      "shimen_storage": 12598.13,
+      "zengwen_fill": 14.92,
+      "zengwen_storage": 7611
+    },
+    {
+      "date": "2019-05-08",
+      "shimen_fill": 80.47,
+      "shimen_storage": 15886.04,
+      "zengwen_fill": 16.46,
+      "zengwen_storage": 8397
+    },
+    {
+      "date": "2019-05-15",
+      "shimen_fill": 91.39,
+      "shimen_storage": 18041.22,
+      "zengwen_fill": 16.84,
+      "zengwen_storage": 8591
+    },
+    {
+      "date": "2019-05-22",
+      "shimen_fill": 98.86,
+      "shimen_storage": 19516.1,
+      "zengwen_fill": 32.41,
+      "zengwen_storage": 16530
+    },
+    {
+      "date": "2019-05-29",
+      "shimen_fill": 98.25,
+      "shimen_storage": 19395.99,
+      "zengwen_fill": 37.92,
+      "zengwen_storage": 19341
+    },
+    {
+      "date": "2019-06-05",
+      "shimen_fill": 99.87,
+      "shimen_storage": 19714.48,
+      "zengwen_fill": 40.25,
+      "zengwen_storage": 20528
+    },
+    {
+      "date": "2019-06-12",
+      "shimen_fill": 97.05,
+      "shimen_storage": 19157.22,
+      "zengwen_fill": 45,
+      "zengwen_storage": 22950
+    },
+    {
+      "date": "2019-06-19",
+      "shimen_fill": 98.73,
+      "shimen_storage": 19490.32,
+      "zengwen_fill": 70.57,
+      "zengwen_storage": 35994
+    },
+    {
+      "date": "2019-06-26",
+      "shimen_fill": 99.08,
+      "shimen_storage": 19559.1152209899,
+      "zengwen_fill": 74.51,
+      "zengwen_storage": 38003
+    },
+    {
+      "date": "2019-07-03",
+      "shimen_fill": 98.08,
+      "shimen_storage": 19361.76,
+      "zengwen_fill": 75.37,
+      "zengwen_storage": 38440
+    },
+    {
+      "date": "2019-07-10",
+      "shimen_fill": 93.98,
+      "shimen_storage": 18552.12,
+      "zengwen_fill": 82.7,
+      "zengwen_storage": 42177
+    },
+    {
+      "date": "2019-07-17",
+      "shimen_fill": 93.48,
+      "shimen_storage": 18452.51,
+      "zengwen_fill": 86.11,
+      "zengwen_storage": 43920
+    },
+    {
+      "date": "2019-07-24",
+      "shimen_fill": 94.83,
+      "shimen_storage": 18718.93,
+      "zengwen_fill": 85.45,
+      "zengwen_storage": 43583
+    },
+    {
+      "date": "2019-07-31",
+      "shimen_fill": 95.42,
+      "shimen_storage": 18836.28,
+      "zengwen_fill": 85.59,
+      "zengwen_storage": 43654
+    },
+    {
+      "date": "2019-08-07",
+      "shimen_fill": 87.76,
+      "shimen_storage": 17324.0597779055,
+      "zengwen_fill": 85.98,
+      "zengwen_storage": 43849
+    },
+    {
+      "date": "2019-08-14",
+      "shimen_fill": 98.12,
+      "shimen_storage": 19370.3145221672,
+      "zengwen_fill": 89.63,
+      "zengwen_storage": 45714
+    },
+    {
+      "date": "2019-08-21",
+      "shimen_fill": 97.78,
+      "shimen_storage": 19301.96,
+      "zengwen_fill": 91.2,
+      "zengwen_storage": 46513
+    },
+    {
+      "date": "2019-08-28",
+      "shimen_fill": 98.52,
+      "shimen_storage": 19447.41,
+      "zengwen_fill": 93.57,
+      "zengwen_storage": 47724
+    },
+    {
+      "date": "2019-09-04",
+      "shimen_fill": 98.73,
+      "shimen_storage": 19490.32,
+      "zengwen_fill": 94.33,
+      "zengwen_storage": 48112
+    },
+    {
+      "date": "2019-09-11",
+      "shimen_fill": 98.91,
+      "shimen_storage": 19524.7,
+      "zengwen_fill": 97.96,
+      "zengwen_storage": 49961
+    },
+    {
+      "date": "2019-09-18",
+      "shimen_fill": 97.61,
+      "shimen_storage": 19267.84,
+      "zengwen_fill": 97.7,
+      "zengwen_storage": 49829
+    },
+    {
+      "date": "2019-09-25",
+      "shimen_fill": 100,
+      "shimen_storage": 19766.45,
+      "zengwen_fill": 97.41,
+      "zengwen_storage": 49679
+    },
+    {
+      "date": "2019-10-02",
+      "shimen_fill": 97.26,
+      "shimen_storage": 19199.72,
+      "zengwen_fill": 95.06,
+      "zengwen_storage": 48483
+    },
+    {
+      "date": "2019-10-09",
+      "shimen_fill": 100,
+      "shimen_storage": 19853.266246732397,
+      "zengwen_fill": 91.06,
+      "zengwen_storage": 46440
+    },
+    {
+      "date": "2019-10-16",
+      "shimen_fill": 100,
+      "shimen_storage": 19827.1957744898,
+      "zengwen_fill": 86.74,
+      "zengwen_storage": 44240
+    },
+    {
+      "date": "2019-10-23",
+      "shimen_fill": 99.3,
+      "shimen_storage": 19602.1921407423,
+      "zengwen_fill": 82.87,
+      "zengwen_storage": 42264
+    },
+    {
+      "date": "2019-10-30",
+      "shimen_fill": 97.3,
+      "shimen_storage": 19208.2247111981,
+      "zengwen_fill": 79.84,
+      "zengwen_storage": 40722
+    },
+    {
+      "date": "2019-11-06",
+      "shimen_fill": 96.02,
+      "shimen_storage": 18954.1087072562,
+      "zengwen_fill": 77.63,
+      "zengwen_storage": 39592
+    },
+    {
+      "date": "2019-11-13",
+      "shimen_fill": 95.63,
+      "shimen_storage": 18878.3061110963,
+      "zengwen_fill": 75.4,
+      "zengwen_storage": 38457
+    },
+    {
+      "date": "2019-11-20",
+      "shimen_fill": 89.87,
+      "shimen_storage": 17740.7604210422,
+      "zengwen_fill": 72.35,
+      "zengwen_storage": 36902
+    },
+    {
+      "date": "2019-11-27",
+      "shimen_fill": 87.4,
+      "shimen_storage": 17252.595320413,
+      "zengwen_fill": 68.68,
+      "zengwen_storage": 35030
+    },
+    {
+      "date": "2019-12-04",
+      "shimen_fill": 86.16,
+      "shimen_storage": 17007.92,
+      "zengwen_fill": 66.49,
+      "zengwen_storage": 33913
+    },
+    {
+      "date": "2019-12-11",
+      "shimen_fill": 91.97,
+      "shimen_storage": 18155.767920721002,
+      "zengwen_fill": 65.58,
+      "zengwen_storage": 33448
+    },
+    {
+      "date": "2019-12-18",
+      "shimen_fill": 91.76,
+      "shimen_storage": 18114.8028071054,
+      "zengwen_fill": 65.77,
+      "zengwen_storage": 33544
+    },
+    {
+      "date": "2019-12-25",
+      "shimen_fill": 89.99,
+      "shimen_storage": 17764.9988864313,
+      "zengwen_fill": 65.9,
+      "zengwen_storage": 33608
+    },
+    {
+      "date": "2020-01-01",
+      "shimen_fill": 88.93,
+      "shimen_storage": 17555.65,
+      "zengwen_fill": 66.27,
+      "zengwen_storage": 33801
+    },
+    {
+      "date": "2020-01-08",
+      "shimen_fill": 87.84,
+      "shimen_storage": 17339.97,
+      "zengwen_fill": null,
+      "zengwen_storage": null
+    },
+    {
+      "date": "2020-01-15",
+      "shimen_fill": 85.36,
+      "shimen_storage": 16851.270105768202,
+      "zengwen_fill": 66.65,
+      "zengwen_storage": 33890
+    },
+    {
+      "date": "2020-01-22",
+      "shimen_fill": 81.93,
+      "shimen_storage": 16173.227905078,
+      "zengwen_fill": 60.89,
+      "zengwen_storage": 30960
+    },
+    {
+      "date": "2020-01-29",
+      "shimen_fill": 80.09,
+      "shimen_storage": 15811.019085559801,
+      "zengwen_fill": 60.76,
+      "zengwen_storage": 30897
+    },
+    {
+      "date": "2020-02-05",
+      "shimen_fill": 74.93,
+      "shimen_storage": 14792.0782228701,
+      "zengwen_fill": 56.06,
+      "zengwen_storage": 28504
+    },
+    {
+      "date": "2020-02-12",
+      "shimen_fill": 70.31,
+      "shimen_storage": 13878.738531331801,
+      "zengwen_fill": 49.97,
+      "zengwen_storage": 25411
+    },
+    {
+      "date": "2020-02-19",
+      "shimen_fill": 64.38,
+      "shimen_storage": 12708.2833831393,
+      "zengwen_fill": 44.23,
+      "zengwen_storage": 22488
+    },
+    {
+      "date": "2020-02-26",
+      "shimen_fill": 58.47,
+      "shimen_storage": 11542.629050166699,
+      "zengwen_fill": 40.33,
+      "zengwen_storage": 20508
+    },
+    {
+      "date": "2020-03-04",
+      "shimen_fill": 51.81,
+      "shimen_storage": 10226.596657187,
+      "zengwen_fill": 35.44,
+      "zengwen_storage": 18021
+    },
+    {
+      "date": "2020-03-11",
+      "shimen_fill": 47.19,
+      "shimen_storage": 9316.43966853199,
+      "zengwen_fill": 30.95,
+      "zengwen_storage": 15738
+    },
+    {
+      "date": "2020-03-18",
+      "shimen_fill": 45.83,
+      "shimen_storage": 9047.647646000481,
+      "zengwen_fill": 28.22,
+      "zengwen_storage": 14349
+    },
+    {
+      "date": "2020-03-25",
+      "shimen_fill": 42.7,
+      "shimen_storage": 8429.87224273971,
+      "zengwen_fill": 26.22,
+      "zengwen_storage": 13333
+    },
+    {
+      "date": "2020-04-01",
+      "shimen_fill": 42.83,
+      "shimen_storage": 8454.85015538977,
+      "zengwen_fill": 22.79,
+      "zengwen_storage": 11590
+    },
+    {
+      "date": "2020-04-08",
+      "shimen_fill": 42.68,
+      "shimen_storage": 8424.88230529539,
+      "zengwen_fill": 19.37,
+      "zengwen_storage": 9850
+    },
+    {
+      "date": "2020-04-15",
+      "shimen_fill": 42.07,
+      "shimen_storage": 8305.6872200988,
+      "zengwen_fill": 16.94,
+      "zengwen_storage": 8615
+    },
+    {
+      "date": "2020-04-22",
+      "shimen_fill": 39.83,
+      "shimen_storage": 7863.492203853681,
+      "zengwen_fill": 13.94,
+      "zengwen_storage": 7089
+    },
+    {
+      "date": "2020-04-29",
+      "shimen_fill": 36.77,
+      "shimen_storage": 7258.1321602203,
+      "zengwen_fill": 12.08,
+      "zengwen_storage": 6143
+    },
+    {
+      "date": "2020-05-06",
+      "shimen_fill": 31.55,
+      "shimen_storage": 6227.7315793157395,
+      "zengwen_fill": 9.81,
+      "zengwen_storage": 4988
+    },
+    {
+      "date": "2020-05-13",
+      "shimen_fill": 29.16,
+      "shimen_storage": 5756.894753231541,
+      "zengwen_fill": 8.82,
+      "zengwen_storage": 4484
+    },
+    {
+      "date": "2020-05-20",
+      "shimen_fill": 35.25,
+      "shimen_storage": 6958.01190905462,
+      "zengwen_fill": 7.94,
+      "zengwen_storage": 4039
+    },
+    {
+      "date": "2020-05-27",
+      "shimen_fill": 50.44,
+      "shimen_storage": 9957.815477039241,
+      "zengwen_fill": 22.54,
+      "zengwen_storage": 11462
+    },
+    {
+      "date": "2020-06-03",
+      "shimen_fill": 69.3,
+      "shimen_storage": 13680.134923653099,
+      "zengwen_fill": 27.97,
+      "zengwen_storage": 14224
+    },
+    {
+      "date": "2020-06-10",
+      "shimen_fill": 71.04,
+      "shimen_storage": 14023.7187547211,
+      "zengwen_fill": 32.75,
+      "zengwen_storage": 16655.33
+    },
+    {
+      "date": "2020-06-17",
+      "shimen_fill": 70.24,
+      "shimen_storage": 13864.9819528758,
+      "zengwen_fill": 35.67,
+      "zengwen_storage": 18135.38
+    },
+    {
+      "date": "2020-06-24",
+      "shimen_fill": 67.28,
+      "shimen_storage": 13281.7996796602,
+      "zengwen_fill": 34.33,
+      "zengwen_storage": 17456.9
+    },
+    {
+      "date": "2020-07-01",
+      "shimen_fill": 63.23,
+      "shimen_storage": 12482.1704967636,
+      "zengwen_fill": 32.49,
+      "zengwen_storage": 16521.29
+    },
+    {
+      "date": "2020-07-08",
+      "shimen_fill": 63.07,
+      "shimen_storage": 12450.083132114001,
+      "zengwen_fill": 31.75,
+      "zengwen_storage": 16145.92
+    },
+    {
+      "date": "2020-07-15",
+      "shimen_fill": 59.87,
+      "shimen_storage": 11819.5064096543,
+      "zengwen_fill": 31.35,
+      "zengwen_storage": 15941.59
+    },
+    {
+      "date": "2020-07-22",
+      "shimen_fill": 56.6,
+      "shimen_storage": 11174.0453062152,
+      "zengwen_fill": 27.4,
+      "zengwen_storage": 13930.57
+    },
+    {
+      "date": "2020-07-29",
+      "shimen_fill": 55.4,
+      "shimen_storage": 10936.525671734,
+      "zengwen_fill": 24.62,
+      "zengwen_storage": 12519.34
+    },
+    {
+      "date": "2020-08-05",
+      "shimen_fill": 53.6,
+      "shimen_storage": 10580.6138083105,
+      "zengwen_fill": 26.59,
+      "zengwen_storage": 13519.73
+    },
+    {
+      "date": "2020-08-12",
+      "shimen_fill": 52.55,
+      "shimen_storage": 10374.1123032946,
+      "zengwen_fill": 30.48,
+      "zengwen_storage": 15500.72
+    },
+    {
+      "date": "2020-08-19",
+      "shimen_fill": 50.53,
+      "shimen_storage": 9974.48,
+      "zengwen_fill": 32.73,
+      "zengwen_storage": 16643
+    },
+    {
+      "date": "2020-08-26",
+      "shimen_fill": 47.49,
+      "shimen_storage": 9375.07,
+      "zengwen_fill": 31.35,
+      "zengwen_storage": 15942
+    },
+    {
+      "date": "2020-09-02",
+      "shimen_fill": 48.99,
+      "shimen_storage": 9671.801,
+      "zengwen_fill": 39.7,
+      "zengwen_storage": 20187
+    },
+    {
+      "date": "2020-09-09",
+      "shimen_fill": 47.82,
+      "shimen_storage": 9439.311040034241,
+      "zengwen_fill": 42.11,
+      "zengwen_storage": 21415
+    },
+    {
+      "date": "2020-09-16",
+      "shimen_fill": 47.33,
+      "shimen_storage": 9343.06320319439,
+      "zengwen_fill": 40.17,
+      "zengwen_storage": 20428
+    },
+    {
+      "date": "2020-09-23",
+      "shimen_fill": 47.76,
+      "shimen_storage": 9428.58563663746,
+      "zengwen_fill": 38.79,
+      "zengwen_storage": 19723
+    },
+    {
+      "date": "2020-09-30",
+      "shimen_fill": 46.15,
+      "shimen_storage": 9110.4404956513,
+      "zengwen_fill": 37.28,
+      "zengwen_storage": 18954
+    },
+    {
+      "date": "2020-10-07",
+      "shimen_fill": 44.63,
+      "shimen_storage": 8809.50465717624,
+      "zengwen_fill": 34.82,
+      "zengwen_storage": 17707
+    },
+    {
+      "date": "2020-10-14",
+      "shimen_fill": 42.65,
+      "shimen_storage": 8419.89424869452,
+      "zengwen_fill": 32.28,
+      "zengwen_storage": 16412
+    },
+    {
+      "date": "2020-10-21",
+      "shimen_fill": 45.52,
+      "shimen_storage": 8985.13205071724,
+      "zengwen_fill": 29.93,
+      "zengwen_storage": 15218
+    },
+    {
+      "date": "2020-10-28",
+      "shimen_fill": 50.08,
+      "shimen_storage": 9885.81013520468,
+      "zengwen_fill": 26.89,
+      "zengwen_storage": 13674
+    },
+    {
+      "date": "2020-11-04",
+      "shimen_fill": 49.52,
+      "shimen_storage": 9775.68657166327,
+      "zengwen_fill": 22.95,
+      "zengwen_storage": 11668
+    },
+    {
+      "date": "2020-11-11",
+      "shimen_fill": 48.69,
+      "shimen_storage": 9611.981580336509,
+      "zengwen_fill": 23.4,
+      "zengwen_storage": 11897
+    },
+    {
+      "date": "2020-11-18",
+      "shimen_fill": 51.15,
+      "shimen_storage": 10097.2318392147,
+      "zengwen_fill": 23.75,
+      "zengwen_storage": 12078
+    },
+    {
+      "date": "2020-11-25",
+      "shimen_fill": 50.08,
+      "shimen_storage": 9885.81013520468,
+      "zengwen_fill": 22.89,
+      "zengwen_storage": 11639
+    },
+    {
+      "date": "2020-12-02",
+      "shimen_fill": 51.21,
+      "shimen_storage": 10108.4389698656,
+      "zengwen_fill": 23.12,
+      "zengwen_storage": 11758
+    },
+    {
+      "date": "2020-12-09",
+      "shimen_fill": 57.61,
+      "shimen_storage": 11372.484175424599,
+      "zengwen_fill": 22.24,
+      "zengwen_storage": 11307
+    },
+    {
+      "date": "2020-12-16",
+      "shimen_fill": 62.32,
+      "shimen_storage": 12303.1693999308,
+      "zengwen_fill": 22.48,
+      "zengwen_storage": 11433
+    },
+    {
+      "date": "2020-12-23",
+      "shimen_fill": 64.08,
+      "shimen_storage": 12649.888690948901,
+      "zengwen_fill": 22.68,
+      "zengwen_storage": 11531
+    },
+    {
+      "date": "2020-12-30",
+      "shimen_fill": 66.14,
+      "shimen_storage": 13055.7108721968,
+      "zengwen_fill": 22.83,
+      "zengwen_storage": 11609
+    },
+    {
+      "date": "2021-01-06",
+      "shimen_fill": 65.97,
+      "shimen_storage": 13022.6747526355,
+      "zengwen_fill": 22.99,
+      "zengwen_storage": 11688
+    },
+    {
+      "date": "2021-01-13",
+      "shimen_fill": 66.71,
+      "shimen_storage": 13168.4403467355,
+      "zengwen_fill": 18.82,
+      "zengwen_storage": 9572
+    },
+    {
+      "date": "2021-01-20",
+      "shimen_fill": 66.67,
+      "shimen_storage": 13161.7917831697,
+      "zengwen_fill": 18.65,
+      "zengwen_storage": 9484
+    },
+    {
+      "date": "2021-01-27",
+      "shimen_fill": 65.07,
+      "shimen_storage": 12845.216599719299,
+      "zengwen_fill": 18.79,
+      "zengwen_storage": 9553
+    },
+    {
+      "date": "2021-02-03",
+      "shimen_fill": 62.36,
+      "shimen_storage": 12309.53,
+      "zengwen_fill": 18.91,
+      "zengwen_storage": 9614
+    },
+    {
+      "date": "2021-02-10",
+      "shimen_fill": 59.15,
+      "shimen_storage": 11677.4614038552,
+      "zengwen_fill": 14.81,
+      "zengwen_storage": 7531
+    },
+    {
+      "date": "2021-02-17",
+      "shimen_fill": 58.19,
+      "shimen_storage": 11487.7616275234,
+      "zengwen_fill": 14.94,
+      "zengwen_storage": 7595
+    },
+    {
+      "date": "2021-02-24",
+      "shimen_fill": 55.31,
+      "shimen_storage": 10918.844181566,
+      "zengwen_fill": 15.03,
+      "zengwen_storage": 7644
+    },
+    {
+      "date": "2021-03-03",
+      "shimen_fill": 51.01,
+      "shimen_storage": 10069.248939594901,
+      "zengwen_fill": 15.13,
+      "zengwen_storage": 7695
+    },
+    {
+      "date": "2021-03-10",
+      "shimen_fill": 48.58,
+      "shimen_storage": 9590.28802012008,
+      "zengwen_fill": 15.25,
+      "zengwen_storage": 7752
+    },
+    {
+      "date": "2021-03-17",
+      "shimen_fill": 44.32,
+      "shimen_storage": 8748.04602684773,
+      "zengwen_fill": 15.35,
+      "zengwen_storage": 7803
+    },
+    {
+      "date": "2021-03-24",
+      "shimen_fill": 40.2,
+      "shimen_storage": 7935.32598762735,
+      "zengwen_fill": 15.45,
+      "zengwen_storage": 7855
+    },
+    {
+      "date": "2021-03-31",
+      "shimen_fill": 37.69,
+      "shimen_storage": 7441.13501707978,
+      "zengwen_fill": 11.48,
+      "zengwen_storage": 5838
+    },
+    {
+      "date": "2021-04-07",
+      "shimen_fill": 33.96,
+      "shimen_storage": 6704.6154931005,
+      "zengwen_fill": 11.56,
+      "zengwen_storage": 5876
+    },
+    {
+      "date": "2021-04-14",
+      "shimen_fill": 29.46,
+      "shimen_storage": 5815.97486691678,
+      "zengwen_fill": 11.61,
+      "zengwen_storage": 5915
+    },
+    {
+      "date": "2021-04-21",
+      "shimen_fill": 23.06,
+      "shimen_storage": 4672.86750707519,
+      "zengwen_fill": 10.17,
+      "zengwen_storage": 5184
+    },
+    {
+      "date": "2021-04-28",
+      "shimen_fill": 20.86,
+      "shimen_storage": 4226.92,
+      "zengwen_fill": 8.88,
+      "zengwen_storage": 4523
+    },
+    {
+      "date": "2021-05-05",
+      "shimen_fill": 19.66,
+      "shimen_storage": 3985.028,
+      "zengwen_fill": 8.94,
+      "zengwen_storage": 4558
+    },
+    {
+      "date": "2021-05-12",
+      "shimen_fill": 15.86,
+      "shimen_storage": 3213.885,
+      "zengwen_fill": 5.98,
+      "zengwen_storage": 3045
+    },
+    {
+      "date": "2021-05-19",
+      "shimen_fill": 11.74,
+      "shimen_storage": 2379.708,
+      "zengwen_fill": 5.97,
+      "zengwen_storage": 3041
+    },
+    {
+      "date": "2021-05-26",
+      "shimen_fill": 10.22,
+      "shimen_storage": 2071.54,
+      "zengwen_fill": 5.97,
+      "zengwen_storage": 3041
+    },
+    {
+      "date": "2021-06-02",
+      "shimen_fill": 15.31,
+      "shimen_storage": 3103.247,
+      "zengwen_fill": 4.45,
+      "zengwen_storage": 2270
+    },
+    {
+      "date": "2021-06-09",
+      "shimen_fill": 34.34,
+      "shimen_storage": 6959.344,
+      "zengwen_fill": 14.72,
+      "zengwen_storage": 7503
+    },
+    {
+      "date": "2021-06-16",
+      "shimen_fill": 51.01,
+      "shimen_storage": 10337.534,
+      "zengwen_fill": 21.31,
+      "zengwen_storage": 10858
+    },
+    {
+      "date": "2021-06-23",
+      "shimen_fill": 55.51,
+      "shimen_storage": 11248.763,
+      "zengwen_fill": 38.53,
+      "zengwen_storage": 19633
+    },
+    {
+      "date": "2021-06-30",
+      "shimen_fill": 70.78,
+      "shimen_storage": 14344.703,
+      "zengwen_fill": 52.1,
+      "zengwen_storage": 26547
+    },
+    {
+      "date": "2021-07-07",
+      "shimen_fill": 75.41,
+      "shimen_storage": 15282.089,
+      "zengwen_fill": 57.93,
+      "zengwen_storage": 29518
+    },
+    {
+      "date": "2021-07-14",
+      "shimen_fill": 78.4,
+      "shimen_storage": 15888.771,
+      "zengwen_fill": 60.58,
+      "zengwen_storage": 30868
+    },
+    {
+      "date": "2021-07-21",
+      "shimen_fill": 75.08,
+      "shimen_storage": 15214.991,
+      "zengwen_fill": 62.87,
+      "zengwen_storage": 32035
+    },
+    {
+      "date": "2021-07-28",
+      "shimen_fill": 99.2,
+      "shimen_storage": 20104.49,
+      "zengwen_fill": 67.12,
+      "zengwen_storage": 34201
+    },
+    {
+      "date": "2021-08-04",
+      "shimen_fill": 97.86,
+      "shimen_storage": 19832.35,
+      "zengwen_fill": 86.42,
+      "zengwen_storage": 44036
+    },
+    {
+      "date": "2021-08-11",
+      "shimen_fill": 97.52,
+      "shimen_storage": 19764.318,
+      "zengwen_fill": 97.58,
+      "zengwen_storage": 49724
+    },
+    {
+      "date": "2021-08-18",
+      "shimen_fill": 98.2,
+      "shimen_storage": 19900.38,
+      "zengwen_fill": 96.26,
+      "zengwen_storage": 49048
+    },
+    {
+      "date": "2021-08-25",
+      "shimen_fill": 98.7,
+      "shimen_storage": 20002.438,
+      "zengwen_fill": 95.81,
+      "zengwen_storage": 48823
+    },
+    {
+      "date": "2021-09-01",
+      "shimen_fill": 99.2,
+      "shimen_storage": 20104.49,
+      "zengwen_fill": 98.73,
+      "zengwen_storage": 50310
+    },
+    {
+      "date": "2021-09-08",
+      "shimen_fill": 98.99,
+      "shimen_storage": 20061.968,
+      "zengwen_fill": 97.21,
+      "zengwen_storage": 49536
+    },
+    {
+      "date": "2021-09-15",
+      "shimen_fill": 100,
+      "shimen_storage": 20361.53,
+      "zengwen_fill": 98.62,
+      "zengwen_storage": 50253
+    },
+    {
+      "date": "2021-09-22",
+      "shimen_fill": 100,
+      "shimen_storage": 20361.533,
+      "zengwen_fill": 96.55,
+      "zengwen_storage": 49198
+    },
+    {
+      "date": "2021-09-29",
+      "shimen_fill": 100,
+      "shimen_storage": 20439.637,
+      "zengwen_fill": 97.95,
+      "zengwen_storage": 49913
+    },
+    {
+      "date": "2021-10-06",
+      "shimen_fill": 100,
+      "shimen_storage": 20309.463,
+      "zengwen_fill": 93.88,
+      "zengwen_storage": 47837
+    },
+    {
+      "date": "2021-10-13",
+      "shimen_fill": 97.82,
+      "shimen_storage": 19823.85,
+      "zengwen_fill": 92.11,
+      "zengwen_storage": 46934
+    },
+    {
+      "date": "2021-10-20",
+      "shimen_fill": 100,
+      "shimen_storage": 20378.889,
+      "zengwen_fill": 87.44,
+      "zengwen_storage": 44556
+    },
+    {
+      "date": "2021-10-27",
+      "shimen_fill": 100,
+      "shimen_storage": 20335.498,
+      "zengwen_fill": 86.63,
+      "zengwen_storage": 44143
+    },
+    {
+      "date": "2021-11-03",
+      "shimen_fill": 100,
+      "shimen_storage": 20448.315,
+      "zengwen_fill": 83.15,
+      "zengwen_storage": 42368
+    },
+    {
+      "date": "2021-11-10",
+      "shimen_fill": 100,
+      "shimen_storage": 20378.889,
+      "zengwen_fill": 81.56,
+      "zengwen_storage": 41561
+    },
+    {
+      "date": "2021-11-17",
+      "shimen_fill": 99.79,
+      "shimen_storage": 20223.55,
+      "zengwen_fill": 76.62,
+      "zengwen_storage": 39041
+    },
+    {
+      "date": "2021-11-24",
+      "shimen_fill": 99.16,
+      "shimen_storage": 20095.986,
+      "zengwen_fill": 71.11,
+      "zengwen_storage": 36233
+    },
+    {
+      "date": "2021-12-01",
+      "shimen_fill": 100,
+      "shimen_storage": 20283.428,
+      "zengwen_fill": 68.17,
+      "zengwen_storage": 34738
+    },
+    {
+      "date": "2021-12-08",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20181.02,
+      "zengwen_fill": 68.2,
+      "zengwen_storage": 34754
+    },
+    {
+      "date": "2021-12-15",
+      "shimen_fill": 99.03,
+      "shimen_storage": 20070.473,
+      "zengwen_fill": 68.27,
+      "zengwen_storage": 34787
+    },
+    {
+      "date": "2021-12-22",
+      "shimen_fill": 98.41,
+      "shimen_storage": 19942.908,
+      "zengwen_fill": 68.36,
+      "zengwen_storage": 34836
+    },
+    {
+      "date": "2021-12-29",
+      "shimen_fill": 98.78,
+      "shimen_storage": 20019.447,
+      "zengwen_fill": 68.72,
+      "zengwen_storage": 35015
+    },
+    {
+      "date": "2022-01-05",
+      "shimen_fill": 97.9,
+      "shimen_storage": 19840.856,
+      "zengwen_fill": 68.94,
+      "zengwen_storage": 35130
+    },
+    {
+      "date": "2022-01-12",
+      "shimen_fill": 97.62,
+      "shimen_storage": 19782.841,
+      "zengwen_fill": 69.04,
+      "zengwen_storage": 35179
+    },
+    {
+      "date": "2022-01-19",
+      "shimen_fill": 95.95,
+      "shimen_storage": 19444.732,
+      "zengwen_fill": 68.43,
+      "zengwen_storage": 34868
+    },
+    {
+      "date": "2022-01-26",
+      "shimen_fill": 96.55,
+      "shimen_storage": 19817.01,
+      "zengwen_fill": 64.02,
+      "zengwen_storage": 32624
+    },
+    {
+      "date": "2022-02-02",
+      "shimen_fill": 96.88,
+      "shimen_storage": 19885.347,
+      "zengwen_fill": 59.2,
+      "zengwen_storage": 30167
+    },
+    {
+      "date": "2022-02-09",
+      "shimen_fill": 100,
+      "shimen_storage": 20543.377,
+      "zengwen_fill": 55.21,
+      "zengwen_storage": 28131
+    },
+    {
+      "date": "2022-02-16",
+      "shimen_fill": 100,
+      "shimen_storage": 20543.377,
+      "zengwen_fill": 52.27,
+      "zengwen_storage": 26636
+    },
+    {
+      "date": "2022-02-23",
+      "shimen_fill": 99.71,
+      "shimen_storage": 20466.215,
+      "zengwen_fill": 49.56,
+      "zengwen_storage": 25256
+    },
+    {
+      "date": "2022-03-02",
+      "shimen_fill": 100,
+      "shimen_storage": 20578.111,
+      "zengwen_fill": 50.02,
+      "zengwen_storage": 25489
+    },
+    {
+      "date": "2022-03-09",
+      "shimen_fill": 100,
+      "shimen_storage": 20595.478,
+      "zengwen_fill": 45.79,
+      "zengwen_storage": 23333
+    },
+    {
+      "date": "2022-03-16",
+      "shimen_fill": 98.96,
+      "shimen_storage": 20312.456,
+      "zengwen_fill": 43.53,
+      "zengwen_storage": 22182
+    },
+    {
+      "date": "2022-03-23",
+      "shimen_fill": 96.5,
+      "shimen_storage": 19808.468,
+      "zengwen_fill": 39.13,
+      "zengwen_storage": 19937
+    },
+    {
+      "date": "2022-03-30",
+      "shimen_fill": 98.54,
+      "shimen_storage": 20227.034,
+      "zengwen_fill": 39.81,
+      "zengwen_storage": 20284
+    },
+    {
+      "date": "2022-04-06",
+      "shimen_fill": 99.67,
+      "shimen_storage": 20457.672,
+      "zengwen_fill": 36.94,
+      "zengwen_storage": 18824
+    },
+    {
+      "date": "2022-04-13",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.588,
+      "zengwen_fill": 35.19,
+      "zengwen_storage": 17929
+    },
+    {
+      "date": "2022-04-20",
+      "shimen_fill": 99.46,
+      "shimen_storage": 20414.962,
+      "zengwen_fill": 30.8,
+      "zengwen_storage": 15696
+    },
+    {
+      "date": "2022-04-27",
+      "shimen_fill": 98.46,
+      "shimen_storage": 20209.95,
+      "zengwen_fill": 30.13,
+      "zengwen_storage": 15352
+    },
+    {
+      "date": "2022-05-04",
+      "shimen_fill": 97.42,
+      "shimen_storage": 19996.396,
+      "zengwen_fill": 28.75,
+      "zengwen_storage": 14652
+    },
+    {
+      "date": "2022-05-11",
+      "shimen_fill": 97.38,
+      "shimen_storage": 19987.853,
+      "zengwen_fill": 28.03,
+      "zengwen_storage": 14285
+    },
+    {
+      "date": "2022-05-18",
+      "shimen_fill": 99.46,
+      "shimen_storage": 20414.962,
+      "zengwen_fill": 32.1,
+      "zengwen_storage": 16357
+    },
+    {
+      "date": "2022-05-25",
+      "shimen_fill": 97.59,
+      "shimen_storage": 20030.564,
+      "zengwen_fill": 34.91,
+      "zengwen_storage": 17791
+    },
+    {
+      "date": "2022-06-01",
+      "shimen_fill": 99.29,
+      "shimen_storage": 20380.793,
+      "zengwen_fill": 43.45,
+      "zengwen_storage": 22141
+    },
+    {
+      "date": "2022-06-08",
+      "shimen_fill": 98.09,
+      "shimen_storage": 20133.07,
+      "zengwen_fill": 46.74,
+      "zengwen_storage": 23816
+    },
+    {
+      "date": "2022-06-15",
+      "shimen_fill": 95.67,
+      "shimen_storage": 19638.154,
+      "zengwen_fill": 52.97,
+      "zengwen_storage": 26992
+    },
+    {
+      "date": "2022-06-22",
+      "shimen_fill": 91.54,
+      "shimen_storage": 18789.48,
+      "zengwen_fill": 52.59,
+      "zengwen_storage": 26799
+    },
+    {
+      "date": "2022-06-29",
+      "shimen_fill": 91.46,
+      "shimen_storage": 18772.942,
+      "zengwen_fill": 51.52,
+      "zengwen_storage": 26252
+    },
+    {
+      "date": "2022-07-06",
+      "shimen_fill": 91.46,
+      "shimen_storage": 18772.942,
+      "zengwen_fill": 53.23,
+      "zengwen_storage": 27126
+    },
+    {
+      "date": "2022-07-13",
+      "shimen_fill": 91.58,
+      "shimen_storage": 18797.749,
+      "zengwen_fill": 53.29,
+      "zengwen_storage": 27156
+    },
+    {
+      "date": "2022-07-20",
+      "shimen_fill": 91.3,
+      "shimen_storage": 18739.866,
+      "zengwen_fill": 48.99,
+      "zengwen_storage": 24965
+    },
+    {
+      "date": "2022-07-27",
+      "shimen_fill": 88.6,
+      "shimen_storage": 18185.847,
+      "zengwen_fill": 46.18,
+      "zengwen_storage": 23531
+    },
+    {
+      "date": "2022-08-03",
+      "shimen_fill": 85.07,
+      "shimen_storage": 17462.326,
+      "zengwen_fill": 41.72,
+      "zengwen_storage": 21258
+    },
+    {
+      "date": "2022-08-10",
+      "shimen_fill": 81.47,
+      "shimen_storage": 16723.337,
+      "zengwen_fill": 44.11,
+      "zengwen_storage": 22475
+    },
+    {
+      "date": "2022-08-17",
+      "shimen_fill": 77.7,
+      "shimen_storage": 15947.821,
+      "zengwen_fill": 46.79,
+      "zengwen_storage": 23844
+    },
+    {
+      "date": "2022-08-24",
+      "shimen_fill": 75.83,
+      "shimen_storage": 15565.677,
+      "zengwen_fill": 50.68,
+      "zengwen_storage": 25825
+    },
+    {
+      "date": "2022-08-31",
+      "shimen_fill": 74.7,
+      "shimen_storage": 15333.139,
+      "zengwen_fill": 48.57,
+      "zengwen_storage": 24748
+    },
+    {
+      "date": "2022-09-07",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.5882,
+      "zengwen_fill": 54.2,
+      "zengwen_storage": 27619
+    },
+    {
+      "date": "2022-09-14",
+      "shimen_fill": 99.08,
+      "shimen_storage": 20338.08,
+      "zengwen_fill": 53.44,
+      "zengwen_storage": 27230
+    },
+    {
+      "date": "2022-09-21",
+      "shimen_fill": 100,
+      "shimen_storage": 20621.529,
+      "zengwen_fill": 53.47,
+      "zengwen_storage": 27245
+    },
+    {
+      "date": "2022-09-28",
+      "shimen_fill": 100,
+      "shimen_storage": 20647.579,
+      "zengwen_fill": 49.48,
+      "zengwen_storage": 25212
+    },
+    {
+      "date": "2022-10-05",
+      "shimen_fill": 100,
+      "shimen_storage": 20656.263,
+      "zengwen_fill": 48.85,
+      "zengwen_storage": 24893
+    },
+    {
+      "date": "2022-10-12",
+      "shimen_fill": 100,
+      "shimen_storage": 20656.263,
+      "zengwen_fill": 45.1,
+      "zengwen_storage": 22980
+    },
+    {
+      "date": "2022-10-19",
+      "shimen_fill": 98.71,
+      "shimen_storage": 20261.2,
+      "zengwen_fill": 44.24,
+      "zengwen_storage": 22545
+    },
+    {
+      "date": "2022-10-26",
+      "shimen_fill": 100,
+      "shimen_storage": 20699.68,
+      "zengwen_fill": 41.4,
+      "zengwen_storage": 21094
+    },
+    {
+      "date": "2022-11-02",
+      "shimen_fill": 98.83,
+      "shimen_storage": 20286.83,
+      "zengwen_fill": 40.23,
+      "zengwen_storage": 20498
+    },
+    {
+      "date": "2022-11-09",
+      "shimen_fill": 100,
+      "shimen_storage": 20621.529,
+      "zengwen_fill": 37.09,
+      "zengwen_storage": 18901
+    },
+    {
+      "date": "2022-11-16",
+      "shimen_fill": 100,
+      "shimen_storage": 20690.997,
+      "zengwen_fill": 33.03,
+      "zengwen_storage": 16833
+    },
+    {
+      "date": "2022-11-23",
+      "shimen_fill": 100,
+      "shimen_storage": 20656.263,
+      "zengwen_fill": 32.6,
+      "zengwen_storage": 16613
+    },
+    {
+      "date": "2022-11-30",
+      "shimen_fill": 100,
+      "shimen_storage": 20682.313,
+      "zengwen_fill": 28.24,
+      "zengwen_storage": 14388
+    },
+    {
+      "date": "2022-12-07",
+      "shimen_fill": 100,
+      "shimen_storage": 20621.529,
+      "zengwen_fill": 27.32,
+      "zengwen_storage": 13922
+    },
+    {
+      "date": "2022-12-14",
+      "shimen_fill": 100,
+      "shimen_storage": 20656.263,
+      "zengwen_fill": 27.48,
+      "zengwen_storage": 14001
+    },
+    {
+      "date": "2022-12-21",
+      "shimen_fill": 100,
+      "shimen_storage": 20621.529,
+      "zengwen_fill": 27.72,
+      "zengwen_storage": 14126
+    },
+    {
+      "date": "2022-12-28",
+      "shimen_fill": 100,
+      "shimen_storage": 20682.313,
+      "zengwen_fill": 27.88,
+      "zengwen_storage": 14205
+    },
+    {
+      "date": "2023-01-04",
+      "shimen_fill": 100,
+      "shimen_storage": 20656.263,
+      "zengwen_fill": 28.03,
+      "zengwen_storage": 14285
+    },
+    {
+      "date": "2023-01-11",
+      "shimen_fill": 100,
+      "shimen_storage": 20630.212,
+      "zengwen_fill": 28.12,
+      "zengwen_storage": 14331
+    },
+    {
+      "date": "2023-01-18",
+      "shimen_fill": 99.54,
+      "shimen_storage": 20432.046,
+      "zengwen_fill": 28.19,
+      "zengwen_storage": 14365
+    },
+    {
+      "date": "2023-01-25",
+      "shimen_fill": 98.29,
+      "shimen_storage": 20175.781,
+      "zengwen_fill": 23.22,
+      "zengwen_storage": 11830
+    },
+    {
+      "date": "2023-02-01",
+      "shimen_fill": 95.67,
+      "shimen_storage": 19638.154,
+      "zengwen_fill": 23.45,
+      "zengwen_storage": 11886
+    },
+    {
+      "date": "2023-02-08",
+      "zengwen_fill": 23.51,
+      "zengwen_storage": 11916,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2023-02-15",
+      "shimen_fill": 87.04,
+      "shimen_storage": 17866.508,
+      "zengwen_fill": 23.59,
+      "zengwen_storage": 11957
+    },
+    {
+      "date": "2023-02-22",
+      "shimen_fill": 80.4,
+      "shimen_storage": 16502.964,
+      "zengwen_fill": 23.65,
+      "zengwen_storage": 11987
+    },
+    {
+      "date": "2023-03-01",
+      "shimen_fill": 74.3,
+      "shimen_storage": 15250.626,
+      "zengwen_fill": 23.73,
+      "zengwen_storage": 12028
+    },
+    {
+      "date": "2023-03-08",
+      "shimen_fill": 67.74,
+      "shimen_storage": 13904.71,
+      "zengwen_fill": 17.3,
+      "zengwen_storage": 8770
+    },
+    {
+      "date": "2023-03-15",
+      "shimen_fill": 60.83,
+      "shimen_storage": 12485.812,
+      "zengwen_fill": 11.27,
+      "zengwen_storage": 5710
+    },
+    {
+      "date": "2023-03-22",
+      "shimen_fill": 55.74,
+      "shimen_storage": 11441.33,
+      "zengwen_fill": 11.29,
+      "zengwen_storage": 5721
+    },
+    {
+      "date": "2023-03-29",
+      "shimen_fill": 51.5,
+      "shimen_storage": 10570.766,
+      "zengwen_fill": 11.32,
+      "zengwen_storage": 5737
+    },
+    {
+      "date": "2023-04-05",
+      "shimen_fill": 47.35,
+      "shimen_storage": 9719.837,
+      "zengwen_fill": 11.34,
+      "zengwen_storage": 5749
+    },
+    {
+      "date": "2023-04-12",
+      "shimen_fill": 43.44,
+      "shimen_storage": 8915.569,
+      "zengwen_fill": 11.36,
+      "zengwen_storage": 5760
+    },
+    {
+      "date": "2023-04-19",
+      "shimen_fill": 38.41,
+      "shimen_storage": 7883.365,
+      "zengwen_fill": 9.97,
+      "zengwen_storage": 5052
+    },
+    {
+      "date": "2023-04-26",
+      "shimen_fill": 41.58,
+      "shimen_storage": 8534.502,
+      "zengwen_fill": 6.41,
+      "zengwen_storage": 3248
+    },
+    {
+      "date": "2023-05-03",
+      "shimen_fill": 38.48,
+      "shimen_storage": 7898.281,
+      "zengwen_fill": 6.43,
+      "zengwen_storage": 3261
+    },
+    {
+      "date": "2023-05-10",
+      "shimen_fill": 36.6,
+      "shimen_storage": 7512.208,
+      "zengwen_fill": 6.49,
+      "zengwen_storage": 3290
+    },
+    {
+      "date": "2023-05-17",
+      "shimen_fill": 34.29,
+      "shimen_storage": 7038.808,
+      "zengwen_fill": 6.55,
+      "zengwen_storage": 3319
+    },
+    {
+      "date": "2023-05-24",
+      "shimen_fill": 35.9,
+      "shimen_storage": 7369.58,
+      "zengwen_fill": 8.85,
+      "zengwen_storage": 4488
+    },
+    {
+      "date": "2023-05-31",
+      "shimen_fill": 35.81,
+      "shimen_storage": 7350.563,
+      "zengwen_fill": 6.67,
+      "zengwen_storage": 3381
+    },
+    {
+      "date": "2023-06-07",
+      "shimen_fill": 61.35,
+      "shimen_storage": 12591.938,
+      "zengwen_fill": 8.91,
+      "zengwen_storage": 4514
+    },
+    {
+      "date": "2023-06-14",
+      "shimen_fill": 83.16,
+      "shimen_storage": 17069.638,
+      "zengwen_fill": 12.6,
+      "zengwen_storage": 6385
+    },
+    {
+      "date": "2023-06-21",
+      "shimen_fill": 93.87,
+      "shimen_storage": 19268.128,
+      "zengwen_fill": 14.5,
+      "zengwen_storage": 7348
+    },
+    {
+      "date": "2023-06-28",
+      "shimen_fill": 95.96,
+      "shimen_storage": 19697.42,
+      "zengwen_fill": 10.19,
+      "zengwen_storage": 5166
+    },
+    {
+      "date": "2023-07-05",
+      "shimen_fill": 96.63,
+      "shimen_storage": 19834.094,
+      "zengwen_fill": 12.22,
+      "zengwen_storage": 6194
+    },
+    {
+      "date": "2023-07-12",
+      "shimen_fill": 96.71,
+      "shimen_storage": 19851.179,
+      "zengwen_fill": 13.79,
+      "zengwen_storage": 6991
+    },
+    {
+      "date": "2023-07-19",
+      "shimen_fill": 95.67,
+      "shimen_storage": 19638.154,
+      "zengwen_fill": 14.6,
+      "zengwen_storage": 7401
+    },
+    {
+      "date": "2023-07-26",
+      "shimen_fill": 94.77,
+      "shimen_storage": 19453.141,
+      "zengwen_fill": 17.33,
+      "zengwen_storage": 8786
+    },
+    {
+      "date": "2023-08-02",
+      "shimen_fill": 97.09,
+      "shimen_storage": 19928.058,
+      "zengwen_fill": 22.33,
+      "zengwen_storage": 11318
+    },
+    {
+      "date": "2023-08-09",
+      "shimen_fill": 97,
+      "shimen_storage": 19910.974,
+      "zengwen_fill": 56.89,
+      "zengwen_storage": 28836
+    },
+    {
+      "date": "2023-08-16",
+      "shimen_fill": 96.3,
+      "shimen_storage": 19765.757,
+      "zengwen_fill": 64.02,
+      "zengwen_storage": 32451
+    },
+    {
+      "date": "2023-08-23",
+      "shimen_fill": 98.09,
+      "shimen_storage": 20133.07,
+      "zengwen_fill": 70.06,
+      "zengwen_storage": 35508
+    },
+    {
+      "date": "2023-08-30",
+      "shimen_fill": 97.34,
+      "shimen_storage": 19979.311,
+      "zengwen_fill": 78.85,
+      "zengwen_storage": 39966
+    },
+    {
+      "date": "2023-09-06",
+      "shimen_fill": 95.92,
+      "shimen_storage": 19688.88,
+      "zengwen_fill": 81.73,
+      "zengwen_storage": 41426
+    },
+    {
+      "date": "2023-09-13",
+      "shimen_fill": 100,
+      "shimen_storage": 20543.377,
+      "zengwen_fill": 99.52,
+      "zengwen_storage": 50440
+    },
+    {
+      "date": "2023-09-20",
+      "shimen_fill": 100,
+      "shimen_storage": 20578.111,
+      "zengwen_fill": 99.85,
+      "zengwen_storage": 50610
+    },
+    {
+      "date": "2023-09-27",
+      "shimen_fill": 100,
+      "shimen_storage": 20560.744,
+      "zengwen_fill": 99.74,
+      "zengwen_storage": 50553
+    },
+    {
+      "date": "2023-10-04",
+      "shimen_fill": 95.47,
+      "shimen_storage": 19596.11,
+      "zengwen_fill": 99.44,
+      "zengwen_storage": 50402
+    },
+    {
+      "date": "2023-10-11",
+      "shimen_fill": 99.71,
+      "shimen_storage": 20466.215,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50837
+    },
+    {
+      "date": "2023-10-18",
+      "shimen_fill": 100,
+      "shimen_storage": 20534.693,
+      "zengwen_fill": 99.74,
+      "zengwen_storage": 50553
+    },
+    {
+      "date": "2023-10-25",
+      "shimen_fill": 99.92,
+      "shimen_storage": 20508.926,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50704
+    },
+    {
+      "date": "2023-11-01",
+      "shimen_fill": 98.79,
+      "shimen_storage": 20278.287,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50799
+    },
+    {
+      "date": "2023-11-08",
+      "shimen_fill": 95.06,
+      "shimen_storage": 19512.009,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50742
+    },
+    {
+      "date": "2023-11-15",
+      "shimen_fill": 90.73,
+      "shimen_storage": 18624.101,
+      "zengwen_fill": 98.62,
+      "zengwen_storage": 49987
+    },
+    {
+      "date": "2023-11-22",
+      "shimen_fill": 87.99,
+      "shimen_storage": 18061.812,
+      "zengwen_fill": 94.62,
+      "zengwen_storage": 47959
+    },
+    {
+      "date": "2023-11-29",
+      "shimen_fill": 84.21,
+      "shimen_storage": 17284.485,
+      "zengwen_fill": 91.84,
+      "zengwen_storage": 46551
+    },
+    {
+      "date": "2023-12-06",
+      "shimen_fill": 84.44,
+      "shimen_storage": 17332.987,
+      "zengwen_fill": 91.77,
+      "zengwen_storage": 46514
+    },
+    {
+      "date": "2023-12-13",
+      "shimen_fill": 84.33,
+      "shimen_storage": 17308.736,
+      "zengwen_fill": 90.59,
+      "zengwen_storage": 45917
+    },
+    {
+      "date": "2023-12-20",
+      "shimen_fill": 82.59,
+      "shimen_storage": 16951.581,
+      "zengwen_fill": 90.81,
+      "zengwen_storage": 46025
+    },
+    {
+      "date": "2023-12-27",
+      "shimen_fill": 81.21,
+      "shimen_storage": 16668.244,
+      "zengwen_fill": 91.06,
+      "zengwen_storage": 46152
+    },
+    {
+      "date": "2024-01-03",
+      "shimen_fill": 79.79,
+      "shimen_storage": 16377.806,
+      "zengwen_fill": 91.41,
+      "zengwen_storage": 46333
+    },
+    {
+      "date": "2024-01-10",
+      "shimen_fill": 77.85,
+      "shimen_storage": 15978.534,
+      "zengwen_fill": 91.59,
+      "zengwen_storage": 46424
+    },
+    {
+      "date": "2024-01-17",
+      "shimen_fill": 74.81,
+      "shimen_storage": 15355.643,
+      "zengwen_fill": 91.7,
+      "zengwen_storage": 46478
+    },
+    {
+      "date": "2024-01-24",
+      "shimen_fill": 72.8,
+      "shimen_storage": 14943.076,
+      "zengwen_fill": 90.56,
+      "zengwen_storage": 45899
+    },
+    {
+      "date": "2024-01-31",
+      "shimen_fill": 71.37,
+      "shimen_storage": 14649.492,
+      "zengwen_fill": 85.18,
+      "zengwen_storage": 42995
+    },
+    {
+      "date": "2024-02-07",
+      "shimen_fill": 66.91,
+      "shimen_storage": 13734.492,
+      "zengwen_fill": 79,
+      "zengwen_storage": 39876
+    },
+    {
+      "date": "2024-02-14",
+      "shimen_fill": 66.74,
+      "shimen_storage": 13699.03,
+      "zengwen_fill": 73.39,
+      "zengwen_storage": 37042
+    },
+    {
+      "date": "2024-02-21",
+      "shimen_fill": 60.22,
+      "shimen_storage": 12359.788,
+      "zengwen_fill": 67.54,
+      "zengwen_storage": 34091
+    },
+    {
+      "date": "2024-02-28",
+      "shimen_fill": 53.27,
+      "shimen_storage": 10933.267,
+      "zengwen_fill": 61.55,
+      "zengwen_storage": 31067
+    },
+    {
+      "date": "2024-03-06",
+      "shimen_fill": 47.1,
+      "shimen_storage": 9667.691,
+      "zengwen_fill": 55.46,
+      "zengwen_storage": 27993
+    },
+    {
+      "date": "2024-03-13",
+      "shimen_fill": 41.25,
+      "shimen_storage": 8467.143,
+      "zengwen_fill": 53.79,
+      "zengwen_storage": 27149
+    },
+    {
+      "date": "2024-03-20",
+      "shimen_fill": 35.58,
+      "shimen_storage": 7303.02,
+      "zengwen_fill": 53.85,
+      "zengwen_storage": 27179
+    },
+    {
+      "date": "2024-03-27",
+      "shimen_fill": 31.16,
+      "shimen_storage": 6396.184,
+      "zengwen_fill": 47.8,
+      "zengwen_storage": 24125
+    },
+    {
+      "date": "2024-04-03",
+      "shimen_fill": 27.72,
+      "shimen_storage": 5690.454,
+      "zengwen_fill": 41.58,
+      "zengwen_storage": 20988
+    },
+    {
+      "date": "2024-04-10",
+      "shimen_fill": 26.91,
+      "shimen_storage": 5523.748,
+      "zengwen_fill": 39.68,
+      "zengwen_storage": 20029
+    },
+    {
+      "date": "2024-04-17",
+      "shimen_fill": 24.25,
+      "shimen_storage": 4976.669,
+      "zengwen_fill": 34.4,
+      "zengwen_storage": 17363
+    },
+    {
+      "date": "2024-04-24",
+      "shimen_fill": 24.1,
+      "shimen_storage": 4946.172,
+      "zengwen_fill": 34.42,
+      "zengwen_storage": 17375
+    },
+    {
+      "date": "2024-05-01",
+      "shimen_fill": 28.7,
+      "shimen_storage": 5890.766,
+      "zengwen_fill": 34.32,
+      "zengwen_storage": 17325
+    },
+    {
+      "date": "2024-05-08",
+      "shimen_fill": 33.81,
+      "shimen_storage": 6939.79,
+      "zengwen_fill": 32.93,
+      "zengwen_storage": 16619
+    },
+    {
+      "date": "2024-05-15",
+      "shimen_fill": 32.54,
+      "shimen_storage": 6678.74,
+      "zengwen_fill": 31.55,
+      "zengwen_storage": 15927
+    },
+    {
+      "date": "2024-05-22",
+      "shimen_fill": 32.2,
+      "shimen_storage": 6608.405,
+      "zengwen_fill": 26,
+      "zengwen_storage": 13122
+    },
+    {
+      "date": "2024-05-29",
+      "shimen_fill": 33.04,
+      "shimen_storage": 6782.26,
+      "zengwen_fill": 30.44,
+      "zengwen_storage": 15365
+    },
+    {
+      "date": "2024-06-05",
+      "shimen_fill": 35.49,
+      "shimen_storage": 7284.003,
+      "zengwen_fill": 39.84,
+      "zengwen_storage": 20109
+    },
+    {
+      "date": "2024-06-12",
+      "shimen_fill": 37.24,
+      "shimen_storage": 7644.71,
+      "zengwen_fill": 47.43,
+      "zengwen_storage": 23939
+    },
+    {
+      "date": "2024-06-19",
+      "shimen_fill": 34.47,
+      "shimen_storage": 7074.815,
+      "zengwen_fill": 51.99,
+      "zengwen_storage": 26240
+    },
+    {
+      "date": "2024-06-26",
+      "shimen_fill": 33.99,
+      "shimen_storage": 6975.796,
+      "zengwen_fill": 48.91,
+      "zengwen_storage": 24687
+    },
+    {
+      "date": "2024-07-03",
+      "shimen_fill": 38.12,
+      "shimen_storage": 7823.701,
+      "zengwen_fill": 51.14,
+      "zengwen_storage": 25812
+    },
+    {
+      "date": "2024-07-10",
+      "shimen_fill": 40.92,
+      "shimen_storage": 8399.783,
+      "zengwen_fill": 50.58,
+      "zengwen_storage": 25532
+    },
+    {
+      "date": "2024-07-17",
+      "shimen_fill": 48.91,
+      "shimen_storage": 10038.509,
+      "zengwen_fill": 50.24,
+      "zengwen_storage": 25356
+    },
+    {
+      "date": "2024-07-24",
+      "shimen_fill": 50.97,
+      "shimen_storage": 10462.941,
+      "zengwen_fill": 49.77,
+      "zengwen_storage": 25123
+    },
+    {
+      "date": "2024-07-31",
+      "shimen_fill": 98.13,
+      "shimen_storage": 20141.612,
+      "zengwen_fill": 99.53,
+      "zengwen_storage": 46552
+    },
+    {
+      "date": "2024-08-07",
+      "shimen_fill": 98.38,
+      "shimen_storage": 20192.865,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48143
+    },
+    {
+      "date": "2024-08-14",
+      "shimen_fill": 98.71,
+      "shimen_storage": 20261.203,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49032
+    },
+    {
+      "date": "2024-08-21",
+      "shimen_fill": 99.33,
+      "shimen_storage": 20389.335,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49648
+    },
+    {
+      "date": "2024-08-28",
+      "shimen_fill": 98.92,
+      "shimen_storage": 20303.914,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49498
+    },
+    {
+      "date": "2024-09-04",
+      "shimen_fill": 98.96,
+      "shimen_storage": 20312.456,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50324
+    },
+    {
+      "date": "2024-09-11",
+      "shimen_fill": 98.92,
+      "shimen_storage": 20303.914,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50475
+    },
+    {
+      "date": "2024-09-18",
+      "shimen_fill": 97.54,
+      "shimen_storage": 20022.022,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50475
+    },
+    {
+      "date": "2024-09-25",
+      "shimen_fill": 100,
+      "shimen_storage": 20534.693,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50512
+    },
+    {
+      "date": "2024-10-02",
+      "shimen_fill": 93.75,
+      "shimen_storage": 19242.899,
+      "zengwen_fill": 98.1,
+      "zengwen_storage": 49517
+    },
+    {
+      "date": "2024-10-09",
+      "shimen_fill": 99.63,
+      "shimen_storage": 20449.13,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51042
+    },
+    {
+      "date": "2024-10-16",
+      "shimen_fill": 99.54,
+      "shimen_storage": 20432.046,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50815
+    },
+    {
+      "date": "2024-10-23",
+      "shimen_fill": 99.75,
+      "shimen_storage": 20474.757,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50739
+    },
+    {
+      "date": "2024-10-30",
+      "shimen_fill": 97.13,
+      "shimen_storage": 19936.6,
+      "zengwen_fill": 99.74,
+      "zengwen_storage": 50343
+    },
+    {
+      "date": "2024-11-06",
+      "shimen_fill": 100,
+      "shimen_storage": 20569.43,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51023
+    },
+    {
+      "date": "2024-11-13",
+      "shimen_fill": 99.67,
+      "shimen_storage": 20457.672,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50910
+    },
+    {
+      "date": "2024-11-20",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.588,
+      "zengwen_fill": 100,
+      "zengwen_storage": 50928
+    },
+    {
+      "date": "2024-11-27",
+      "shimen_fill": 99.63,
+      "shimen_storage": 20449.13,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51118
+    },
+    {
+      "date": "2024-12-04",
+      "shimen_fill": 100,
+      "shimen_storage": 20543.377,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51118
+    },
+    {
+      "date": "2024-12-11",
+      "shimen_fill": 100,
+      "shimen_storage": 20578.111,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51194
+    },
+    {
+      "date": "2024-12-18",
+      "zengwen_fill": 100,
+      "zengwen_storage": 50853,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2024-12-25",
+      "zengwen_fill": 100,
+      "zengwen_storage": 51137,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2025-01-01",
+      "zengwen_fill": 100,
+      "zengwen_storage": 50758,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2025-01-08",
+      "zengwen_fill": 100,
+      "zengwen_storage": 50966,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2025-01-15",
+      "shimen_fill": 96.21,
+      "shimen_storage": 19748.707199999997,
+      "zengwen_fill": 100,
+      "zengwen_storage": 51118
+    },
+    {
+      "date": "2025-01-22",
+      "shimen_fill": 94.57,
+      "shimen_storage": 19411.056,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49956
+    },
+    {
+      "date": "2025-01-29",
+      "shimen_fill": 92.6,
+      "shimen_storage": 19007.395199999995,
+      "zengwen_fill": 100,
+      "zengwen_storage": 49615
+    },
+    {
+      "date": "2025-02-05",
+      "shimen_fill": 92.68,
+      "shimen_storage": 19024.243200000004,
+      "zengwen_fill": 98.05,
+      "zengwen_storage": 48220
+    },
+    {
+      "date": "2025-02-12",
+      "shimen_fill": 87.83,
+      "shimen_storage": 18028.742399999996,
+      "zengwen_fill": 92.57,
+      "zengwen_storage": 45528
+    },
+    {
+      "date": "2025-02-19",
+      "shimen_fill": 88.44,
+      "shimen_storage": 18152.8128,
+      "zengwen_fill": 88.24,
+      "zengwen_storage": 43397
+    },
+    {
+      "date": "2025-02-26",
+      "zengwen_fill": 82.39,
+      "zengwen_storage": 40519,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2025-03-05",
+      "zengwen_fill": 80.92,
+      "zengwen_storage": 39800,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2025-03-12",
+      "shimen_fill": 87.79,
+      "shimen_storage": 18020.447999999997,
+      "zengwen_fill": 80.82,
+      "zengwen_storage": 39749
+    },
+    {
+      "date": "2025-03-19",
+      "shimen_fill": 93.79,
+      "shimen_storage": 19251.302399999993,
+      "zengwen_fill": 80.44,
+      "zengwen_storage": 39561
+    },
+    {
+      "date": "2025-03-26",
+      "shimen_fill": 94.45,
+      "shimen_storage": 19385.827199999996,
+      "zengwen_fill": 78.95,
+      "zengwen_storage": 38831
+    },
+    {
+      "date": "2025-04-02",
+      "shimen_fill": 95.8,
+      "shimen_storage": 19663.344,
+      "zengwen_fill": 72.98,
+      "zengwen_storage": 35892
+    },
+    {
+      "date": "2025-04-09",
+      "shimen_fill": 98.21,
+      "shimen_storage": 20158.6752,
+      "zengwen_fill": 68.94,
+      "zengwen_storage": 33907
+    },
+    {
+      "date": "2025-04-16",
+      "shimen_fill": 99.46,
+      "shimen_storage": 20414.937600000005,
+      "zengwen_fill": 69.04,
+      "zengwen_storage": 33956
+    },
+    {
+      "date": "2025-04-23",
+      "shimen_fill": 99.21,
+      "shimen_storage": 20363.702399999995,
+      "zengwen_fill": 67.02,
+      "zengwen_storage": 32963
+    },
+    {
+      "date": "2025-04-30",
+      "shimen_fill": 99.17,
+      "shimen_storage": 20355.1488,
+      "zengwen_fill": 61.28,
+      "zengwen_storage": 30140
+    },
+    {
+      "date": "2025-05-07",
+      "shimen_fill": 96.59,
+      "shimen_storage": 19825.516799999998,
+      "zengwen_fill": 60.49,
+      "zengwen_storage": 27563
+    },
+    {
+      "date": "2025-05-14",
+      "shimen_fill": 97.42,
+      "shimen_storage": 19996.416,
+      "zengwen_fill": 60.99,
+      "zengwen_storage": 27787
+    },
+    {
+      "date": "2025-05-21",
+      "shimen_fill": 95.96,
+      "shimen_storage": 19697.3856,
+      "zengwen_fill": 61.12,
+      "zengwen_storage": 27847
+    },
+    {
+      "date": "2025-05-28",
+      "shimen_fill": 95.51,
+      "shimen_storage": 19604.5056,
+      "zengwen_fill": 56.23,
+      "zengwen_storage": 25622
+    },
+    {
+      "date": "2025-06-04",
+      "shimen_fill": 96.34,
+      "shimen_storage": 19774.2816,
+      "zengwen_fill": 56.87,
+      "zengwen_storage": 25912
+    },
+    {
+      "date": "2025-06-11",
+      "shimen_fill": 96.3,
+      "shimen_storage": 19765.728,
+      "zengwen_fill": 63.23,
+      "zengwen_storage": 28811
+    },
+    {
+      "date": "2025-06-18",
+      "shimen_fill": 95.22,
+      "shimen_storage": 19545.667199999996,
+      "zengwen_fill": 74.38,
+      "zengwen_storage": 33891
+    },
+    {
+      "date": "2025-06-25",
+      "shimen_fill": 95.31,
+      "shimen_storage": 19562.4288,
+      "zengwen_fill": 78.27,
+      "zengwen_storage": 35662
+    },
+    {
+      "date": "2025-07-02",
+      "shimen_fill": 95.1,
+      "shimen_storage": 19520.4384,
+      "zengwen_fill": 81.1,
+      "zengwen_storage": 36950
+    },
+    {
+      "date": "2025-07-09",
+      "shimen_fill": 93.09,
+      "shimen_storage": 19108.3104,
+      "zengwen_fill": 99.02,
+      "zengwen_storage": 45118
+    },
+    {
+      "date": "2025-07-16",
+      "shimen_fill": 95.26,
+      "shimen_storage": 19554.048,
+      "zengwen_fill": 100,
+      "zengwen_storage": 46547
+    },
+    {
+      "date": "2025-07-23",
+      "shimen_fill": 95.26,
+      "shimen_storage": 19554.048,
+      "zengwen_fill": 100,
+      "zengwen_storage": 46278
+    },
+    {
+      "date": "2025-07-30",
+      "shimen_fill": 97.92,
+      "shimen_storage": 20098.8864,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48639
+    },
+    {
+      "date": "2025-08-06",
+      "shimen_fill": 96.38,
+      "shimen_storage": 19782.835199999998,
+      "zengwen_fill": 100,
+      "zengwen_storage": 46403
+    },
+    {
+      "date": "2025-08-13",
+      "shimen_fill": 96.42,
+      "shimen_storage": 19791.388800000004,
+      "zengwen_fill": 99.77,
+      "zengwen_storage": 45456
+    },
+    {
+      "date": "2025-08-20",
+      "shimen_fill": 97.34,
+      "shimen_storage": 19979.308800000003,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47769
+    },
+    {
+      "date": "2025-08-27",
+      "shimen_fill": 96.88,
+      "shimen_storage": 19885.3056,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47823
+    },
+    {
+      "date": "2025-09-03",
+      "shimen_fill": 96.21,
+      "shimen_storage": 19748.707199999997,
+      "zengwen_fill": 98.6,
+      "zengwen_storage": 46690
+    },
+    {
+      "date": "2025-09-10",
+      "shimen_fill": 96.46,
+      "shimen_storage": 19799.942399999993,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47427
+    },
+    {
+      "date": "2025-09-17",
+      "shimen_fill": 96.42,
+      "shimen_storage": 19791.388800000004,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47463
+    },
+    {
+      "date": "2025-09-24",
+      "shimen_fill": 99,
+      "shimen_storage": 20321.020799999995,
+      "zengwen_fill": 100,
+      "zengwen_storage": 48528
+    },
+    {
+      "date": "2025-10-01",
+      "shimen_fill": 99.92,
+      "shimen_storage": 20508.940799999993,
+      "zengwen_fill": 100,
+      "zengwen_storage": 47589
+    },
+    {
+      "date": "2025-10-08",
+      "shimen_fill": 97.75,
+      "shimen_storage": 20064.7584,
+      "zengwen_fill": 97.09,
+      "zengwen_storage": 47751
+    },
+    {
+      "date": "2025-10-15",
+      "shimen_fill": 94.81,
+      "shimen_storage": 19461.5136,
+      "zengwen_fill": 93.55,
+      "zengwen_storage": 46010
+    },
+    {
+      "date": "2025-10-22",
+      "shimen_fill": 94.94,
+      "shimen_storage": 19486.742399999996,
+      "zengwen_fill": 93.52,
+      "zengwen_storage": 45992
+    },
+    {
+      "date": "2025-10-29",
+      "shimen_fill": 100,
+      "shimen_storage": 20647.579,
+      "zengwen_fill": 91.19,
+      "zengwen_storage": 44850
+    },
+    {
+      "date": "2025-11-05",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.5984,
+      "zengwen_fill": 86.73,
+      "zengwen_storage": 42657
+    },
+    {
+      "date": "2025-11-12",
+      "shimen_fill": 99.75,
+      "shimen_storage": 20474.7264,
+      "zengwen_fill": 86.45,
+      "zengwen_storage": 42516
+    },
+    {
+      "date": "2025-11-19",
+      "shimen_fill": 99.79,
+      "shimen_storage": 20483.28,
+      "zengwen_fill": 82,
+      "zengwen_storage": 40330
+    },
+    {
+      "date": "2025-11-26",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.5984,
+      "zengwen_fill": 76.22,
+      "zengwen_storage": 37484
+    },
+    {
+      "date": "2025-12-03",
+      "shimen_fill": 99.54,
+      "shimen_storage": 20432.0448,
+      "zengwen_fill": 74.42,
+      "zengwen_storage": 36602
+    },
+    {
+      "date": "2025-12-10",
+      "shimen_fill": 99.42,
+      "shimen_storage": 20406.384,
+      "zengwen_fill": 74.59,
+      "zengwen_storage": 36685
+    },
+    {
+      "date": "2025-12-17",
+      "shimen_fill": 99.33,
+      "shimen_storage": 20389.363200000007,
+      "zengwen_fill": 74.76,
+      "zengwen_storage": 36768
+    },
+    {
+      "date": "2025-12-24",
+      "shimen_fill": 98.04,
+      "shimen_storage": 20124.547199999997,
+      "zengwen_fill": 74.86,
+      "zengwen_storage": 36817
+    },
+    {
+      "date": "2025-12-31",
+      "shimen_fill": 98.75,
+      "shimen_storage": 20269.7856,
+      "zengwen_fill": 75.03,
+      "zengwen_storage": 36900
+    },
+    {
+      "date": "2026-01-07",
+      "shimen_fill": 99.63,
+      "shimen_storage": 20449.152,
+      "zengwen_fill": 75.1,
+      "zengwen_storage": 36934
+    },
+    {
+      "date": "2026-01-14",
+      "shimen_fill": 99.58,
+      "shimen_storage": 20440.5984,
+      "zengwen_fill": 75.17,
+      "zengwen_storage": 36967
+    },
+    {
+      "date": "2026-01-21",
+      "shimen_fill": 98.46,
+      "shimen_storage": 20209.9104,
+      "zengwen_fill": 69.24,
+      "zengwen_storage": 34052
+    },
+    {
+      "date": "2026-01-28",
+      "shimen_fill": 97.25,
+      "shimen_storage": 19962.2016,
+      "zengwen_fill": 62.83,
+      "zengwen_storage": 30899
+    },
+    {
+      "date": "2026-02-04",
+      "shimen_fill": 95.47,
+      "shimen_storage": 19596.1248,
+      "zengwen_fill": 56.09,
+      "zengwen_storage": 27291
+    },
+    {
+      "date": "2026-02-11",
+      "shimen_fill": 92.89,
+      "shimen_storage": 19066.32,
+      "zengwen_fill": 50.7,
+      "zengwen_storage": 24668
+    },
+    {
+      "date": "2026-02-18",
+      "shimen_fill": 87.63,
+      "shimen_storage": 17987.788800000002,
+      "zengwen_fill": 48.05,
+      "zengwen_storage": 23379
+    },
+    {
+      "date": "2026-02-25",
+      "shimen_fill": 81.7,
+      "shimen_storage": 16770.5856,
+      "zengwen_fill": 46.21,
+      "zengwen_storage": 22484
+    },
+    {
+      "date": "2026-03-04",
+      "zengwen_fill": 39.61,
+      "zengwen_storage": 19270,
+      "shimen_fill": null,
+      "shimen_storage": null
+    },
+    {
+      "date": "2026-03-11",
+      "shimen_fill": 69.34,
+      "shimen_storage": 14233.104,
+      "zengwen_fill": 37,
+      "zengwen_storage": 18000
+    },
+    {
+      "date": "2026-03-18",
+      "shimen_fill": 62.29,
+      "shimen_storage": 12784.9536,
+      "zengwen_fill": 30.26,
+      "zengwen_storage": 14721
+    },
+    {
+      "date": "2026-03-25",
+      "shimen_fill": 56.83,
+      "shimen_storage": 11665.1232,
+      "zengwen_fill": 28.2,
+      "zengwen_storage": 13718
+    },
+    {
+      "date": "2026-04-01",
+      "shimen_fill": 51.35,
+      "shimen_storage": 10540.8,
+      "zengwen_fill": 24.36,
+      "zengwen_storage": 11853
+    },
+    {
+      "date": "2026-04-08",
+      "shimen_fill": 67.6,
+      "shimen_storage": 13876.358399999997,
+      "zengwen_fill": 21.51,
+      "zengwen_storage": 10465
+    },
+    {
+      "date": "2026-04-15",
+      "shimen_fill": 70.94,
+      "shimen_storage": 14561.856,
+      "zengwen_fill": 20.66,
+      "zengwen_storage": 10052
+    },
+    {
+      "date": "2026-04-22",
+      "shimen_fill": 68.71,
+      "shimen_storage": 14103.331199999997,
+      "zengwen_fill": 17.08,
+      "zengwen_storage": 8308
+    },
+    {
+      "date": "2026-04-29",
+      "shimen_fill": 67.67,
+      "shimen_storage": 13890.528,
+      "zengwen_fill": 15.5,
+      "zengwen_storage": 7541
+    },
+    {
+      "date": "2026-05-06",
+      "shimen_fill": 68.16,
+      "shimen_storage": 13989.801600000003,
+      "zengwen_fill": 11.86,
+      "zengwen_storage": 5337
+    },
+    {
+      "date": "2026-05-13",
+      "shimen_fill": 71.83,
+      "shimen_storage": 14744.4192,
+      "zengwen_fill": 11.23,
+      "zengwen_storage": 5056
+    },
+    {
+      "date": "2026-05-20",
+      "shimen_fill": 72.3,
+      "shimen_storage": 14839.4592,
+      "zengwen_fill": 12.1,
+      "zengwen_storage": 5445
+    },
+    {
+      "date": "2026-05-27",
+      "shimen_fill": 67.4,
+      "shimen_storage": 13833.7632,
+      "zengwen_fill": 10.61,
+      "zengwen_storage": 4774
+    },
+    {
+      "date": "2026-06-03",
+      "shimen_fill": 61.86,
+      "shimen_storage": 12698.0352,
+      "zengwen_fill": 9.43,
+      "zengwen_storage": 4245
+    },
+    {
+      "date": "2026-06-10",
+      "shimen_fill": 72.15,
+      "shimen_storage": 14810.169600000003,
+      "zengwen_fill": 15.98,
+      "zengwen_storage": 7190
+    }
+  ]
+}
