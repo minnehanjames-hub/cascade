@@ -40,7 +40,14 @@ function loadOni(file) {
   }
   return map;
 }
-const oniMap = loadOni('/tmp/oni.txt');
+// ONI history is committed to the repo for reproducibility (refresh with:
+// curl https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt > research/data/oni-history.txt)
+const ONI_FILE = path.join(__dirname, '..', 'research', 'data', 'oni-history.txt');
+if (!fs.existsSync(ONI_FILE)) {
+  console.error(`Missing ${ONI_FILE}. Fetch it with:\n  curl https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt > research/data/oni-history.txt`);
+  process.exit(1);
+}
+const oniMap = loadOni(ONI_FILE);
 function oniFor(dateStr) {
   const ym = dateStr.slice(0, 7);
   if (oniMap.has(ym)) return oniMap.get(ym);

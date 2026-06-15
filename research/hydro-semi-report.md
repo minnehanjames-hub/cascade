@@ -2,9 +2,39 @@
 ## A Complexity Collapse Perspective
 
 **Project:** Cascade Hydro-Semiconductor Risk Engine  
-**Version:** 1.0 — Living Document  
+**Version:** 1.1 — Validated &amp; Closed  
 **Date:** June 2026  
-**Status:** Active Research  
+**Status:** Thesis tested — tradeable claim NOT supported (see Validation Update)  
+
+---
+
+## 0. Validation Update — June 2026 (read this first)
+
+> The body of this document below makes a bullish case: that water stress is a "grossly
+> underpriced" systemic risk and that an "early-warning window for pre-positioning is open."
+> **We subsequently put that claim through a proper validation gauntlet, and it did not survive.**
+> This note records the honest result; the original thesis is preserved below as written, for transparency.
+>
+> **What held up:**
+> - The reservoir early-warning model is *real*. On 16 years of strictly causal walk-forward testing it
+>   anticipated all 6 severe Taiwan droughts, its probabilities are well-calibrated, and it beats a
+>   seasonal-null model ~4.5×.
+>
+> **What did not:**
+> - The "critical slowing down" indicators — the document's intellectual centerpiece — add essentially
+>   nothing over hydrological state, season, and ENSO.
+> - **The water→equity link is not in the price record.** An event study on the exposed names across the
+>   6 real droughts found they *rose* +3.8% vs the semi sector afterward (the short thesis wanted them to
+>   fall); a thesis-structured long-short book *lost* ~8.9% over the following 6 months. Reason: TSMC keeps
+>   output near-full through droughts via trucking, 86% recycling, and growing desalination — so the
+>   feared curtailment, and its market impact, never arrives.
+> - The contrarian flip (buy the drought scare) also fails: a permutation test (p=0.97) shows entering at
+>   a *random* month beat drought entry; the apparent gain was just basket beta.
+>
+> **Conclusion:** Cascade is a *calibrated reservoir-stress monitor*, not a validated source of equity
+> alpha. The dollar-at-risk figures below are illustrative model outputs, not evidence of a market
+> mispricing. The project's real output is the disciplined apparatus that disproved its own thesis before
+> any capital was committed. Full validation is on the dashboard's *Model &amp; validation* tab.
 
 ---
 
