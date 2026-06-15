@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-06-15T14:38:42.476Z",
+  "hypothesis": "LONG the Taiwan-water-exposed semi basket at a severe drought onset; hold ~6 months; capture the fade of an unrealised-curtailment discount.",
+  "basket": [
+    "ASX",
+    "AMKR",
+    "ENTG",
+    "ACMR",
+    "UCTT",
+    "MRVL",
+    "LRCX",
+    "NVDA"
+  ],
+  "events": [
+    "2011-05",
+    "2015-04",
+    "2018-05",
+    "2020-05",
+    "2021-04",
+    "2023-04"
+  ],
+  "benchmark": "SOXX",
+  "horizons": [
+    {
+      "h": 3,
+      "meanAbnormalPct": 8.1,
+      "n": 6
+    },
+    {
+      "h": 6,
+      "meanAbnormalPct": 3.8,
+      "n": 6
+    },
+    {
+      "h": 9,
+      "meanAbnormalPct": 8.3,
+      "n": 6
+    },
+    {
+      "h": 12,
+      "meanAbnormalPct": 11.8,
+      "n": 6
+    }
+  ],
+  "vsSPY6mPct": 5.4,
+  "mechanism": {
+    "meanRunup6mPct": 2.5,
+    "soldOffIntoDroughts": "2/6",
+    "meanRecovery6mPct": 3.8,
+    "roseAfter": "5/6",
+    "note": "Contrarian edge needs a discount to fade: the basket should UNDERPERFORM into the drought (negative run-up) then RECOVER. If run-up is not negative, the post-gain is beta/drift, not a fade."
+  },
+  "permutation": {
+    "droughtEntryMean6mPct": 3.8,
+    "randomEntryMean6mPct": 14.3,
+    "pValue": 0.972,
+    "draws": 20000,
+    "note": "p = chance that entering at 6 RANDOM months beats this drought-entry result. Small p = the drought signal adds real information beyond the basket's baseline tendency."
+  },
+  "costs": "Unlevered long basket: round-trip frictions ~0.1–0.2%, immaterial vs the effect size. No borrow. Costs do not change the verdict.",
+  "perEvent": [
+    {
+      "event": "2011-05",
+      "runup6mPct": 0.5,
+      "fwd6mPct": 9.3
+    },
+    {
+      "event": "2015-04",
+      "runup6mPct": 9.4,
+      "fwd6mPct": 8.4
+    },
+    {
+      "event": "2018-05",
+      "runup6mPct": 12.1,
+      "fwd6mPct": -15.1
+    },
+    {
+      "event": "2020-05",
+      "runup6mPct": -6.9,
+      "fwd6mPct": 3
+    },
+    {
+      "event": "2021-04",
+      "runup6mPct": -5.7,
+      "fwd6mPct": 8.1
+    },
+    {
+      "event": "2023-04",
+      "runup6mPct": 5.6,
+      "fwd6mPct": 9.3
+    }
+  ],
+  "verdict": "FAILS",
+  "verdictText": "No edge. The decisive control kills it: entering at a RANDOM month beat the sector by +14% over 6 months, vs only +3.8% entering at droughts — so drought timing was actually WORSE than random (permutation p=0.972). And the mechanism is absent: the basket did NOT sell off into droughts (only 2/6), so there was no fear-discount to fade. The apparent \"+3.8% contrarian gain\" is just basket beta — these are high-growth, high-beta names (NVDA, ACMR, MRVL…) that beat the sector entering almost any time. The drought adds no information.",
+  "caveats": [
+    "6 events — not enough for statistical proof; the permutation test mitigates but cannot cure this.",
+    "Overlapping 6-month windows are autocorrelated, which makes the permutation p optimistic (too small).",
+    "Hypothesis was generated from these same events — only a true forward test (below) is genuinely out-of-sample.",
+    "Confounders uncontrolled: 2020 COVID rebound, 2021 AI boom, 2023 AI boom all fell in the post-drought windows."
+  ]
+}

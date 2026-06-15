@@ -26,11 +26,11 @@ function themeCharts() {
 
 // ── boot ─────────────────────────────────────────────────────────────────────
 const getJSON = (f) => fetch(f, { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(`${f} HTTP ${r.status}`); return r.json(); });
-Promise.all([getJSON('data.json'), getJSON('analysis.json'), getJSON('validation.json'), getJSON('event-study.json')])
-  .then(([d, a, v, es]) => render(d, a, v, es))
+Promise.all([getJSON('data.json'), getJSON('analysis.json'), getJSON('validation.json'), getJSON('event-study.json'), getJSON('contrarian.json')])
+  .then(([d, a, v, es, ct]) => render(d, a, v, es, ct))
   .catch((err) => { $('loading').hidden = true; const e = $('error'); e.hidden = false; e.textContent = `Failed to load memo:\n${err.message}`; });
 
-function render(d, a, v, es) {
+function render(d, a, v, es, ct) {
   $('loading').hidden = true;
   $('app').hidden = false;
   themeCharts();
@@ -61,6 +61,36 @@ function render(d, a, v, es) {
   renderHow(v);
   renderEventStudy(es);
   renderRealityBanner(es);
+  renderLedger(es, ct);
+}
+
+// ── hypothesis ledger ────────────────────────────────────────────────────────
+function renderLedger(es, ct) {
+  if (!es || !ct) return;
+  const items = [
+    {
+      title: 'H1 — SHORT the Taiwan-water-exposed names at a drought',
+      verdict: es.verdict, cls: es.verdict === 'NOT SUPPORTED' ? 'bad' : 'warn',
+      killedBy: 'Event study (market-adjusted, 6 droughts)',
+      finding: `After droughts the basket <strong>rose</strong> +${es.shortBasket.grandMeanAbnormal6m}% vs the sector (wanted negative); the long-short book lost ${es.longShortSpread.grandMean6m}% over 6 months. TSMC never actually curtailed.`,
+    },
+    {
+      title: 'H2 — LONG the same names (contrarian: buy the drought scare)',
+      verdict: ct.verdict, cls: ct.verdict === 'FAILS' ? 'bad' : ct.verdict === 'SURVIVES' ? 'good' : 'warn',
+      killedBy: 'Permutation test + mechanism check',
+      finding: `The +${ct.mechanism.meanRecovery6mPct}% post-drought gain looked like an edge — until the control: entering at a <strong>random</strong> month beat the sector by +${ct.permutation.randomEntryMean6mPct}% (vs +${ct.permutation.droughtEntryMean6mPct}% at droughts), permutation <strong>p=${ct.permutation.pValue}</strong>. The basket also didn't sell off into droughts (${ct.mechanism.soldOffIntoDroughts}), so there was no discount to fade. The "edge" was just basket beta.`,
+    },
+  ];
+  const wrap = $('ledger');
+  items.forEach((it) => {
+    const pill = it.cls === 'good' ? 'ok' : 'warn';
+    wrap.appendChild(el('div', 'callout' + (it.cls === 'bad' ? '' : ' warn'),
+      `<h5>${it.title} <span class="verdict-pill ${pill}" style="margin-left:6px">${it.verdict}</span></h5>
+       <p style="margin-top:6px">${it.finding}</p>
+       <p class="mono small" style="color:var(--muted);margin-top:8px">killed by: ${it.killedBy}</p>`));
+  });
+  wrap.appendChild(el('p', 'caption',
+    'This is the point of the tool. A naive backtest would have sold you H2 (+3.8%, 5 of 6 events up). The gauntlet caught that it was beta, not signal — for the price of a script instead of a portfolio. When a hypothesis eventually survives this, it gets forward-tested live here before any capital is risked. None has yet.'));
 }
 
 // ── event study (the keystone test) ──────────────────────────────────────────
