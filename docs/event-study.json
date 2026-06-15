@@ -1,0 +1,632 @@
+{
+  "generatedAt": "2026-06-15T14:22:20.691Z",
+  "method": {
+    "events": [
+      "2011-05",
+      "2015-04",
+      "2018-05",
+      "2020-05",
+      "2021-04",
+      "2023-04"
+    ],
+    "horizonsMonths": [
+      3,
+      6
+    ],
+    "benchmark": "SOXX",
+    "benchmark2": "SPY",
+    "note": "Market-adjusted forward returns (ticker minus SOXX) over 3 and 6 months from each severe drought onset. Negative=thesis-consistent for shorts; positive for longs."
+  },
+  "shortBasket": {
+    "sleeve": "short",
+    "perEvent": [
+      {
+        "event": "2011-05",
+        "n": 8,
+        "meanAbnormal6m": 9.3
+      },
+      {
+        "event": "2015-04",
+        "n": 8,
+        "meanAbnormal6m": 8.4
+      },
+      {
+        "event": "2018-05",
+        "n": 8,
+        "meanAbnormal6m": -15.1
+      },
+      {
+        "event": "2020-05",
+        "n": 8,
+        "meanAbnormal6m": 3
+      },
+      {
+        "event": "2021-04",
+        "n": 8,
+        "meanAbnormal6m": 8.1
+      },
+      {
+        "event": "2023-04",
+        "n": 8,
+        "meanAbnormal6m": 9.3
+      }
+    ],
+    "grandMeanAbnormal6m": 3.8,
+    "tStat": 0.98,
+    "consistentEvents": "1/6"
+  },
+  "longBasket": {
+    "sleeve": "long",
+    "perEvent": [
+      {
+        "event": "2011-05",
+        "n": 5,
+        "meanAbnormal6m": 3.1
+      },
+      {
+        "event": "2015-04",
+        "n": 5,
+        "meanAbnormal6m": -8.8
+      },
+      {
+        "event": "2018-05",
+        "n": 5,
+        "meanAbnormal6m": -9.1
+      },
+      {
+        "event": "2020-05",
+        "n": 5,
+        "meanAbnormal6m": 12
+      },
+      {
+        "event": "2021-04",
+        "n": 5,
+        "meanAbnormal6m": -2.9
+      },
+      {
+        "event": "2023-04",
+        "n": 5,
+        "meanAbnormal6m": -24.7
+      }
+    ],
+    "grandMeanAbnormal6m": -5.1,
+    "tStat": -0.99,
+    "consistentEvents": "2/6"
+  },
+  "longShortSpread": {
+    "perEvent": [
+      {
+        "event": "2011-05",
+        "spread6m": -6.3
+      },
+      {
+        "event": "2015-04",
+        "spread6m": -17.2
+      },
+      {
+        "event": "2018-05",
+        "spread6m": 6
+      },
+      {
+        "event": "2020-05",
+        "spread6m": 9
+      },
+      {
+        "event": "2021-04",
+        "spread6m": -11
+      },
+      {
+        "event": "2023-04",
+        "spread6m": -34
+      }
+    ],
+    "grandMean6m": -8.9
+  },
+  "shortTickers": [
+    {
+      "ticker": "ASX",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": -8.3,
+      "meanAbnormal3m": -6.4,
+      "rangeAbnormal6m": [
+        -24,
+        9
+      ],
+      "consistentSign": "5/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": -2.5
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -13.2
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -8.4
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -10.2
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -24.4
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 8.7
+        }
+      ]
+    },
+    {
+      "ticker": "AMKR",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": -10.5,
+      "meanAbnormal3m": -7.3,
+      "rangeAbnormal6m": [
+        -16,
+        -4
+      ],
+      "consistentSign": "6/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": -15.8
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -8.8
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -15.2
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -5.2
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -4.1
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -14.1
+        }
+      ]
+    },
+    {
+      "ticker": "ENTG",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": 5.4,
+      "meanAbnormal3m": 2.9,
+      "rangeAbnormal6m": [
+        -6,
+        12
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 6.6
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -0.9
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -6.3
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 10.5
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 12.3
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 10
+        }
+      ]
+    },
+    {
+      "ticker": "ACMR",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": 46.4,
+      "meanAbnormal3m": 57.9,
+      "rangeAbnormal6m": [
+        -6,
+        120
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 120.1
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": 108.1
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -2.7
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -6.3
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 21.6
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 37.6
+        }
+      ]
+    },
+    {
+      "ticker": "UCTT",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": -19.1,
+      "meanAbnormal3m": -2.1,
+      "rangeAbnormal6m": [
+        -37,
+        8
+      ],
+      "consistentSign": "5/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": -29.6
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -16.1
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -37.1
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 8.1
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -15.8
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -24.3
+        }
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": -0.5,
+      "meanAbnormal3m": 7.7,
+      "rangeAbnormal6m": [
+        -38,
+        39
+      ],
+      "consistentSign": "3/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 1.7
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -38
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -15.2
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -2.2
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 38.9
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 12
+        }
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": 0.3,
+      "meanAbnormal3m": -1,
+      "rangeAbnormal6m": [
+        -22,
+        22
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 1.5
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": 4.9
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -10.3
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 22.2
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -21.6
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 5
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "sleeve": "short",
+      "nEvents": 6,
+      "meanAbnormal6m": 17,
+      "meanAbnormal3m": 13.1,
+      "rangeAbnormal6m": [
+        -26,
+        58
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": -7.3
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": 31.7
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -25.6
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 6.6
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 57.5
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": 39.1
+        }
+      ]
+    }
+  ],
+  "longTickers": [
+    {
+      "ticker": "GFS",
+      "sleeve": "long",
+      "nEvents": 6,
+      "meanAbnormal6m": -20.5,
+      "meanAbnormal3m": -15.2,
+      "rangeAbnormal6m": [
+        -58,
+        1
+      ],
+      "consistentSign": "1/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 1
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -11.1
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -4.3
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -58.3
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -26.7
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -23.5
+        }
+      ]
+    },
+    {
+      "ticker": "TSEM",
+      "sleeve": "long",
+      "nEvents": 6,
+      "meanAbnormal6m": -23.7,
+      "meanAbnormal3m": -19.8,
+      "rangeAbnormal6m": [
+        -57,
+        0
+      ],
+      "consistentSign": "0/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": -27.2
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -5.7
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -29.7
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -22.9
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -0.3
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -56.7
+        }
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "sleeve": "long",
+      "nEvents": 6,
+      "meanAbnormal6m": -1.6,
+      "meanAbnormal3m": -1,
+      "rangeAbnormal6m": [
+        -13,
+        16
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 16.1
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -10.6
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -3.3
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": -11.2
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 12.9
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -13.4
+        }
+      ]
+    },
+    {
+      "ticker": "XYL",
+      "sleeve": "long",
+      "nEvents": 6,
+      "meanAbnormal6m": 4.5,
+      "meanAbnormal3m": 2.7,
+      "rangeAbnormal6m": [
+        -17,
+        22
+      ],
+      "consistentSign": "5/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 21.6
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": 1.9
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": 13.8
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 1.1
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": 5.7
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -17.2
+        }
+      ]
+    },
+    {
+      "ticker": "UMC",
+      "sleeve": "long",
+      "nEvents": 6,
+      "meanAbnormal6m": 15.9,
+      "meanAbnormal3m": -3.8,
+      "rangeAbnormal6m": [
+        -22,
+        151
+      ],
+      "consistentSign": "2/6",
+      "perEvent": [
+        {
+          "event": "2011-05",
+          "abnormal6m": 4
+        },
+        {
+          "event": "2015-04",
+          "abnormal6m": -18.5
+        },
+        {
+          "event": "2018-05",
+          "abnormal6m": -22.2
+        },
+        {
+          "event": "2020-05",
+          "abnormal6m": 151.1
+        },
+        {
+          "event": "2021-04",
+          "abnormal6m": -6.1
+        },
+        {
+          "event": "2023-04",
+          "abnormal6m": -12.8
+        }
+      ]
+    }
+  ],
+  "verdict": "NOT SUPPORTED",
+  "verdictText": "After real Taiwan droughts, the watchlist stocks did NOT underperform their sector — if anything they outperformed, and the thesis-structured long-short book LOST money over the following 6 months. The reservoir→equity link is not visible in the price record. The basket is an elegant hypothesis without a measurable market footprint — consistent with the fact that TSMC kept output near-full through every one of these droughts.",
+  "caveats": [
+    "Six events is far too few for statistical significance — treat every number as indicative, not proof. The t-stats are reported but underpowered.",
+    "The SOXX benchmark contains several of the test names (NVDA, LRCX, …), which dampens measured under/over-performance — a conservative bias.",
+    "Monthly resolution; event = drought onset month, which may already be partly priced (reservoirs were visibly low for months prior).",
+    "Coverage varies: GFS only exists from 2021, ACMR from 2017, so early events use fewer names.",
+    "This tests correlation of price with reservoir stress, not a clean causal curtailment→revenue→price chain. Confounders (COVID 2020, the 2021 chip boom, 2022–23 rate shock) are not controlled."
+  ]
+}

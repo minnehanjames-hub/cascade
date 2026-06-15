@@ -26,11 +26,11 @@ function themeCharts() {
 
 // ── boot ─────────────────────────────────────────────────────────────────────
 const getJSON = (f) => fetch(f, { cache: 'no-store' }).then((r) => { if (!r.ok) throw new Error(`${f} HTTP ${r.status}`); return r.json(); });
-Promise.all([getJSON('data.json'), getJSON('analysis.json'), getJSON('validation.json')])
-  .then(([d, a, v]) => render(d, a, v))
+Promise.all([getJSON('data.json'), getJSON('analysis.json'), getJSON('validation.json'), getJSON('event-study.json')])
+  .then(([d, a, v, es]) => render(d, a, v, es))
   .catch((err) => { $('loading').hidden = true; const e = $('error'); e.hidden = false; e.textContent = `Failed to load memo:\n${err.message}`; });
 
-function render(d, a, v) {
+function render(d, a, v, es) {
   $('loading').hidden = true;
   $('app').hidden = false;
   themeCharts();
@@ -59,6 +59,47 @@ function render(d, a, v) {
   renderValidation(v);
   renderAudit(v.audit);
   renderHow(v);
+  renderEventStudy(es);
+  renderRealityBanner(es);
+}
+
+// ── event study (the keystone test) ──────────────────────────────────────────
+function renderRealityBanner(es) {
+  if (!es) return;
+  const cls = es.verdict === 'SUPPORTED' ? 'ok' : es.verdict === 'NOT SUPPORTED' ? 'crit' : 'warn';
+  $('realityBanner').innerHTML = `<div class="reality ${cls}">
+    <div class="reality-tag">Reality check — keystone validation</div>
+    <div class="reality-head">Water→equity link: <strong>${es.verdict}</strong></div>
+    <p>${es.verdictText}</p>
+    <p class="reality-sub">Short basket after droughts: <strong>${es.shortBasket.grandMeanAbnormal6m > 0 ? '+' : ''}${es.shortBasket.grandMeanAbnormal6m}%</strong> vs sector (thesis wanted negative) · thesis long-short book: <strong>${es.longShortSpread.grandMean6m > 0 ? '+' : ''}${es.longShortSpread.grandMean6m}%</strong> over 6 months. Full test on the Model &amp; validation tab.</p>
+  </div>`;
+}
+
+function renderEventStudy(es) {
+  if (!es) return;
+  const cls = es.verdict === 'SUPPORTED' ? 'good' : es.verdict === 'NOT SUPPORTED' ? 'bad' : 'warn';
+  const sb = es.shortBasket, ls = es.longShortSpread;
+  const cards = [
+    { cls, v: es.verdict, l: 'Verdict', c: `${es.method.events.length} droughts, 2011–2023` },
+    { cls: sb.grandMeanAbnormal6m <= 0 ? 'good' : 'bad', v: `${sb.grandMeanAbnormal6m > 0 ? '+' : ''}${sb.grandMeanAbnormal6m}%`, l: 'Short basket vs sector (6m)', c: `wanted negative · ${sb.consistentEvents} right way` },
+    { cls: ls.grandMean6m >= 0 ? 'good' : 'bad', v: `${ls.grandMean6m > 0 ? '+' : ''}${ls.grandMean6m}%`, l: 'Thesis long-short book (6m)', c: 'profit if positive' },
+  ];
+  const grid = el('div', 'metric-grid', '');
+  grid.style.gridTemplateColumns = 'repeat(3,1fr)';
+  cards.forEach((m) => grid.appendChild(el('div', `mcard ${m.cls}`, `<div class="mv" style="font-size:${m.v.length > 6 ? 18 : 26}px">${m.v}</div><div class="ml">${m.l}</div><div class="mc">${m.c}</div>`)));
+  const wrap = $('eventStudy');
+  wrap.appendChild(grid);
+
+  // per-event short basket table
+  const t = el('table', 'ind');
+  t.style.marginTop = '18px';
+  t.innerHTML = '<tr><th>Drought onset</th><th>Short basket vs sector, +6m</th><th>Thesis-consistent?</th></tr>';
+  sb.perEvent.forEach((e) => {
+    const ok = e.meanAbnormal6m < 0;
+    t.appendChild(el('tr', null, `<td>${e.event}</td><td class="${ok ? 'tau-good' : 'tau-flag'}">${e.meanAbnormal6m > 0 ? '+' : ''}${e.meanAbnormal6m}%</td><td class="${ok ? 'tau-good' : 'tau-dim'}">${ok ? 'yes ✓' : 'no — rose vs peers'}</td></tr>`));
+  });
+  wrap.appendChild(t);
+  wrap.appendChild(el('p', 'caption', es.caveats[0] + ' ' + es.caveats[4]));
 }
 
 // ── tabs ─────────────────────────────────────────────────────────────────────
