@@ -1,28 +1,25 @@
 {
-  "generatedAt": "2026-06-22T11:33:34.665Z",
-  "date": "2026-06-22",
-  "dataMode": "live",
-  "mockSources": [],
-  "staleSources": [
+  "generatedAt": "2026-06-23T08:57:45.354Z",
+  "date": "2026-06-23",
+  "dataMode": "mixed",
+  "mockSources": [
     "taiwan"
   ],
+  "staleSources": [],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-06-22T11:33:35.740Z",
-      "stale": true,
-      "mock": false,
-      "error": null,
-      "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "509.76",
       "shimen_storage_mcm": 218.4,
+      "zengwen_storage_mcm": 529.1,
+      "combined_storage_mcm": 747.5,
+      "combined_fill_fraction": 0.735,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-06-21",
-      "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17850.24",
-      "zengwen_storage_mcm": 196.71,
-      "zengwen_fill_fraction": 0.2778,
-      "combined_storage_mcm": 415.11,
-      "combined_fill_fraction": 0.4081
+      "zengwen_fill_fraction": 0.747,
+      "source_date": "2026-06-09",
+      "stale": false,
+      "mock": true,
+      "fetchedAt": null,
+      "error": "Unterminated string in JSON at position 61440 (line 1863 column 17)",
+      "lastFetchAttempt": "2026-06-23T08:57:46.655Z"
     },
     "usgs": {
       "depth_m": 36.44,
@@ -80,7 +77,7 @@
         }
       ],
       "source_date": "2025-08-28",
-      "fetchedAt": "2026-06-22T11:33:35.196Z",
+      "fetchedAt": "2026-06-23T08:57:46.375Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,20 +118,20 @@
         }
       ],
       "date": "MAM 2026",
-      "fetchedAt": "2026-06-22T11:33:35.168Z",
+      "fetchedAt": "2026-06-23T08:57:45.757Z",
       "stale": false,
       "mock": false,
       "error": null
     }
   },
   "composite": {
-    "score": 0.025,
-    "activeCount": 2,
+    "score": 0,
+    "activeCount": 0,
     "total": 10,
     "components": {
-      "rawScore": 0.025070529802743817,
+      "rawScore": 0,
       "coActivationBoost": 1,
-      "coActiveCount": 2,
+      "coActiveCount": 0,
       "maxCompositeWeight": 58.81795625052449
     }
   },
@@ -142,26 +139,26 @@
     {
       "id": "tw_reservoir_combined_50pct",
       "severity": 3,
-      "active": true,
-      "stress": 0.288,
-      "detail": "Combined fill: 40.8% (Shimen 218 MCM / 70.7%, Zengwen 197 MCM / 27.8%)",
-      "status": "active"
+      "active": false,
+      "stress": 0,
+      "detail": "Combined fill: 73.5% (Shimen 218 MCM / 70.7%, Zengwen 529 MCM / 74.7%)",
+      "status": "inactive"
     },
     {
       "id": "tw_industrial_rationing",
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 27.8%",
+      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 74.7%",
       "status": "inactive"
     },
     {
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
-      "active": true,
-      "stress": 0.411,
-      "detail": "Water cost proxy ratio: 1.68x (simulation estimate)",
-      "status": "active"
+      "active": false,
+      "stress": 0,
+      "detail": "Water cost proxy ratio: 1.00x (simulation estimate)",
+      "status": "inactive"
     },
     {
       "id": "az_fab21_adjudication_ruling",
@@ -192,7 +189,7 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Shimen 70.7%, Zengwen 27.8% — both above 20%",
+      "detail": "Shimen 70.7%, Zengwen 74.7% — both above 20%",
       "status": "inactive"
     },
     {
@@ -222,20 +219,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4081,
+      "combinedFill": 0.735,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 196.71,
-        "fill": 0.2778,
+        "storage": 529.1,
+        "fill": 0.747,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.0003597294812139998
+        "tainan": 1.52275550447455e-9
       }
     },
     "arizona": {
