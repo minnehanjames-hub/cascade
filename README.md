@@ -6,6 +6,12 @@
 
 ---
 
+## In plain terms
+
+The world's most advanced computer chips need *enormous* amounts of clean water to make — and almost all of them are built in just two drought-prone places (Taiwan and Arizona). This project asks: **if those places run dry, can you see it coming and make money betting on it?**
+
+It pulls 16 years of real reservoir data and stress-tests the idea honestly. The verdict it reached: **you *can* predict the droughts months ahead — but you *can't* profitably trade them**, because the chip factories keep running through droughts anyway (trucking water in, recycling, desalination). The real achievement is a research engine disciplined enough to disprove its own moneymaking idea *before* any money was at risk.
+
 ## The one-paragraph story
 
 Advanced chips are among the most water-intensive products on earth, and >93% of sub-5nm capacity sits in two water-stressed geographies (Taiwan, Arizona). The thesis was that this is a *grossly underpriced* systemic risk that would propagate to markets. We built the engine, pulled 16 years of real reservoir data, and put the thesis through a proper validation gauntlet.
@@ -22,6 +28,20 @@ Advanced chips are among the most water-intensive products on earth, and >93% of
 | H2 — long them contrarian (buy the drought scare) | ❌ **Fails** | Permutation test p=0.97 — entering at a *random* month (+14%) beat drought entry (+3.8%); the gain was basket beta, not signal |
 
 **Validated tradeable signals today: 0.** That is the honest state, and the site says so.
+
+## The agents behind the verdict
+
+Cascade doesn't reach a conclusion from one model — it runs the thesis past a simulated **investment committee** of five independent agents, each with a different mandate. They deliberately disagree, and the final call is the *reconciliation* of their views, not a single voice. (Their full write-ups live in `docs/analysis.json` and the "Desk" tab of the dashboard.)
+
+| Agent | Role | Their job in the verdict | Current stance |
+|---|---|---|---|
+| **Derek Voss** | Fundamental Single-Name / Short-Seller | Bottom-up: is a specific stock's water dependency *underpriced* vs. what's already in the price? Flags NVDA's near-total reliance on TSMC. | SHORT |
+| **Priya Nair** | Event-Driven / Special Situations | Hunts asymmetric payoffs — cheap "tail insurance" (put options) that pays off big if a drought actually bites. | LONG PUTS |
+| **Marcus Reid** | Global Macro | Top-down: the mispricing is real, but is there a *catalyst now*? Watches ENSO, reservoir levels, the cycle. Says "real risk, wrong moment." | FLAT-WATCH |
+| **Helena Koh** | Chief Risk Officer / Skeptic | Capital preservation. Argues that when the engine's *own* stress score reads near-zero, you don't bet — and shorting a refilling reservoir is shorting your own thesis. | FLAT-WATCH |
+| **Model-Auditor** | Independent red-team (in `validation.json`) | Doesn't trade. Attacks the *methodology* — catches that the headline "26-week lead" was a seasonality artifact, that the sample is just 6 events in 16 years, and that the reservoir→stock link is unproven. Its unedited verdict: **PARTIAL-BUT-LIMITED**. |
+
+**How they combine into the conclusion:** the two bulls (Voss, Nair) make the case for a position; the macro and risk seats (Reid, Koh) gate it on timing and base rates; and the red-team auditor invalidates any "edge" that's really just seasonality or too small a sample to trust. The net result is the project's honest headline — **a real early-warning signal, but zero validated tradeable signals today** — sized at "starter / optionality only" precisely because the committee never reaches consensus to do more.
 
 ## Run it
 
