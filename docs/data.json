@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-03T08:47:46.780Z",
-  "date": "2026-07-03",
+  "generatedAt": "2026-07-04T08:22:38.407Z",
+  "date": "2026-07-04",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-07-03T08:47:48.105Z",
+      "fetchedAt": "2026-07-04T08:22:39.461Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "503.79",
+      "shimen_ewsc_raw": "508.56",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-07-03",
+      "source_date": "2026-07-04",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "16578.64",
-      "zengwen_storage_mcm": 182.7,
-      "zengwen_fill_fraction": 0.258,
-      "combined_storage_mcm": 401.1,
-      "combined_fill_fraction": 0.3943
+      "zengwen_ewsc_raw": "16117.05",
+      "zengwen_storage_mcm": 177.61,
+      "zengwen_fill_fraction": 0.2508,
+      "combined_storage_mcm": 396.01,
+      "combined_fill_fraction": 0.3893
     },
     "usgs": {
       "depth_m": 36.44,
@@ -80,25 +80,20 @@
         }
       ],
       "source_date": "2025-08-28",
-      "fetchedAt": "2026-07-03T08:47:47.462Z",
+      "fetchedAt": "2026-07-04T08:22:38.996Z",
       "stale": false,
       "mock": false,
       "error": null
     },
     "noaa": {
-      "oni": 0.48,
+      "oni": 0.98,
       "advisory_status": "ENSO-Neutral",
       "la_nina_advisory_active": false,
       "el_nino_advisory_active": false,
       "la_nina_watch_active": false,
       "el_nino_watch_active": false,
-      "tw_drought_probability_3m": 0.3,
+      "tw_drought_probability_3m": 0.2,
       "recent_oni": [
-        {
-          "season": "NDJ",
-          "year": 2025,
-          "oni": -0.54
-        },
         {
           "season": "DJF",
           "year": 2026,
@@ -117,11 +112,16 @@
         {
           "season": "MAM",
           "year": 2026,
-          "oni": 0.48
+          "oni": 0.51
+        },
+        {
+          "season": "AMJ",
+          "year": 2026,
+          "oni": 0.98
         }
       ],
-      "date": "MAM 2026",
-      "fetchedAt": "2026-07-03T08:47:47.250Z",
+      "date": "AMJ 2026",
+      "fetchedAt": "2026-07-04T08:22:38.692Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -143,8 +143,8 @@
       "id": "tw_reservoir_combined_50pct",
       "severity": 3,
       "active": true,
-      "stress": 0.308,
-      "detail": "Combined fill: 39.4% (Shimen 218 MCM / 70.7%, Zengwen 183 MCM / 25.8%)",
+      "stress": 0.316,
+      "detail": "Combined fill: 38.9% (Shimen 218 MCM / 70.7%, Zengwen 178 MCM / 25.1%)",
       "status": "active"
     },
     {
@@ -152,15 +152,15 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 25.8%",
+      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 25.1%",
       "status": "inactive"
     },
     {
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
       "active": true,
-      "stress": 0.429,
-      "detail": "Water cost proxy ratio: 1.77x (simulation estimate)",
+      "stress": 0.436,
+      "detail": "Water cost proxy ratio: 1.80x (simulation estimate)",
       "status": "active"
     },
     {
@@ -184,7 +184,7 @@
       "severity": 2,
       "active": false,
       "stress": 0,
-      "detail": "La Niña advisory: false; Taiwan drought probability: 30%",
+      "detail": "La Niña advisory: false; Taiwan drought probability: 20%",
       "status": "inactive"
     },
     {
@@ -192,7 +192,7 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Shimen 70.7%, Zengwen 25.8% — both above 20%",
+      "detail": "Shimen 70.7%, Zengwen 25.1% — both above 20%",
       "status": "inactive"
     },
     {
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.3943,
+      "combinedFill": 0.3893,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 182.7,
-        "fill": 0.258,
+        "storage": 177.61,
+        "fill": 0.2508,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.000605951957375523
+        "tainan": 0.0007322917109103924
       }
     },
     "arizona": {
