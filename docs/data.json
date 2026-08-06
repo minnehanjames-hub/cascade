@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-05T08:14:48.702Z",
-  "date": "2026-08-05",
+  "generatedAt": "2026-08-06T08:14:07.096Z",
+  "date": "2026-08-06",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-08-05T08:14:50.108Z",
+      "fetchedAt": "2026-08-06T08:14:08.022Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "462.57",
+      "shimen_ewsc_raw": "472.83",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-08-05",
+      "source_date": "2026-08-06",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "16992.69",
-      "zengwen_storage_mcm": 187.26,
-      "zengwen_fill_fraction": 0.2644,
-      "combined_storage_mcm": 405.66,
-      "combined_fill_fraction": 0.3988
+      "zengwen_ewsc_raw": "16883.38",
+      "zengwen_storage_mcm": 186.05,
+      "zengwen_fill_fraction": 0.2627,
+      "combined_storage_mcm": 404.45,
+      "combined_fill_fraction": 0.3976
     },
     "usgs": {
       "depth_m": 28.07,
@@ -80,48 +80,48 @@
         }
       ],
       "source_date": "2025-05-30",
-      "fetchedAt": "2026-08-05T08:14:49.298Z",
+      "fetchedAt": "2026-08-06T08:14:07.352Z",
       "stale": false,
       "mock": false,
       "error": null
     },
     "noaa": {
-      "oni": 0.98,
+      "oni": 1.39,
       "advisory_status": "ENSO-Neutral",
       "la_nina_advisory_active": false,
       "el_nino_advisory_active": false,
       "la_nina_watch_active": false,
       "el_nino_watch_active": false,
-      "tw_drought_probability_3m": 0.2,
+      "tw_drought_probability_3m": 0.14,
       "recent_oni": [
-        {
-          "season": "DJF",
-          "year": 2026,
-          "oni": -0.37
-        },
         {
           "season": "JFM",
           "year": 2026,
-          "oni": -0.14
+          "oni": -0.21
         },
         {
           "season": "FMA",
           "year": 2026,
-          "oni": 0.13
+          "oni": 0.11
         },
         {
           "season": "MAM",
           "year": 2026,
-          "oni": 0.51
+          "oni": 0.46
         },
         {
           "season": "AMJ",
           "year": 2026,
-          "oni": 0.98
+          "oni": 0.95
+        },
+        {
+          "season": "MJJ",
+          "year": 2026,
+          "oni": 1.39
         }
       ],
-      "date": "AMJ 2026",
-      "fetchedAt": "2026-08-05T08:14:48.936Z",
+      "date": "MJJ 2026",
+      "fetchedAt": "2026-08-06T08:14:07.562Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -143,8 +143,8 @@
       "id": "tw_reservoir_combined_50pct",
       "severity": 3,
       "active": true,
-      "stress": 0.302,
-      "detail": "Combined fill: 39.9% (Shimen 218 MCM / 70.7%, Zengwen 187 MCM / 26.4%)",
+      "stress": 0.303,
+      "detail": "Combined fill: 39.8% (Shimen 218 MCM / 70.7%, Zengwen 186 MCM / 26.3%)",
       "status": "active"
     },
     {
@@ -152,14 +152,14 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 26.4%",
+      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 26.3%",
       "status": "inactive"
     },
     {
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
       "active": true,
-      "stress": 0.423,
+      "stress": 0.425,
       "detail": "Water cost proxy ratio: 1.74x (simulation estimate)",
       "status": "active"
     },
@@ -184,7 +184,7 @@
       "severity": 2,
       "active": false,
       "stress": 0,
-      "detail": "La Niña advisory: false; Taiwan drought probability: 20%",
+      "detail": "La Niña advisory: false; Taiwan drought probability: 14%",
       "status": "inactive"
     },
     {
@@ -192,7 +192,7 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Shimen 70.7%, Zengwen 26.4% — both above 20%",
+      "detail": "Shimen 70.7%, Zengwen 26.3% — both above 20%",
       "status": "inactive"
     },
     {
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.3988,
+      "combinedFill": 0.3976,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 187.26,
-        "fill": 0.2644,
+        "storage": 186.05,
+        "fill": 0.2627,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.0005113762604440865
+        "tainan": 0.0005349307545348858
       }
     },
     "arizona": {
