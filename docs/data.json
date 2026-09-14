@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-13T10:46:18.355Z",
-  "date": "2026-09-13",
+  "generatedAt": "2026-09-14T11:11:49.952Z",
+  "date": "2026-09-14",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-09-13T10:46:19.330Z",
+      "fetchedAt": "2026-09-14T11:11:51.388Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "499.64",
+      "shimen_ewsc_raw": "503.79",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-09-13",
+      "source_date": "2026-09-14",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17381.96",
-      "zengwen_storage_mcm": 191.55,
-      "zengwen_fill_fraction": 0.2705,
-      "combined_storage_mcm": 409.95,
-      "combined_fill_fraction": 0.403
+      "zengwen_ewsc_raw": "17402.58",
+      "zengwen_storage_mcm": 191.78,
+      "zengwen_fill_fraction": 0.2708,
+      "combined_storage_mcm": 410.18,
+      "combined_fill_fraction": 0.4032
     },
     "usgs": {
       "depth_m": 28.96,
@@ -80,7 +80,7 @@
         }
       ],
       "source_date": "2025-08-12",
-      "fetchedAt": "2026-09-13T10:46:18.599Z",
+      "fetchedAt": "2026-09-14T11:11:50.316Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JJA 2026",
-      "fetchedAt": "2026-09-13T10:46:18.796Z",
+      "fetchedAt": "2026-09-14T11:11:50.394Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.403,
+      "combinedFill": 0.4032,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 191.55,
-        "fill": 0.2705,
+        "storage": 191.78,
+        "fill": 0.2708,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.00043590872708641407
+        "tainan": 0.00043219277472871095
       }
     },
     "arizona": {
