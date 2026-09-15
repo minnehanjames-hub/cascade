@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T11:11:49.952Z",
-  "date": "2026-09-14",
+  "generatedAt": "2026-09-15T10:39:11.254Z",
+  "date": "2026-09-15",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,34 +8,27 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-09-14T11:11:51.388Z",
+      "fetchedAt": "2026-09-15T10:39:12.300Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "503.79",
+      "shimen_ewsc_raw": "506.77",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-09-14",
+      "source_date": "2026-09-15",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17402.58",
-      "zengwen_storage_mcm": 191.78,
-      "zengwen_fill_fraction": 0.2708,
-      "combined_storage_mcm": 410.18,
-      "combined_fill_fraction": 0.4032
+      "zengwen_ewsc_raw": "17386.08",
+      "zengwen_storage_mcm": 191.59,
+      "zengwen_fill_fraction": 0.2706,
+      "combined_storage_mcm": 409.99,
+      "combined_fill_fraction": 0.403
     },
     "usgs": {
       "depth_m": 28.96,
       "depth_ft": 95.01,
       "sites_count": 7,
       "sites": [
-        {
-          "site_no": "AZ014-333052111595501",
-          "site_name": "AZ014-333052111595501",
-          "depth_ft": 86.29,
-          "depth_m": 26.3,
-          "dateTime": "2025-05-30T18:12:00+00:00"
-        },
         {
           "site_no": "USGS-332830112274201",
           "site_name": "USGS-332830112274201",
@@ -65,6 +58,13 @@
           "dateTime": "2025-05-30T19:13:00+00:00"
         },
         {
+          "site_no": "AZ014-333052111595501",
+          "site_name": "AZ014-333052111595501",
+          "depth_ft": 87.96,
+          "depth_m": 26.81,
+          "dateTime": "2026-04-22T17:15:00+00:00"
+        },
+        {
           "site_no": "USGS-332500112095501",
           "site_name": "USGS-332500112095501",
           "depth_ft": 91.6,
@@ -79,8 +79,8 @@
           "dateTime": "2025-08-12T14:10:00+00:00"
         }
       ],
-      "source_date": "2025-08-12",
-      "fetchedAt": "2026-09-14T11:11:50.316Z",
+      "source_date": "2026-04-22",
+      "fetchedAt": "2026-09-15T10:39:11.538Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JJA 2026",
-      "fetchedAt": "2026-09-14T11:11:50.394Z",
+      "fetchedAt": "2026-09-15T10:39:11.786Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4032,
+      "combinedFill": 0.403,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 191.78,
-        "fill": 0.2708,
+        "storage": 191.59,
+        "fill": 0.2706,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.00043219277472871095
+        "tainan": 0.00043526018896213904
       }
     },
     "arizona": {
