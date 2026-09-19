@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-18T10:12:50.986Z",
-  "date": "2026-09-18",
+  "generatedAt": "2026-09-19T09:54:35.838Z",
+  "date": "2026-09-19",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,25 +8,25 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-09-18T10:12:51.946Z",
+      "fetchedAt": "2026-09-19T09:54:37.135Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "508.56",
+      "shimen_ewsc_raw": "509.16",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-09-18",
+      "source_date": "2026-09-19",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17650.78",
-      "zengwen_storage_mcm": 194.51,
-      "zengwen_fill_fraction": 0.2747,
-      "combined_storage_mcm": 412.91,
-      "combined_fill_fraction": 0.4059
+      "zengwen_ewsc_raw": "17692.27",
+      "zengwen_storage_mcm": 194.97,
+      "zengwen_fill_fraction": 0.2753,
+      "combined_storage_mcm": 413.37,
+      "combined_fill_fraction": 0.4064
     },
     "usgs": {
-      "depth_m": 28.96,
-      "depth_ft": 95.01,
+      "depth_m": 39.57,
+      "depth_ft": 129.83,
       "sites_count": 7,
       "sites": [
         {
@@ -35,6 +35,13 @@
           "depth_ft": 267.76,
           "depth_m": 81.61,
           "dateTime": "2024-07-12T19:15:00+00:00"
+        },
+        {
+          "site_no": "AZ014-333052111595501",
+          "site_name": "AZ014-333052111595501",
+          "depth_ft": 129.83,
+          "depth_m": 39.57,
+          "dateTime": "2024-08-08T21:10:00+00:00"
         },
         {
           "site_no": "USGS-332918112283301",
@@ -58,13 +65,6 @@
           "dateTime": "2025-05-30T19:13:00+00:00"
         },
         {
-          "site_no": "AZ014-333052111595501",
-          "site_name": "AZ014-333052111595501",
-          "depth_ft": 87.96,
-          "depth_m": 26.81,
-          "dateTime": "2026-04-22T17:15:00+00:00"
-        },
-        {
           "site_no": "USGS-332500112095501",
           "site_name": "USGS-332500112095501",
           "depth_ft": 91.6,
@@ -79,8 +79,8 @@
           "dateTime": "2025-08-12T14:10:00+00:00"
         }
       ],
-      "source_date": "2026-04-22",
-      "fetchedAt": "2026-09-18T10:12:51.361Z",
+      "source_date": "2025-08-12",
+      "fetchedAt": "2026-09-19T09:54:36.342Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JJA 2026",
-      "fetchedAt": "2026-09-18T10:12:51.568Z",
+      "fetchedAt": "2026-09-19T09:54:36.224Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -143,7 +143,7 @@
       "id": "tw_reservoir_combined_50pct",
       "severity": 3,
       "active": true,
-      "stress": 0.291,
+      "stress": 0.29,
       "detail": "Combined fill: 40.6% (Shimen 218 MCM / 70.7%, Zengwen 195 MCM / 27.5%)",
       "status": "active"
     },
@@ -208,7 +208,7 @@
       "severity": 2,
       "active": false,
       "stress": 0,
-      "detail": "Phoenix AMA depth: 29.0m (95ft) — trigger at 91m (300ft), crisis at 122m (400ft)",
+      "detail": "Phoenix AMA depth: 39.6m (130ft) — trigger at 91m (300ft), crisis at 122m (400ft)",
       "status": "inactive"
     },
     {
@@ -222,25 +222,25 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4059,
+      "combinedFill": 0.4064,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 194.51,
-        "fill": 0.2747,
+        "storage": 194.97,
+        "fill": 0.2753,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.0003904306293993864
+        "tainan": 0.0003838019067871012
       }
     },
     "arizona": {
-      "depthM": 28.96,
-      "depthFt": 95.01,
+      "depthM": 39.57,
+      "depthFt": 129.83,
       "triggerM": 91,
       "crisisM": 122,
       "sites": 7,
@@ -385,8 +385,8 @@
     "arizona": {
       "nodeVar": "az_groundwater.depth_to_water_m",
       "window": 30,
-      "initial": 28.96,
-      "current": 29.134,
+      "initial": 39.57,
+      "current": 39.744,
       "delta": 0.174,
       "warning": false,
       "signals": 1,
