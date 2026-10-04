@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-03T10:47:07.385Z",
-  "date": "2026-10-03",
+  "generatedAt": "2026-10-04T11:29:29.798Z",
+  "date": "2026-10-04",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-10-03T10:47:08.255Z",
+      "fetchedAt": "2026-10-04T11:29:31.042Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "506.77",
+      "shimen_ewsc_raw": "507.97",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-10-03",
+      "source_date": "2026-10-04",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17837.75",
-      "zengwen_storage_mcm": 196.57,
-      "zengwen_fill_fraction": 0.2776,
-      "combined_storage_mcm": 414.97,
-      "combined_fill_fraction": 0.4079
+      "zengwen_ewsc_raw": "17862.73",
+      "zengwen_storage_mcm": 196.85,
+      "zengwen_fill_fraction": 0.278,
+      "combined_storage_mcm": 415.25,
+      "combined_fill_fraction": 0.4082
     },
     "usgs": {
       "depth_m": 39.57,
@@ -80,13 +80,13 @@
         }
       ],
       "source_date": "2025-08-12",
-      "fetchedAt": "2026-10-03T10:47:07.650Z",
+      "fetchedAt": "2026-10-04T11:29:30.024Z",
       "stale": false,
       "mock": false,
       "error": null
     },
     "noaa": {
-      "oni": 1.8,
+      "oni": 2.16,
       "advisory_status": "El Niño Watch",
       "la_nina_advisory_active": false,
       "el_nino_advisory_active": false,
@@ -94,11 +94,6 @@
       "el_nino_watch_active": true,
       "tw_drought_probability_3m": 0.14,
       "recent_oni": [
-        {
-          "season": "FMA",
-          "year": 2026,
-          "oni": 0.11
-        },
         {
           "season": "MAM",
           "year": 2026,
@@ -118,10 +113,15 @@
           "season": "JJA",
           "year": 2026,
           "oni": 1.8
+        },
+        {
+          "season": "JAS",
+          "year": 2026,
+          "oni": 2.16
         }
       ],
-      "date": "JJA 2026",
-      "fetchedAt": "2026-10-03T10:47:07.827Z",
+      "date": "JAS 2026",
+      "fetchedAt": "2026-10-04T11:29:30.213Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -159,8 +159,8 @@
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
       "active": true,
-      "stress": 0.412,
-      "detail": "Water cost proxy ratio: 1.68x (simulation estimate)",
+      "stress": 0.411,
+      "detail": "Water cost proxy ratio: 1.67x (simulation estimate)",
       "status": "active"
     },
     {
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4079,
+      "combinedFill": 0.4082,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 196.57,
-        "fill": 0.2776,
+        "storage": 196.85,
+        "fill": 0.278,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.000361609221202044
+        "tainan": 0.0003578595064876945
       }
     },
     "arizona": {
