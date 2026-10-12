@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-11T11:46:33.324Z",
-  "date": "2026-10-11",
+  "generatedAt": "2026-10-12T13:49:59.496Z",
+  "date": "2026-10-12",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-10-11T11:46:34.533Z",
+      "fetchedAt": "2026-10-12T13:50:00.575Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "491.38",
+      "shimen_ewsc_raw": "489.04",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-10-11",
+      "source_date": "2026-10-12",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17833.59",
-      "zengwen_storage_mcm": 196.53,
-      "zengwen_fill_fraction": 0.2775,
-      "combined_storage_mcm": 414.93,
-      "combined_fill_fraction": 0.4079
+      "zengwen_ewsc_raw": "17850.24",
+      "zengwen_storage_mcm": 196.71,
+      "zengwen_fill_fraction": 0.2778,
+      "combined_storage_mcm": 415.11,
+      "combined_fill_fraction": 0.4081
     },
     "usgs": {
       "depth_m": 39.57,
@@ -80,7 +80,7 @@
         }
       ],
       "source_date": "2025-08-12",
-      "fetchedAt": "2026-10-11T11:46:33.739Z",
+      "fetchedAt": "2026-10-12T13:49:59.983Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JAS 2026",
-      "fetchedAt": "2026-10-11T11:46:33.824Z",
+      "fetchedAt": "2026-10-12T13:49:59.938Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -159,7 +159,7 @@
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
       "active": true,
-      "stress": 0.412,
+      "stress": 0.411,
       "detail": "Water cost proxy ratio: 1.68x (simulation estimate)",
       "status": "active"
     },
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4079,
+      "combinedFill": 0.4081,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 196.53,
-        "fill": 0.2775,
+        "storage": 196.71,
+        "fill": 0.2778,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.00036214809050917493
+        "tainan": 0.0003597294812139998
       }
     },
     "arizona": {
