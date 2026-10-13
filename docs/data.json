@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T13:49:59.496Z",
-  "date": "2026-10-12",
+  "generatedAt": "2026-10-13T13:08:10.062Z",
+  "date": "2026-10-13",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-10-12T13:50:00.575Z",
+      "fetchedAt": "2026-10-13T13:08:12.421Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "489.04",
+      "shimen_ewsc_raw": "487.29",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-10-12",
+      "source_date": "2026-10-13",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17850.24",
-      "zengwen_storage_mcm": 196.71,
-      "zengwen_fill_fraction": 0.2778,
-      "combined_storage_mcm": 415.11,
-      "combined_fill_fraction": 0.4081
+      "zengwen_ewsc_raw": "17812.78",
+      "zengwen_storage_mcm": 196.3,
+      "zengwen_fill_fraction": 0.2772,
+      "combined_storage_mcm": 414.7,
+      "combined_fill_fraction": 0.4077
     },
     "usgs": {
       "depth_m": 39.57,
@@ -80,7 +80,7 @@
         }
       ],
       "source_date": "2025-08-12",
-      "fetchedAt": "2026-10-12T13:49:59.983Z",
+      "fetchedAt": "2026-10-13T13:08:10.502Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JAS 2026",
-      "fetchedAt": "2026-10-12T13:49:59.938Z",
+      "fetchedAt": "2026-10-13T13:08:10.565Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -144,7 +144,7 @@
       "severity": 3,
       "active": true,
       "stress": 0.288,
-      "detail": "Combined fill: 40.8% (Shimen 218 MCM / 70.7%, Zengwen 197 MCM / 27.8%)",
+      "detail": "Combined fill: 40.8% (Shimen 218 MCM / 70.7%, Zengwen 196 MCM / 27.7%)",
       "status": "active"
     },
     {
@@ -152,14 +152,14 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 27.8%",
+      "detail": "Below proxy threshold; Shimen 70.7%, Zengwen 27.7%",
       "status": "inactive"
     },
     {
       "id": "tsmc_water_cost_yoy_40pct",
       "severity": 3,
       "active": true,
-      "stress": 0.411,
+      "stress": 0.412,
       "detail": "Water cost proxy ratio: 1.68x (simulation estimate)",
       "status": "active"
     },
@@ -192,7 +192,7 @@
       "severity": 4,
       "active": false,
       "stress": 0,
-      "detail": "Shimen 70.7%, Zengwen 27.8% — both above 20%",
+      "detail": "Shimen 70.7%, Zengwen 27.7% — both above 20%",
       "status": "inactive"
     },
     {
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4081,
+      "combinedFill": 0.4077,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 196.71,
-        "fill": 0.2778,
+        "storage": 196.3,
+        "fill": 0.2772,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.0003597294812139998
+        "tainan": 0.00036526219947946174
       }
     },
     "arizona": {
