@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-17T09:52:34.660Z",
-  "date": "2026-10-17",
+  "generatedAt": "2026-10-18T10:03:55.887Z",
+  "date": "2026-10-18",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,21 +8,21 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-10-17T09:52:36.498Z",
+      "fetchedAt": "2026-10-18T10:03:57.049Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "462.57",
+      "shimen_ewsc_raw": "456.92",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-10-17",
+      "source_date": "2026-10-18",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17667.37",
-      "zengwen_storage_mcm": 194.69,
-      "zengwen_fill_fraction": 0.2749,
-      "combined_storage_mcm": 413.09,
-      "combined_fill_fraction": 0.4061
+      "zengwen_ewsc_raw": "17654.92",
+      "zengwen_storage_mcm": 194.56,
+      "zengwen_fill_fraction": 0.2747,
+      "combined_storage_mcm": 412.96,
+      "combined_fill_fraction": 0.406
     },
     "usgs": {
       "depth_m": 39.57,
@@ -44,32 +44,11 @@
           "dateTime": "2024-08-08T21:10:00+00:00"
         },
         {
-          "site_no": "USGS-332918112283301",
-          "site_name": "USGS-332918112283301",
-          "depth_ft": 328.41,
-          "depth_m": 100.1,
-          "dateTime": "2024-07-12T22:27:00+00:00"
-        },
-        {
-          "site_no": "USGS-332659112264801",
-          "site_name": "USGS-332659112264801",
-          "depth_ft": 173.69,
-          "depth_m": 52.94,
-          "dateTime": "2023-12-15T20:44:00+00:00"
-        },
-        {
           "site_no": "USGS-332948111573201",
           "site_name": "USGS-332948111573201",
-          "depth_ft": 92.09,
-          "depth_m": 28.07,
-          "dateTime": "2025-05-30T19:13:00+00:00"
-        },
-        {
-          "site_no": "USGS-332500112095501",
-          "site_name": "USGS-332500112095501",
-          "depth_ft": 91.6,
-          "depth_m": 27.92,
-          "dateTime": "2020-11-17T16:16:00+00:00"
+          "depth_ft": 90.01,
+          "depth_m": 27.44,
+          "dateTime": "2024-07-02T21:29:00+00:00"
         },
         {
           "site_no": "USGS-332642112210801",
@@ -77,10 +56,31 @@
           "depth_ft": 95.01,
           "depth_m": 28.96,
           "dateTime": "2025-08-12T14:10:00+00:00"
+        },
+        {
+          "site_no": "USGS-332659112264801",
+          "site_name": "USGS-332659112264801",
+          "depth_ft": 165.85,
+          "depth_m": 50.55,
+          "dateTime": "2023-12-15T21:05:00+00:00"
+        },
+        {
+          "site_no": "USGS-332918112283301",
+          "site_name": "USGS-332918112283301",
+          "depth_ft": 328.41,
+          "depth_m": 100.1,
+          "dateTime": "2024-07-12T22:27:00+00:00"
+        },
+        {
+          "site_no": "USGS-332500112095501",
+          "site_name": "USGS-332500112095501",
+          "depth_ft": 89.76,
+          "depth_m": 27.36,
+          "dateTime": "2025-08-28T17:04:00+00:00"
         }
       ],
-      "source_date": "2025-08-12",
-      "fetchedAt": "2026-10-17T09:52:35.280Z",
+      "source_date": "2025-08-28",
+      "fetchedAt": "2026-10-18T10:03:56.376Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "JAS 2026",
-      "fetchedAt": "2026-10-17T09:52:35.036Z",
+      "fetchedAt": "2026-10-18T10:03:56.428Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -222,20 +222,20 @@
   ],
   "regions": {
     "taiwan": {
-      "combinedFill": 0.4061,
+      "combinedFill": 0.406,
       "shimen": {
         "storage": 218.4,
         "fill": 0.707,
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 194.69,
-        "fill": 0.2749,
+        "storage": 194.56,
+        "fill": 0.2747,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.0003878232644148507
+        "tainan": 0.0003897046092209899
       }
     },
     "arizona": {
