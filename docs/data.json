@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T13:40:57.532Z",
-  "date": "2026-11-05",
+  "generatedAt": "2026-11-06T13:25:06.938Z",
+  "date": "2026-11-06",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,12 +8,12 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-11-05T13:40:58.609Z",
+      "fetchedAt": "2026-11-06T13:25:11.316Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "475.7",
+      "shimen_ewsc_raw": "485.54",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
       "source_date": "2026-11-05",
@@ -80,7 +80,7 @@
         }
       ],
       "source_date": "2025-08-28",
-      "fetchedAt": "2026-11-05T13:40:58.014Z",
+      "fetchedAt": "2026-11-06T13:25:07.260Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "ASO 2026",
-      "fetchedAt": "2026-11-05T13:40:58.006Z",
+      "fetchedAt": "2026-11-06T13:25:07.335Z",
       "stale": false,
       "mock": false,
       "error": null
