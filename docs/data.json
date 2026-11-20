@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-19T14:52:58.522Z",
-  "date": "2026-11-19",
+  "generatedAt": "2026-11-20T14:33:53.430Z",
+  "date": "2026-11-20",
   "dataMode": "live",
   "mockSources": [],
   "staleSources": [
@@ -8,20 +8,20 @@
   ],
   "sources": {
     "taiwan": {
-      "fetchedAt": "2026-11-19T14:53:01.308Z",
+      "fetchedAt": "2026-11-20T14:33:54.708Z",
       "stale": true,
       "mock": false,
       "error": null,
       "shimen_sensor_offline": true,
-      "shimen_ewsc_raw": "503.79",
+      "shimen_ewsc_raw": "502.01",
       "shimen_storage_mcm": 218.4,
       "shimen_fill_fraction": 0.707,
-      "source_date": "2026-11-19",
+      "source_date": "2026-11-20",
       "zengwen_sensor_offline": false,
-      "zengwen_ewsc_raw": "17841.91",
-      "zengwen_storage_mcm": 196.62,
+      "zengwen_ewsc_raw": "17846.07",
+      "zengwen_storage_mcm": 196.66,
       "zengwen_fill_fraction": 0.2777,
-      "combined_storage_mcm": 415.02,
+      "combined_storage_mcm": 415.06,
       "combined_fill_fraction": 0.408
     },
     "usgs": {
@@ -80,7 +80,7 @@
         }
       ],
       "source_date": "2025-08-28",
-      "fetchedAt": "2026-11-19T14:52:58.976Z",
+      "fetchedAt": "2026-11-20T14:33:53.872Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -121,7 +121,7 @@
         }
       ],
       "date": "ASO 2026",
-      "fetchedAt": "2026-11-19T14:52:59.053Z",
+      "fetchedAt": "2026-11-20T14:33:53.676Z",
       "stale": false,
       "mock": false,
       "error": null
@@ -229,13 +229,13 @@
         "capacity": 309.1
       },
       "zengwen": {
-        "storage": 196.62,
+        "storage": 196.66,
         "fill": 0.2777,
         "capacity": 708.1
       },
       "fabStress": {
         "hsinchu": 2.3036810401807905e-8,
-        "tainan": 0.00036093676128423006
+        "tainan": 0.000360399693272954
       }
     },
     "arizona": {
